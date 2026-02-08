@@ -20,7 +20,6 @@
 ## 📑 Table of Contents
 
 - [What I Do](#-what-i-do)
-- [Featured Projects](#-featured-projects)
 - [Experience & Education](#-experience--education)
 - [Currently Learning](#-currently-learning)
 - [Tech Stack](#️-tech-stack)

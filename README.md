@@ -2,7 +2,7 @@
 
 **Computer Science student at FAST-NUCES | Building scalable systems & community-driven edtech in Pakistan**
 
-📍 Based in Pakistan | 🎯 Focused on backend scalability, AI/ML pipelines, and startup development
+📍 Based in Pakistan | 🎯 Focused on backend scalability, AI/ML pipelines, and startup development | AI Engineer | DevOps Engineer | BAckend Developer 
 
 ---
 

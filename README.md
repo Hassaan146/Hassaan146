@@ -65,42 +65,7 @@ Interactive games built from scratch using **C++ and SFML** for graphics renderi
 **Highlights:**
 - Implemented object-oriented design patterns (inheritance, polymorphism)
 - Built game loops, collision detection, and sprite management
-```cpp
-// Example: Player movement logic (OOP style)
-class Player {
-    int position_x;
-    int position_y;
-public:
-    void move(int dx, int dy) {
-        position_x += dx;
-        position_y += dy;
-    }
-};
-```
-
----
-
-### 🎬 Netflix Clone — Full-Stack Streaming UI
-
-A **front-end clone** of Netflix with dynamic content rendering and responsive design.
-
-**Tech:** HTML · CSS · JavaScript · Python (Backend planned)  
-**Highlights:**
-- Replica UI with hover effects, carousels, and grid layouts
-- Learning backend integration for user auth and video streaming
-```python
-# Example: FastAPI endpoint for fetching movie data
-from fastapi import FastAPI
-
-app = FastAPI()
-
-@app.get("/movies")
-async def get_movies():
-    movie_list = ["Inception", "Interstellar", "The Matrix"]
-    return {"movies": movie_list}
-```
-
----
+  
 
 ## 🎓 Experience & Education
 
@@ -141,13 +106,21 @@ async def get_movies():
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![SFML](https://img.shields.io/badge/SFML-8CC445?style=for-the-badge&logo=sfml&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
 
-### **Tools & Platforms**
+### **DevOps & Tools**
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+### **Databases**
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ---
 
@@ -163,8 +136,8 @@ async def get_movies():
 ## 📬 Connect With Me
 
 [![Email](https://img.shields.io/badge/Email-muhammadhassaanulmustafa@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammadhassaanulmustafa@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME](https://www.linkedin.com/in/muhammad-hassaan-25480a322/))
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)]([https://github.com/Hassaan146](https://github.com/Hassaan146))
 
 **Open for:** Internships · Junior backend/DevOps roles · Startup collaborations · Edtech partnerships
 

@@ -38,35 +38,6 @@
 
 ---
 
-## 🚀 Featured Projects
-
-### 🎓 [FAST-HUB](https://github.com/Hassaan146/Fast-Hub) — Community Learning Platform
-
-A competitive, community-driven site offering **free courses and roadmaps** for students in Pakistan.
-
-**Tech:** HTML · CSS · JavaScript  
-**Highlights:**
-- Designed for FAST-NUCES students to access curated learning paths
-- Built with clean UI/UX and responsive design principles
-```bash
-# Clone and run locally
-git clone https://github.com/Hassaan146/Fast-Hub
-cd Fast-Hub
-open index.html
-```
-
----
-
-### 🎮 [SFML Game Engine Projects](https://github.com/Hassaan146/Sonic-Forces-OOP) — GUI-Based Games
-
-Interactive games built from scratch using **C++ and SFML** for graphics rendering.
-
-**Tech:** C++ · SFML · OOP  
-**Highlights:**
-- Implemented object-oriented design patterns (inheritance, polymorphism)
-- Built game loops, collision detection, and sprite management
-  
-
 ## 🎓 Experience & Education
 
 🎓 **B.S. in Computer Science** — FAST-NUCES (National University of Computer and Emerging Sciences) *(Ongoing)*  

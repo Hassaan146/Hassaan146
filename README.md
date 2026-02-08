@@ -1,21 +1,73 @@
-# 💫 About Me:
-You are a professional README writer and UX-aware documentation designer. Generate a **clean, modern, GitHub Profile README** in Markdown only. Do NOT include HTML. Keep the README focused, scannable, and visually balanced for GitHub’s profile page. Use emoji sparingly for eye-cues only. Use meaningful section headings and short paragraphs/bullets. Always output only Markdown and nothing else.<br><br>--- CONTEXT (use these exact user details when personalizing) ---<br>Name: Muhammad Hassaanulmustafa<br>Preferred display name: Muhammad Hassaanulmustafa<br>Role / current status: Computer Science student, learning Python for DevOps, 6 months experience in C++ (OOP & PF)<br>Career goals: DevOps + Front-end industry-level jobs; building a startup — a community site offering free courses and roadmaps for students in Pakistan<br>Tech & tools (highlight): C++, Python, Java, HTML/CSS/JS, React (learning), SFML, Git, Linux, VS Code, Docker (beginner), basic SQL<br>Coding style preferences to reflect subtly: prefer snake_case variable names, avoid using vectors in C++ examples, avoid extra wrapper functions unless needed<br>Laptop detail (optional small badge): HP EliteBook 745 G6<br>Keyboard: French AZERTY (do not show as a large section; include as a small note if space permits)<br><br>--- OUTPUT REQUIREMENTS / STRUCTURE ---<br>1. Top hero section (1-2 lines): a one-line tagline + short description (1 sentence) and a location tag (Pakistan).<br>2. Badges line: show 3–5 badges (build/skill/hire/last-commit style). Use shields-style text placeholders (no images). Example badges: "⚙️ Open to work", "🌱 Learning: Python → DevOps", "🔭 Working on: Community learning platform".<br>3. Quick stats: one-line summary of languages/stack (compact).<br>4. What I do (3–4 bullets): short, active voice, each bullet 10–14 words max (projects, learning, teaching intent).<br>5. Pinned projects (3 projects): For each project include:<br>   - Project title (link placeholder to repo)<br>   - One-line description (what it does)<br>   - Tech stack (inline)<br>   - Role / key highlights (2 short bullets)<br>   - A 2–3 line code snippet showing usage or installation. Use snake_case in snippet variable names and avoid `vector` in C++ snippet; prefer arrays or simple loops if showing C++ sample.<br>6. Experience / Education: 2–3 lines (university, major if available)<br>7. What I'm learning: 3 items (current focus first)<br>8. How to reach me: GitHub / Email / LinkedIn — show as link placeholders. Add: "Open for: internships, junior roles, collaboration on edtech".<br>9. Footer: one-liner friendly call-to-action and a small "fun fact" or hobby line (video games, coding puzzles).<br>10. Format constraints:<br>   - Keep total README under ~300 lines.<br>   - Use headings (# or ##) only for section titles.<br>   - Use fenced code blocks for all code snippets, with correct language tags.<br>   - Use `-` for bullets. Use backticks for inline commands. Use snake_case naming in examples.<br>   - Provide a short table-of-contents (links to the main sections).<br>   - Provide a short one-liner alt text for an optional profile GIF/graphic (if user wants to add later).<br><br>--- TONE & STYLE ---<br>- Tone: professional, friendly, concise.<br>- Voice: active, first person singular ("I build...", "I'm learning...").<br>- Use emojis only in the badges/hints (max 8 emojis total).<br>- No long paragraphs—prefer bullets and short lines.<br><br>--- EXAMPLE PLACEHOLDERS & TEMPLATE (generate this exact markdown structure filled with personalized content from CONTEXT) ---<br>Produce the final README now, using the structure above, with real, personalized copy for Muhammad Hassaanulmustafa. Replace link placeholders with `[REPO_LINK]`, `[DEMO_LINK]`, `[EMAIL]`, `[LINKEDIN]`. Use concrete bullets that reflect his startup goal (community learning platform for Pakistan), his SFML & C++ experience, and that he's learning Python for DevOps. For code snippets, show:<br>- a short Python snippet demonstrating a simple DevOps-related task (e.g., printing system info or a Docker-run command) using snake_case variables;<br>- a small C++ snippet demonstrating OOP or a pattern he uses, avoiding vectors.<br><br>End the README with a 1-line call-to-action: "If you'd like to collaborate, reach out — I'd love to connect."<br><br>--- LENGTH: ---<br>Prefer concise outputs (do not exceed 1,500 words). Generate now.<br>
+Hi, I'm Muhammad Hassaanulmustafa 👋
+
+Computer Science student at FAST-NUCES | Building scalable systems & community-driven edtech in Pakistan
+
+📍 Based in Pakistan | 🎯 Focused on backend scalability, AI/ML pipelines, and startup development
 
 
-## 🌐 Socials:
-[![Bluesky](https://img.shields.io/badge/bluesky-0285FF?style=for-the-badge&logo=bluesky&logoColor=%23FFFFFF)](https://bsky.app/profile/Muhammad Hassaan) [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/Muhammad Hassaan) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/potrait_of_hassaan) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Muhammad Hassaan) [![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/Hassaan_146) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@muhammadhassaan9438) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:muhammadhassaanulmustafa@gmail.com) 
+🚀 Quick Overview
 
-# 💻 Tech Stack:
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaFX](https://img.shields.io/badge/javafx-%23FF0000.svg?style=for-the-badge&logo=javafx&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white) ![Jasmine](https://img.shields.io/badge/jasmine-%238A4182.svg?style=for-the-badge&logo=jasmine&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Web3.js](https://img.shields.io/badge/web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white) ![Adobe Acrobat Reader](https://img.shields.io/badge/Adobe%20Acrobat%20Reader-EC1C24.svg?style=for-the-badge&logo=Adobe%20Acrobat%20Reader&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![Jasmine](https://img.shields.io/badge/-Jasmine-%238A4182?style=for-the-badge&logo=Jasmine&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![AMD](https://img.shields.io/badge/AMD-%23000000.svg?style=for-the-badge&logo=amd&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Hassaan146&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Hassaan146&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Hassaan146&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+⚙️ Open to collaborations | 🌱 Learning: FastAPI + Pydantic for AI/ML | 🔭 Building: FAST-NUCES community platform | 💼 Goal: Launch my own startup
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=vetical&theme=radical)
+Current stack: Python · C++ · Java · HTML/CSS/JS · React · FastAPI · SFML · Git · Linux 
 
----
-[![](https://visitcount.itsvg.in/api?id=Hassaan146&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
+ Table of Contents
+- [What I Do](#what-i-do)
+- [Featured Projects](#featured-projects)
+- [Experience & Education](#experience--education)
+- [Currently Learning](#currently-learning)
+- [Connect With Me](#connect-with-me)
+
+
+ What I Do
+
+- Build **enterprise-level management systems** and GUI-based games with C++ & SFML
+- Develop **backend APIs** using FastAPI and Pydantic for AI/ML workflows
+- Create **front-end experiences** (cloned Netflix, Instagram; built FAST-HUB community site)
+- Focus on **scalability, organization, and maintainability** in every project
+
+ 
+ Featured Projects
+
+🎓 [FAST-HUB](https://github.com/Hassaan146/Fast-Hub) — Community Learning Platform
+A competitive, community-driven site offering **free courses and roadmaps** for students in Pakistan.
+
+Tech: HTML · CSS · JavaScript  
+**Highlights:
+- Designed for FAST-NUCES students to access curated learning paths
+- Built with clean UI/UX and responsive design principles
+
+
+ 🎮 [SFML Game Engine Projects](https://github.com/Hassaan146/Sonic-Forces-OOP) — GUI-Based Games
+Interactive games built from scratch using **C++ and SFML** for graphics rendering.
+
+**Tech:** C++ · SFML · OOP  
+**Highlights:**
+- Implemented object-oriented design patterns (inheritance, polymorphism)
+- Built game loops, collision detection, and sprite management
+
+
+
+## Experience & Education
+
+🎓 B.S. in Computer Science — FAST-NUCES (National University of Computer and Emerging Sciences) Going
+📌 **2 Years experience:** C++ (DSA & OOP & Programming Fundamentals), Python , Django  
+📌 **Current focus:** Python for DevOps, FastAPI for AI/ML backend services, Django for backend
+
+
+ Currently Learning
+
+1. FastAPI + Pydantic → Building scalable AI/ML APIs
+2. Docker & CI/CD → Automating deployments and containerization
+3. React.js → Front-end component architecture for modern web apps
+
+
+## ⚡ Fun Facts
+
+- 🎮 Competitive gamer & e-sports enthusiast
+- 📖 Love reading about scalable system design
+- 🐍 Python is my go-to,vast, versatile, and future-proof
+
+->Reach out to me at: muhammadhassaanulmustafa@gmail.com

@@ -1,328 +1,120 @@
-<div align="center">
+# Hi, I'm Muhammad Hassaanulmustafa 👋
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,25:1a0033,50:4b0082,75:ff0080,100:000000&height=300&section=header&text=Muhammad%20Hassaanulmustafa&fontColor=ffffff&fontSize=48&fontAlignY=40&fontAlign=50&desc=AI%20Engineer%20%E2%9A%A1%20DevOps%20%E2%9A%A1%20Backend%20Developer%20%E2%9A%A1%20FAST-NUCES&descFontColor=ff79c6&descSize=18&descAlign=50&descAlignY=58&animation=twinkling&stroke=ff0080&strokeWidth=2" width="100%"/>
+**Computer Science student at FAST-NUCES | Building scalable systems & community-driven edtech in Pakistan**
 
-<br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=24&duration=2200&pause=700&color=FF79C6&center=true&vCenter=true&multiline=false&width=750&lines=Architecting+scalable+AI%2FML+pipelines+%F0%9F%A4%96;Crafting+FastAPI+%2B+Pydantic+like+poetry+%E2%9C%8D%EF%B8%8F;Containerizing+everything+with+Docker+%F0%9F%90%B3;C%2B%2B+SFML+games+%2B+enterprise+systems+%F0%9F%8E%AE;Building+Pakistan's+next-gen+edtech+%F0%9F%87%B5%F0%9F%87%B0;Scalable.+Maintainable.+Production-grade.+%E2%9A%A1" alt="Typing animation" />
-
-<br/><br/>
-
-<a href="mailto:muhammadhassaanulmustafa@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/muhammad-hassaan-25480a322/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-<a href="https://github.com/Hassaan146">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-<a href="https://github.com/Hassaan146">
-  <img src="https://komarev.com/ghpvc/?username=Hassaan146&style=for-the-badge&color=ff0080&label=PROFILE+VIEWS" />
-</a>
-
-<br/>
-
-![Open to Collaborations](https://img.shields.io/badge/STATUS-OPEN%20TO%20COLLABORATIONS-39d353?style=for-the-badge&labelColor=000000)
-![Learning](https://img.shields.io/badge/LEARNING-FastAPI%20%2B%20Pydantic-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=000000)
-![Building](https://img.shields.io/badge/BUILDING-FAST--NUCES%20Platform-ff79c6?style=for-the-badge&labelColor=000000)
-![Goal](https://img.shields.io/badge/GOAL-Launch%20My%20Startup-ff0080?style=for-the-badge&labelColor=000000)
-
-</div>
-
-<br/>
+📍 Based in Pakistan | 🎯 Focused on backend scalability, AI/ML pipelines, and startup development | AI Engineer | DevOps Engineer | BAckend Developer 
 
 ---
 
-<img align="right" alt="Coding" width="380" src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif"/>
+## 🚀 Quick Overview
 
-### 👨‍💻 About Me
+![Open to Collaborations](https://img.shields.io/badge/Status-Open%20to%20Collaborations-brightgreen?style=flat-square)
+![Learning](https://img.shields.io/badge/Learning-FastAPI%20%2B%20Pydantic-blue?style=flat-square&logo=fastapi)
+![Building](https://img.shields.io/badge/Building-FAST--NUCES%20Platform-orange?style=flat-square)
+![Goal](https://img.shields.io/badge/Goal-Launch%20My%20Startup-red?style=flat-square)
 
-```python
-class Hassaan:
-    def __init__(self):
-        self.name        = "Muhammad Hassaanulmustafa"
-        self.role        = ["AI Engineer", "DevOps", "Backend Dev"]
-        self.education   = "B.S. Computer Science @ FAST-NUCES"
-        self.location    = "Pakistan 🇵🇰"
-        self.experience  = "2+ years (C++, Python, Django)"
-        self.stack       = ["FastAPI", "Pydantic", "Docker", "React"]
-        self.mission     = "Build Pakistan's next-gen edtech"
-
-    def current_focus(self):
-        return [
-            "⚡ FastAPI + Pydantic for AI/ML APIs",
-            "🐳 Docker, CI/CD, scalable DevOps",
-            "⚛️ React component architecture",
-            "🚀 Launching my own startup",
-        ]
-
-    def philosophy(self):
-        return "Scalable. Organized. Maintainable. Always."
-```
-
-<br/>
-
-- 🔭 &nbsp; Building **FAST-HUB** — a community-driven platform for FAST-NUCES students
-- 🧠 &nbsp; Deep into **AI/ML backend pipelines** with FastAPI & Pydantic
-- 🎮 &nbsp; Shipped **C++ SFML games** + enterprise management systems
-- 🌐 &nbsp; Cloned **Netflix & Instagram** UIs for fun and learning
-- 🇵🇰 &nbsp; Based in **Pakistan** · Open to remote internships & startup collabs
-- ⚡ &nbsp; Fun fact: I genuinely think **Python is future-proof**
-
-<br clear="right"/>
+**Current stack:** Python · C++ · Java · HTML/CSS/JS · React · FastAPI · Django · SFML · Git · Linux · Docker · SQL · VS Code
 
 ---
 
-## 🛠️ Tech Arsenal
+## 📑 Table of Contents
 
-<div align="center">
-
-### 💻 Languages
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=python,cpp,java,js,html,css,bash&theme=dark&perline=10"/>
-</a>
-
-### ⚙️ Frameworks & Backend
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=fastapi,django,react,nodejs,flask&theme=dark&perline=10"/>
-</a>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white" />
-  <img src="https://img.shields.io/badge/SFML-8CC445?style=flat-square&logo=sfml&logoColor=white" />
-  <img src="https://img.shields.io/badge/REST_APIs-02569B?style=flat-square&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/AI%2FML_Pipelines-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
-</p>
-
-### 🗄️ Databases
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,sqlite,redis&theme=dark&perline=10"/>
-</a>
-
-### 🐳 DevOps & Cloud
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=docker,linux,git,github,githubactions,nginx&theme=dark&perline=10"/>
-</a>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/Containerization-2496ED?style=flat-square&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/System_Design-1a1a2e?style=flat-square&logo=buffer&logoColor=00d4ff" />
-</p>
-
-### 🧰 Tools & Workflow
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=vscode,postman,figma,vim&theme=dark&perline=10"/>
-</a>
-
-</div>
+- [What I Do](#-what-i-do)
+- [Experience & Education](#-experience--education)
+- [Currently Learning](#-currently-learning)
+- [Tech Stack](#️-tech-stack)
+- [Fun Facts](#-fun-facts)
+- [Connect With Me](#-connect-with-me)
 
 ---
 
-## 🎯 What I'm Building
+## 💼 What I Do
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### ⚡ FAST-HUB
-**Community platform for FAST-NUCES students**
-
-- 🎓 Student-focused resource sharing
-- 💬 Discussion forums & study groups
-- 📚 Course material aggregation
-- 🚀 Built with React + FastAPI
-
-</td>
-<td width="50%" valign="top">
-
-### 🎮 C++ SFML Projects
-**Enterprise systems & GUI games**
-
-- 🏢 Management systems (OOP-driven)
-- 🕹️ Interactive SFML games
-- 📊 Data structures from scratch
-- ⚙️ Built across 2 years at FAST-NUCES
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🤖 AI/ML Backend Pipelines
-**FastAPI + Pydantic services**
-
-- ⚡ Async API endpoints
-- ✅ Type-safe validation
-- 🔌 ML model serving
-- 🐳 Docker-containerized
-
-</td>
-<td width="50%" valign="top">
-
-### 🌐 Frontend Clones
-**Pixel-perfect UI replicas**
-
-- 🎬 Netflix clone (HTML/CSS/JS)
-- 📸 Instagram clone (React)
-- 🎨 Component-based design
-- 📱 Responsive layouts
-
-</td>
-</tr>
-</table>
+- Build **enterprise-level management systems** and GUI-based games with C++ & SFML
+- Develop **backend APIs** using FastAPI and Pydantic for AI/ML workflows
+- Create **front-end experiences** (cloned Netflix, Instagram; built FAST-HUB community site)
+- Focus on **scalability, organization, and maintainability** in every project
 
 ---
 
-## 📊 GitHub Analytics
+## 🎓 Experience & Education
 
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=Hassaan146&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=ff79c6&icon_color=ff0080&text_color=c9d1d9&ring_color=ff79c6" height="180"/>
-&nbsp;
-<img src="https://streak-stats.demolab.com?user=Hassaan146&theme=tokyonight&hide_border=true&background=0d1117&ring=ff0080&fire=ff79c6&currStreakLabel=ff79c6&sideLabels=8b949e&currStreakNum=ffffff&sideNums=8b949e&dates=8b949e" height="180"/>
-
-<br/><br/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Hassaan146&theme=radical" width="95%"/>
-
-<br/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Hassaan146&theme=radical" height="160"/>
-&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Hassaan146&theme=radical" height="160"/>
-&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Hassaan146&theme=radical" height="160"/>
-
-<br/><br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hassaan146&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=ff79c6&text_color=c9d1d9" height="180"/>
-
-</div>
+🎓 **B.S. in Computer Science** — FAST-NUCES (National University of Computer and Emerging Sciences) *(Ongoing)*  
+📌 **2 years experience:** C++ (DSA, OOP, Programming Fundamentals), Python, Django  
+📌 **Current focus:** FastAPI for AI/ML backend services, Docker, and DevOps workflows
 
 ---
 
-## 🏆 Achievements
+## 🌱 Currently Learning
 
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=Hassaan146&theme=radical&no-frame=true&no-bg=true&row=1&column=7&margin-w=8&margin-h=8"/>
-
-</div>
+1. **FastAPI + Pydantic** → Building scalable AI/ML APIs
+2. **Docker & CI/CD** → Automating deployments and containerization
+3. **React.js** → Front-end component architecture for modern web apps
 
 ---
 
-## 🐍 Contribution Snake
+## 📊 GitHub Stats
 
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/github-contribution-grid-snake.svg"/>
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/github-contribution-grid-snake-dark.svg"/>
-</picture>
-
-</div>
+![Hassaan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Hassaan146&show_icons=true&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Hassaan146&layout=compact&theme=radical)
 
 ---
 
-## 📈 Contribution Activity
+## 🛠️ Tech Stack
 
-<div align="center">
+### **Languages**
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Hassaan146&bg_color=0d1117&color=ff79c6&line=ff0080&point=ff79c6&area=true&area_color=2d0a3d&hide_border=true&custom_title=Contribution+Graph&radius=8" width="95%"/>
+### **Frameworks & Libraries**
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![SFML](https://img.shields.io/badge/SFML-8CC445?style=for-the-badge&logo=sfml&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
 
-</div>
+### **DevOps & Tools**
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
----
-
-## 🎮 Beyond The Code
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="33%">
-  <img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="100"/><br/>
-  <b>🎮 Competitive Gamer</b><br/>
-  <sub>E-sports enthusiast</sub>
-</td>
-<td align="center" width="33%">
-  <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/><br/>
-  <b>📚 System Design Nerd</b><br/>
-  <sub>Always reading about scale</sub>
-</td>
-<td align="center" width="33%">
-  <img src="https://media.giphy.com/media/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="100"/><br/>
-  <b>💻 HP EliteBook 745 G6</b><br/>
-  <sub>My daily driver</sub>
-</td>
-</tr>
-</table>
-
-</div>
+### **Databases**
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ---
 
-## 🌱 Currently Leveling Up
+## ⚡ Fun Facts
 
-```mermaid
-graph LR
-    A[Current Skills] --> B[FastAPI + Pydantic]
-    A --> C[Docker + CI/CD]
-    A --> D[React.js]
-    B --> E[AI/ML APIs]
-    C --> F[Scalable Deployments]
-    D --> G[Modern Frontends]
-    E --> H[🚀 My Startup]
-    F --> H
-    G --> H
-    style A fill:#ff0080,color:#fff
-    style H fill:#39d353,color:#000
-    style B fill:#009688,color:#fff
-    style C fill:#2496ED,color:#fff
-    style D fill:#61DAFB,color:#000
-```
+- 🎮 Competitive gamer & e-sports enthusiast
+- 📖 Love reading about scalable system design
+- 🐍 Python is my go-to — **vast, versatile, and future-proof**
+- ⌨️ Coding on an **HP EliteBook 745 G6**
 
 ---
 
-## 💬 Let's Build Something Together
+## 📬 Connect With Me
 
-<div align="center">
+[![Email](https://img.shields.io/badge/Email-muhammadhassaanulmustafa@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammadhassaanulmustafa@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME](https://www.linkedin.com/in/muhammad-hassaan-25480a322/))
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)]([https://github.com/Hassaan146](https://github.com/Hassaan146))
 
-I'm **actively looking for**:
-
-🎯 **Internships** &nbsp;·&nbsp; 💼 **Junior Backend / DevOps roles** &nbsp;·&nbsp; 🚀 **Startup Collaborations** &nbsp;·&nbsp; 🎓 **Edtech Partnerships**
-
-<br/>
-
-<a href="mailto:muhammadhassaanulmustafa@gmail.com">
-  <img src="https://img.shields.io/badge/📩_Drop_Me_an_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" />
-</a>
-<a href="https://www.linkedin.com/in/muhammad-hassaan-25480a322/">
-  <img src="https://img.shields.io/badge/🤝_Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000" />
-</a>
-
-</div>
+**Open for:** Internships · Junior backend/DevOps roles · Startup collaborations · Edtech partnerships
 
 ---
 
-<div align="center">
+**If you'd like to collaborate, reach out — I'd love to connect.**
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" width="80%"/>
+---
 
-<br/><br/>
-
-### ⭐ If you like what you see, drop a star on my repos!
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,25:1a0033,50:4b0082,75:ff0080,100:000000&height=120&section=footer&animation=twinkling" width="100%"/>
-
-</div>
+> *Optional: Add a profile GIF/graphic here — "Animated terminal showcasing FastAPI startup logs or a code editor in action"*

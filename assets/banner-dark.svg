@@ -39,10 +39,10 @@
         font-size="16.5" font-weight="600" fill="#58a6ff" letter-spacing="2.4">AI FORWARD-DEPLOYED ENGINEER</text>
 
   <text x="56" y="171" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
-        font-size="14.5" fill="#8b949e">I ship agent systems, not demos.</text>
+        font-size="14.5" fill="#8b949e">Building AI agents that reach production.</text>
 
   <text x="56" y="196" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="12" fill="#6e7681" letter-spacing="1.1">ARBISOFT &#183; TASHI &#183; FAST-NUCES &#183; ISLAMABAD</text>
+        font-size="12" fill="#6e7681" letter-spacing="1.1">ARBISOFT &#183; FAST-NUCES &#183; ISLAMABAD</text>
 
   <!-- 7-node pipeline: the SkyElite StateGraph, drawn -->
   <g transform="translate(648,110)">

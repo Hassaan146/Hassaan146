@@ -314,6 +314,14 @@ Each role — sales, research, ops, engineering — is an agent with its own sco
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Hassaan146&bg_color=0d1117&color=58a6ff&line=1f6feb&point=ffffff&area=true&hide_border=true" width="98%" alt="Contribution graph" />
 
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/snake-light.svg" />
+  <img src="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/snake-light.svg" width="98%" alt="A snake eating my contribution graph" />
+</picture>
+
 </div>
 
 ---

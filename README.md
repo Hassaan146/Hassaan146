@@ -49,7 +49,11 @@ Strongest with LangGraph orchestration, FastAPI, and Pydantic v2.
 ### 🔨 Forge Mentor
 [Repo](https://github.com/Hassaan146/forge-mentor) · MIT · v1.28
 
-<img src="assets/flow-forge.svg" alt="question, options, you decide, recorded, code runs" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-forge-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/flow-forge-light.svg" />
+  <img src="assets/flow-forge-light.svg" alt="question, options, you decide, recorded, code runs" />
+</picture>
 
 A Claude Code plugin for the decisions people skip. It teaches the architectural choice, lays out options, waits for your call, writes it to `.claude/forge/`, then blocks code from moving past anything still undecided. 1,216 tests at 100% coverage.
 
@@ -62,7 +66,11 @@ A Claude Code plugin for the decisions people skip. It teaches the architectural
 ### 📰 AI News Aggregator
 [Live](https://ai-news-aggregator-weld.vercel.app) · [Repo](https://github.com/Hassaan146/ai-news-aggregator)
 
-<img src="assets/flow-news.svg" alt="scrape, store, rank, summarise, email" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-news-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/flow-news-light.svg" />
+  <img src="assets/flow-news-light.svg" alt="scrape, store, rank, summarise, email" />
+</picture>
 
 Scrapes 164 AI sites and 36 YouTube channels, then emails every user a personalised top-5 digest each morning. Groq writes the summaries and Gemini covers the outages. Stripe handles subscriptions.
 
@@ -71,7 +79,11 @@ Scrapes 164 AI sites and 36 YouTube channels, then emails every user a personali
 ### 🛰️ SkyElite AI
 [Repo](https://github.com/Hassaan146/ai-travel-planner) · 🥉 3rd Place, National AI Hackathon
 
-<img src="assets/flow-skyelite.svg" alt="intake, filter, visa, research, scoring, tradeoff, final" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-skyelite-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/flow-skyelite-light.svg" />
+  <img src="assets/flow-skyelite-light.svg" alt="intake, filter, visa, research, scoring, tradeoff, final" />
+</picture>
 
 Takes your passport, budget and interests, drops the destinations you cannot actually reach, then ranks what is left and writes out what it traded away. Seven-node LangGraph pipeline. Runs with zero API keys because every external call degrades to a mock.
 
@@ -80,7 +92,11 @@ Takes your passport, budget and interests, drops the destinations you cannot act
 ### 📡 BitMadWall
 [bitmadwall.ai](https://www.bitmadwall.ai/)
 
-<img src="assets/flow-bitmadwall.svg" alt="your phone, relay, relay, recipient" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-bitmadwall-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/flow-bitmadwall-light.svg" />
+  <img src="assets/flow-bitmadwall-light.svg" alt="your phone, relay, relay, recipient" />
+</picture>
 
 Encrypted messaging and Bitcoin transactions across a mesh of phones, with no internet, no cell service and no server involved. Traffic hops device to device over Bluetooth LE, Wi-Fi Direct and optional LoRa, up to seven hops, with store-and-forward for anything that cannot be delivered yet. Identity is cryptographic, so no phone number or SIM.
 
@@ -89,29 +105,15 @@ Encrypted messaging and Bitcoin transactions across a mesh of phones, with no in
 ### 🧑‍💼 AI Employee OS
 [Repo](https://github.com/Hassaan146/agentic-ai-workflow)
 
-<img src="assets/flow-employeeos.svg" alt="request, decompose, route to agents, validate, trace" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-employeeos-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/flow-employeeos-light.svg" />
+  <img src="assets/flow-employeeos-light.svg" alt="request, decompose, route to agents, validate, trace" />
+</picture>
 
 An org where every seat is an agent. Give it a messy request in plain English and it breaks that into a dependency-aware workflow, routes each piece to the agent that owns it, checks the results, and shows you the whole execution trace.
 
 `Next.js` `FastAPI` `Pydantic` `LangGraph` `LangChain` `Supabase` `Groq`
-
-### 🛍️ AI Fashion Sales Assistant
-[Repo](https://github.com/Hassaan146/ai-fashion-sales-assistant)
-
-<img src="assets/flow-fashion.svg" alt="DM, intent and entities, rank catalog, order state, reply" />
-
-Answers Instagram and WhatsApp DMs for clothing brands. Reads 11 intent types plus colour, size and price, ranks catalog matches, reads the customer's mood, and walks the order to checkout. Drops to keyword matching when there is no API key. 164 tests.
-
-`React` `Node.js` `Express` `MongoDB` `JWT` `LangChain` `Llama 3.3`
-
-### 💳 PayTrace
-[Repo](https://github.com/Hassaan146/PayTrace)
-
-<img src="assets/flow-paytrace.svg" alt="invoice and bank, exact, vendor ref, tolerant, partial" />
-
-Desktop reconciliation for startups with no finance team. Matches vendor invoices against bank records in four passes: exact, vendor reference, tolerant, then partial payment. Role-aware KPIs, undo/redo, BCrypt-secured audit trails.
-
-`Java` `JavaFX` `SQL Server` `Maven` `SMTP`
 
 <details>
 <summary><b>More builds</b></summary>
@@ -120,6 +122,8 @@ Desktop reconciliation for startups with no finance team. Matches vendor invoice
 
 | Project | What it is | Stack |
 |---|---|---|
+| [AI Fashion Sales Assistant](https://github.com/Hassaan146/ai-fashion-sales-assistant) | Answers Instagram and WhatsApp DMs for clothing brands. 11 intent types, catalog ranking, order state machine, 164 tests | React · Node · MongoDB · LangChain |
+| [PayTrace](https://github.com/Hassaan146/PayTrace) | Desktop reconciliation. Matches invoices to bank records in four passes, with BCrypt audit trails | Java · JavaFX · SQL Server |
 | [Forge Marketplace](https://github.com/Hassaan146/forge-marketplace) | Install source for the Forge Mentor plugin | Claude Code |
 | [Preflight](https://github.com/Hassaan146/preflight) | Audits AI-generated projects against a 31-area production standard, then fixes and verifies | LangGraph · Groq |
 | [Agentika](https://github.com/Hassaan146/agentika) | Research agent with a hand-written ReAct loop, web search and file analysis | FastAPI · Groq |

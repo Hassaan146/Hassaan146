@@ -111,14 +111,6 @@ FLOWS = {
         nodes=["request", "decompose", "route to agents", "validate", "trace"],
         note="dependency-aware workflow, execution trace shown back to you",
     ),
-    "fashion": dict(
-        nodes=["DM", "intent + entities", "rank catalog", "order state", "reply"],
-        note="11 intent types  ·  drops to keyword matching with no API key",
-    ),
-    "paytrace": dict(
-        nodes=["invoice + bank", "exact", "vendor ref", "tolerant", "partial"],
-        note="four matching passes, each one looser than the last",
-    ),
 }
 
 FS = 11.5          # node label size
@@ -127,40 +119,43 @@ PAD = 13
 GAP = 26
 H = 27
 
+# Every colour is written out in full. No CSS custom properties, no colour media
+# queries: presentation attributes cannot read var(), and keeping the stylesheet
+# down to keyframes alone is the most compatible thing to hand a proxy. Themes
+# are handled by shipping a pair and letting <picture> choose.
+FLOW_THEME = {
+    "dark": dict(edge="#58a6ff", txt="#8b949e", hot="#79c0ff"),
+    "light": dict(edge="#0969da", txt="#57606a", hot="#0550ae"),
+}
 
-def flow_svg(nodes, note):
+
+def flow_svg(nodes, note, c):
     widths = [len(n) * CW + PAD * 2 for n in nodes]
     w = int(sum(widths) + GAP * (len(nodes) - 1)) + 4
     h, y = 74, 20
     n = len(nodes)
     dur = max(5.0, n * 1.15)
 
-    css = [
-        ":root{--edge:#58a6ff;--txt:#7d8590;--hot:#79c0ff}",
-        "@media (prefers-color-scheme:dark){:root{--txt:#8b949e}}",
-        "@media (prefers-color-scheme:light){:root{--edge:#0969da;--txt:#57606a;--hot:#0550ae}}",
-        ".e{stroke:var(--edge);stroke-opacity:.5;stroke-width:1.3;fill:none;"
-        "stroke-dasharray:3 5;animation:d 1.4s linear infinite}",
-        "@keyframes d{to{stroke-dashoffset:-8}}",
-        ".b{fill:var(--edge);fill-opacity:0;stroke:var(--edge);stroke-opacity:.42;"
-        f"stroke-width:1.1;animation:s {dur}s ease-in-out infinite}}",
+    css = (
+        f".e{{animation:d 1.4s linear infinite}}"
+        f"@keyframes d{{to{{stroke-dashoffset:-8}}}}"
+        f".b{{animation:s {dur}s ease-in-out infinite}}"
         "@keyframes s{0%{stroke-opacity:.42;fill-opacity:0}"
         "7%{stroke-opacity:1;fill-opacity:.14}"
         "20%{stroke-opacity:.42;fill-opacity:0}"
-        "100%{stroke-opacity:.42;fill-opacity:0}}",
-        ".t{fill:var(--txt);font-family:" + MONO + f";font-size:{FS}px;"
-        f"text-anchor:middle;animation:tt {dur}s ease-in-out infinite}}",
-        "@keyframes tt{0%{fill:var(--txt)}7%{fill:var(--hot)}20%{fill:var(--txt)}"
-        "100%{fill:var(--txt)}}",
-        REDUCE,
-    ]
+        "100%{stroke-opacity:.42;fill-opacity:0}}"
+        f".t{{animation:tt {dur}s ease-in-out infinite}}"
+        f"@keyframes tt{{0%{{fill:{c['txt']}}}7%{{fill:{c['hot']}}}"
+        f"20%{{fill:{c['txt']}}}100%{{fill:{c['txt']}}}}}"
+        + REDUCE
+    )
 
     p = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" '
         f'height="{h}" role="img" aria-label="{esc(" then ".join(nodes))}">',
-        "<style>" + "".join(css) + "</style>",
+        "<style>" + css + "</style>",
         '<defs><marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" '
-        'markerHeight="6" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#58a6ff" '
+        f'markerHeight="6" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="{c["edge"]}" '
         'fill-opacity=".6"/></marker></defs>',
     ]
 
@@ -169,22 +164,26 @@ def flow_svg(nodes, note):
         delay = round(i * dur / n, 2)
         p.append(
             f'<rect class="b" style="animation-delay:{delay}s" x="{x:.1f}" y="{y}" '
-            f'width="{bw:.1f}" height="{H}" rx="6"/>'
+            f'width="{bw:.1f}" height="{H}" rx="6" fill="{c["edge"]}" fill-opacity="0" '
+            f'stroke="{c["edge"]}" stroke-opacity=".42" stroke-width="1.1"/>'
         )
         p.append(
             f'<text class="t" style="animation-delay:{delay}s" x="{x + bw / 2:.1f}" '
-            f'y="{y + H / 2 + 4:.1f}">{esc(label)}</text>'
+            f'y="{y + H / 2 + 4:.1f}" font-family="{MONO}" font-size="{FS}" '
+            f'fill="{c["txt"]}" text-anchor="middle">{esc(label)}</text>'
         )
         if i < n - 1:
             p.append(
                 f'<path class="e" d="M{x + bw + 5:.1f} {y + H / 2:.1f} '
-                f'H{x + bw + GAP - 5:.1f}" marker-end="url(#a)"/>'
+                f'H{x + bw + GAP - 5:.1f}" fill="none" stroke="{c["edge"]}" '
+                f'stroke-opacity=".5" stroke-width="1.3" stroke-dasharray="3 5" '
+                f'marker-end="url(#a)"/>'
             )
         x += bw + GAP
 
     p.append(
         f'<text x="3" y="{y + H + 20}" font-family="{MONO}" font-size="10.5" '
-        f'fill="var(--txt)" fill-opacity=".85">{esc(note)}</text>'
+        f'fill="{c["txt"]}" fill-opacity=".85">{esc(note)}</text>'
     )
     p.append("</svg>")
     return "\n".join(p) + "\n"
@@ -351,17 +350,21 @@ def banner_svg(theme):
 if __name__ == "__main__":
     s = stats()
     print(f"stats: {s}")
-    made = []
+    made = set()
     for name, spec in FLOWS.items():
-        f = OUT / f"flow-{name}.svg"
-        f.write_text(flow_svg(spec["nodes"], spec["note"]), encoding="utf-8")
-        made.append(f.name)
+        for theme, c in FLOW_THEME.items():
+            f = OUT / f"flow-{name}-{theme}.svg"
+            f.write_text(flow_svg(spec["nodes"], spec["note"], c), encoding="utf-8")
+            made.add(f.name)
     for theme, t in THEMES.items():
         (OUT / f"about-{theme}.svg").write_text(about_svg(t, s), encoding="utf-8")
         (OUT / f"banner-{theme}.svg").write_text(banner_svg(theme), encoding="utf-8")
-        made += [f"about-{theme}.svg", f"banner-{theme}.svg"]
-    stale = OUT / "flow-asme.svg"
-    if stale.exists():
-        stale.unlink()
-        print("removed flow-asme.svg")
+        made |= {f"about-{theme}.svg", f"banner-{theme}.svg"}
+
+    # anything left over from an earlier shape of this file
+    for old in OUT.glob("*.svg"):
+        if old.name not in made:
+            old.unlink()
+            print(f"removed stale {old.name}")
+
     print("\n".join(sorted(made)))

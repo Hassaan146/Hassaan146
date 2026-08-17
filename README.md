@@ -307,7 +307,6 @@ Each role — sales, research, ops, engineering — is an agent with its own sco
 
 <br/>
 
-<img height="185" src="https://streak-stats.demolab.com?user=Hassaan146&theme=github-dark-blue&hide_border=true&border_radius=8&background=0D1117&ring=58A6FF&fire=1F6FEB&currStreakLabel=58A6FF&sideLabels=8B949E&dates=6E7681" alt="Commit streak" />
 <img height="185" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Hassaan146&theme=github_dark&utcOffset=5" alt="Productive time" />
 
 <br/><br/>

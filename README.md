@@ -1,5 +1,6 @@
 <!-- Muhammad Hassaan-ul-Mustafa. Profile README.
-     Banner art is in assets/. Edit banner-dark.svg and banner-light.svg together.
+     All art in assets/ is generated: python assets/build_svg.py
+     Do not hand-edit the SVGs, edit the spec in build_svg.py and rerun.
      One placeholder left: the portfolio link below. -->
 
 <div align="center">
@@ -7,7 +8,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg" />
-  <img src="assets/banner-light.svg" width="100%" alt="Muhammad Hassaan-ul-Mustafa, AI Forward-Deployed Engineer" />
+  <img src="assets/banner-light.svg" width="100%" alt="Muhammad Hassaan-ul-Mustafa, AI engineer, product and backend" />
 </picture>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&pause=1400&color=58A6FF&center=true&vCenter=true&width=560&lines=Building+AI+agents+that+reach+production.;Currently+at+Arbisoft.;3rd+Place%2C+National+AI+Hackathon.;CS+at+FAST-NUCES%2C+Islamabad." alt="Building AI agents that reach production" />
@@ -45,33 +46,6 @@ Strongest with LangGraph orchestration, FastAPI, and Pydantic v2.
 
 ## Featured work
 
-### 📡 BitMadWall
-[bitmadwall.ai](https://www.bitmadwall.ai/)
-
-<img src="assets/flow-bitmadwall.svg" alt="your phone, relay, relay, recipient" />
-
-Encrypted messaging and Bitcoin transactions across a mesh of phones, with no internet, no cell service and no server involved. Traffic hops device to device over Bluetooth LE, Wi-Fi Direct and optional LoRa, up to seven hops, with store-and-forward for anything that cannot be delivered yet. Identity is cryptographic, so no phone number or SIM.
-
-`AES-256-GCM` `double ratchet` `Bluetooth LE` `Wi-Fi Direct` `LoRa` `Bitcoin`
-
-### 🛰️ SkyElite AI
-[Repo](https://github.com/Hassaan146/ai-travel-planner) · 🥉 3rd Place, National AI Hackathon
-
-<img src="assets/flow-skyelite.svg" alt="intake, filter, visa, research, scoring, tradeoff, final" />
-
-Takes your passport, budget and interests, drops the destinations you cannot actually reach, then ranks what is left and writes out what it traded away. Seven-node LangGraph pipeline: intake, filter, visa, research, scoring, tradeoff, final. Runs with zero API keys because every external call degrades to a mock.
-
-`Next.js 15` `TypeScript` `Three.js` `FastAPI` `Pydantic v2` `LangGraph` `Anthropic API` `Supabase`
-
-### 📰 Asme
-[Live](https://ai-news-aggregator-weld.vercel.app) · [Repo](https://github.com/Hassaan146/ai-news-aggregator)
-
-<img src="assets/flow-asme.svg" alt="scrape, store, rank, summarise, email" />
-
-Scrapes 164 AI sites and 36 YouTube channels, then emails every user a personalised top-5 digest each morning. Groq writes the summaries and Gemini covers the outages. Stripe handles subscriptions.
-
-`React` `Vite` `FastAPI` `PostgreSQL` `Groq` `Gemini` `Stripe`
-
 ### 🔨 Forge Mentor
 [Repo](https://github.com/Hassaan146/forge-mentor) · MIT · v1.28
 
@@ -84,6 +58,33 @@ A Claude Code plugin for the decisions people skip. It teaches the architectural
 ```
 
 `Python 3.12` `MCP` `Claude`
+
+### 📰 AI News Aggregator
+[Live](https://ai-news-aggregator-weld.vercel.app) · [Repo](https://github.com/Hassaan146/ai-news-aggregator)
+
+<img src="assets/flow-news.svg" alt="scrape, store, rank, summarise, email" />
+
+Scrapes 164 AI sites and 36 YouTube channels, then emails every user a personalised top-5 digest each morning. Groq writes the summaries and Gemini covers the outages. Stripe handles subscriptions.
+
+`React` `Vite` `FastAPI` `PostgreSQL` `Groq` `Gemini` `Stripe`
+
+### 🛰️ SkyElite AI
+[Repo](https://github.com/Hassaan146/ai-travel-planner) · 🥉 3rd Place, National AI Hackathon
+
+<img src="assets/flow-skyelite.svg" alt="intake, filter, visa, research, scoring, tradeoff, final" />
+
+Takes your passport, budget and interests, drops the destinations you cannot actually reach, then ranks what is left and writes out what it traded away. Seven-node LangGraph pipeline. Runs with zero API keys because every external call degrades to a mock.
+
+`Next.js 15` `TypeScript` `Three.js` `FastAPI` `Pydantic v2` `LangGraph` `Anthropic API` `Supabase`
+
+### 📡 BitMadWall
+[bitmadwall.ai](https://www.bitmadwall.ai/)
+
+<img src="assets/flow-bitmadwall.svg" alt="your phone, relay, relay, recipient" />
+
+Encrypted messaging and Bitcoin transactions across a mesh of phones, with no internet, no cell service and no server involved. Traffic hops device to device over Bluetooth LE, Wi-Fi Direct and optional LoRa, up to seven hops, with store-and-forward for anything that cannot be delivered yet. Identity is cryptographic, so no phone number or SIM.
+
+`AES-256-GCM` `double ratchet` `Bluetooth LE` `Wi-Fi Direct` `LoRa` `Bitcoin`
 
 ### 🧑‍💼 AI Employee OS
 [Repo](https://github.com/Hassaan146/agentic-ai-workflow)
@@ -222,3 +223,7 @@ If you are building something and part of it is stuck, that is the email I like 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&labelColor=0d1117)](https://linkedin.com/in/muhammad-hassaan25480a322)
 
 </div>
+
+---
+
+<sub>**Colophon.** Every diagram here comes out of a script. [`assets/build_svg.py`](assets/build_svg.py) reads a spec, sizes each node from its label so nothing ever clips, and writes animated SVG. The counts on the About card come from the GitHub API, and a [scheduled job](.github/workflows/refresh.yml) redraws the card each morning to keep them current. Motion switches itself off for anyone whose system asks for less of it.</sub>

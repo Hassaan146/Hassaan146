@@ -25,13 +25,11 @@
 
 ## About
 
-```yaml
-name:   Muhammad Hassaan-ul-Mustafa
-role:   AI engineer, product and backend
-study:  BS Computer Science, FAST-NUCES (2024 to 2028)
-now:    Arbisoft
-based:  Islamabad, Pakistan. Open to remote.
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/about-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/about-light.svg" />
+  <img src="assets/about-light.svg" width="100%" alt="AI engineer, product and backend. BS Computer Science at FAST-NUCES, 2024 to 2028. Currently at Arbisoft, based in Islamabad, Pakistan, open to remote." />
+</picture>
 
 I build AI agents and the backends they run on. Most of my projects ship with rate limiting, input validation, row-level security, and a fallback for every external call, because that is the part clients end up depending on.
 
@@ -50,12 +48,16 @@ Strongest with LangGraph orchestration, FastAPI, and Pydantic v2.
 ### 📡 BitMadWall
 [bitmadwall.ai](https://www.bitmadwall.ai/)
 
+<img src="assets/flow-bitmadwall.svg" alt="your phone, relay, relay, recipient" />
+
 Encrypted messaging and Bitcoin transactions across a mesh of phones, with no internet, no cell service and no server involved. Traffic hops device to device over Bluetooth LE, Wi-Fi Direct and optional LoRa, up to seven hops, with store-and-forward for anything that cannot be delivered yet. Identity is cryptographic, so no phone number or SIM.
 
 `AES-256-GCM` `double ratchet` `Bluetooth LE` `Wi-Fi Direct` `LoRa` `Bitcoin`
 
 ### 🛰️ SkyElite AI
 [Repo](https://github.com/Hassaan146/ai-travel-planner) · 🥉 3rd Place, National AI Hackathon
+
+<img src="assets/flow-skyelite.svg" alt="intake, filter, visa, research, scoring, tradeoff, final" />
 
 Takes your passport, budget and interests, drops the destinations you cannot actually reach, then ranks what is left and writes out what it traded away. Seven-node LangGraph pipeline: intake, filter, visa, research, scoring, tradeoff, final. Runs with zero API keys because every external call degrades to a mock.
 
@@ -64,12 +66,16 @@ Takes your passport, budget and interests, drops the destinations you cannot act
 ### 📰 Asme
 [Live](https://ai-news-aggregator-weld.vercel.app) · [Repo](https://github.com/Hassaan146/ai-news-aggregator)
 
+<img src="assets/flow-asme.svg" alt="scrape, store, rank, summarise, email" />
+
 Scrapes 164 AI sites and 36 YouTube channels, then emails every user a personalised top-5 digest each morning. Groq writes the summaries and Gemini covers the outages. Stripe handles subscriptions.
 
 `React` `Vite` `FastAPI` `PostgreSQL` `Groq` `Gemini` `Stripe`
 
 ### 🔨 Forge Mentor
 [Repo](https://github.com/Hassaan146/forge-mentor) · MIT · v1.28
+
+<img src="assets/flow-forge.svg" alt="question, options, you decide, recorded, code runs" />
 
 A Claude Code plugin for the decisions people skip. It teaches the architectural choice, lays out options, waits for your call, writes it to `.claude/forge/`, then blocks code from moving past anything still undecided. 1,216 tests at 100% coverage.
 
@@ -82,6 +88,8 @@ A Claude Code plugin for the decisions people skip. It teaches the architectural
 ### 🧑‍💼 AI Employee OS
 [Repo](https://github.com/Hassaan146/agentic-ai-workflow)
 
+<img src="assets/flow-employeeos.svg" alt="request, decompose, route to agents, validate, trace" />
+
 An org where every seat is an agent. Give it a messy request in plain English and it breaks that into a dependency-aware workflow, routes each piece to the agent that owns it, checks the results, and shows you the whole execution trace.
 
 `Next.js` `FastAPI` `Pydantic` `LangGraph` `LangChain` `Supabase` `Groq`
@@ -89,12 +97,16 @@ An org where every seat is an agent. Give it a messy request in plain English an
 ### 🛍️ AI Fashion Sales Assistant
 [Repo](https://github.com/Hassaan146/ai-fashion-sales-assistant)
 
+<img src="assets/flow-fashion.svg" alt="DM, intent and entities, rank catalog, order state, reply" />
+
 Answers Instagram and WhatsApp DMs for clothing brands. Reads 11 intent types plus colour, size and price, ranks catalog matches, reads the customer's mood, and walks the order to checkout. Drops to keyword matching when there is no API key. 164 tests.
 
 `React` `Node.js` `Express` `MongoDB` `JWT` `LangChain` `Llama 3.3`
 
 ### 💳 PayTrace
 [Repo](https://github.com/Hassaan146/PayTrace)
+
+<img src="assets/flow-paytrace.svg" alt="invoice and bank, exact, vendor ref, tolerant, partial" />
 
 Desktop reconciliation for startups with no finance team. Matches vendor invoices against bank records in four passes: exact, vendor reference, tolerant, then partial payment. Role-aware KPIs, undo/redo, BCrypt-secured audit trails.
 

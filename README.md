@@ -203,8 +203,6 @@ An org where every seat is an agent. Give it a messy request in plain English an
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Hassaan146&bg_color=0d1117&color=58a6ff&line=1f6feb&point=ffffff&area=true&hide_border=true" width="98%" alt="Contribution graph" />
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/snake-light.svg" />
@@ -230,4 +228,4 @@ If you are building something and part of it is stuck, that is the email I like 
 
 ---
 
-<sub>**Colophon.** Every diagram here comes out of a script. [`assets/build_svg.py`](assets/build_svg.py) reads a spec, sizes each node from its label so nothing ever clips, and writes animated SVG. The counts on the About card come from the GitHub API, and a [scheduled job](.github/workflows/refresh.yml) redraws the card each morning to keep them current. Motion switches itself off for anyone whose system asks for less of it.</sub>
+<sub>**Colophon.** Every diagram here comes out of a script. [`assets/build_svg.py`](assets/build_svg.py) reads a spec, sizes each node from its label so nothing ever clips, and writes animated SVG. The counts on the About card come from the GitHub API, and a [scheduled job](.github/workflows/refresh.yml) redraws the card each morning to keep them current. No image here queries the GitHub API at page load, which is what turns a stat widget into an error box on a bad day. The contribution snake is built by a [job](.github/workflows/snake.yml) that keeps the last good copy when the API is unreachable. Motion switches itself off for anyone whose system asks for less of it.</sub>

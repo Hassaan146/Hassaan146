@@ -36,11 +36,15 @@ I build AI agents and the backends they run on. Most of my projects ship with ra
 
 Strongest with LangGraph orchestration, FastAPI, and Pydantic v2.
 
-**Recognition**
+### Recognition
 
-- 🥉 3rd Place, National AI Hackathon, for [SkyElite AI](https://github.com/Hassaan146/ai-travel-planner)
-- ⭐ Listed as a production adopter of GCF (Graph Context Framework) for cross-agent context passing
-- 📜 Agent Skills with Anthropic (DeepLearning.AI) · CS50P (Harvard) · AI for Everyone (DeepLearning.AI)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/awards-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/awards-light.svg" />
+  <img src="assets/awards-light.svg" width="100%" alt="3rd Place at the National AI Hackathon. Production adopter of the Graph Context Framework. 1,216 tests at 100% coverage on Forge Mentor. Four certifications from Anthropic, Harvard and DeepLearning.AI." />
+</picture>
+
+<sub>[SkyElite AI](https://github.com/Hassaan146/ai-travel-planner) took 3rd at the National AI Hackathon and is listed as a production adopter of GCF for cross-agent context passing. Certifications: Agent Skills with Anthropic, CS50P at Harvard, AI for Everyone and ChatGPT for Everyone.</sub>
 
 ---
 
@@ -204,6 +208,14 @@ An org where every seat is an agent. Give it a messy request in plain English an
 <div align="center">
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg" />
+  <img src="assets/stats-light.svg" width="100%" alt="Public repositories, stars earned, languages used, and the date of the last push, with a bar showing the language mix." />
+</picture>
+
+<br/>
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/snake-light.svg" />
   <img src="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/snake-light.svg" width="98%" alt="Snake eating the contribution graph" />
@@ -223,6 +235,12 @@ If you are building something and part of it is stuck, that is the email I like 
 
 [![Email](https://img.shields.io/badge/muhammadhassaanulmustafa@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117)](mailto:muhammadhassaanulmustafa@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&labelColor=0d1117)](https://linkedin.com/in/muhammad-hassaan25480a322)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg" />
+  <img src="assets/footer-light.svg" width="100%" alt="" />
+</picture>
 
 </div>
 

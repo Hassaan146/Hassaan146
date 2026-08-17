@@ -25,6 +25,7 @@ half-empty card.
 
 import json
 import pathlib
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -47,10 +48,23 @@ def esc(s):
 # live numbers
 # ---------------------------------------------------------------------------
 
-def _get(url):
-    req = urllib.request.Request(url, headers={"User-Agent": "readme-build"})
-    with urllib.request.urlopen(req, timeout=15) as r:
-        return json.load(r)
+def _get(url, tries=4):
+    """GET with a few retries.
+
+    The API returns the odd 502/503/504 even on a good day, and a single one of
+    those is not a reason to skip a rebuild. Only a run of them is.
+    """
+    last = None
+    for attempt in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "readme-build"})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                return json.load(r)
+        except (urllib.error.URLError, OSError) as e:
+            last = e
+            if attempt < tries - 1:
+                time.sleep(2 * (attempt + 1))
+    raise last
 
 
 def _day_month_year(dt):
@@ -72,6 +86,7 @@ def stats():
     """
     try:
         repos, stars, newest = 0, 0, None
+        langs = {}
         for page in range(1, 6):
             batch = _get(f"https://api.github.com/users/{USER}/repos?per_page=100&page={page}")
             if not batch:
@@ -81,13 +96,22 @@ def stats():
                     continue
                 repos += 1
                 stars += r.get("stargazers_count", 0)
+                if r.get("language"):
+                    langs[r["language"]] = langs.get(r["language"], 0) + 1
                 ts = r.get("pushed_at")
                 if ts and (newest is None or ts > newest):
                     newest = ts
-        if not repos or newest is None:
+        if not repos or newest is None or not langs:
             return None
         when = datetime.strptime(newest, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
-        return {"repos": repos, "stars": stars, "pushed": _day_month_year(when)}
+        ordered = sorted(langs.items(), key=lambda kv: -kv[1])
+        return {
+            "repos": repos,
+            "stars": stars,
+            "pushed": _day_month_year(when),
+            "langs": ordered,
+            "lang_count": len(ordered),
+        }
     except (urllib.error.URLError, ValueError, KeyError, TypeError, OSError) as e:
         print(f"could not reach the API ({e}); leaving the About card alone")
         return None
@@ -271,6 +295,153 @@ def about_svg(t, s):
 
 
 # ---------------------------------------------------------------------------
+# awards strip
+#
+# Most profiles fill this space with a trophy generator, which hands out the
+# same Pull Shark badge to everyone and 402s when its quota runs out. These are
+# drawn here instead, and they say something only true of this account.
+# ---------------------------------------------------------------------------
+
+AWARDS = [
+    ("medal", "3rd Place", "National AI Hackathon"),
+    ("star", "Production adopter", "Graph Context Framework"),
+    ("check", "1,216 tests", "100% coverage, Forge Mentor"),
+    ("cert", "4 certifications", "Anthropic, Harvard, DeepLearning"),
+]
+
+
+def _glyph(kind, cx, cy, col):
+    """Small drawn marks. Emoji are not safe to rely on inside an SVG."""
+    if kind == "medal":
+        return (f'<circle cx="{cx}" cy="{cy}" r="7.5" fill="none" stroke="{col}" '
+                f'stroke-width="1.8"/><circle cx="{cx}" cy="{cy}" r="3" fill="{col}"/>')
+    if kind == "star":
+        pts = []
+        import math
+        for i in range(10):
+            r = 8 if i % 2 == 0 else 3.6
+            a = -math.pi / 2 + i * math.pi / 5
+            pts.append(f"{cx + r * math.cos(a):.1f},{cy + r * math.sin(a):.1f}")
+        return f'<polygon points="{" ".join(pts)}" fill="{col}"/>'
+    if kind == "check":
+        return (f'<path d="M{cx - 7} {cy} l4.5 5 l9.5 -10" fill="none" stroke="{col}" '
+                f'stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>')
+    return (f'<rect x="{cx - 6.5}" y="{cy - 8}" width="13" height="16" rx="2" fill="none" '
+            f'stroke="{col}" stroke-width="1.7"/>'
+            f'<path d="M{cx - 3} {cy - 3} h6 M{cx - 3} {cy + 1} h6" stroke="{col}" '
+            f'stroke-width="1.4" stroke-linecap="round"/>')
+
+
+def awards_svg(t):
+    w, h = 880, 92
+    cardw, gap = 211, 12
+    p = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" '
+        f'height="{h}" role="img" aria-label="'
+        + esc(". ".join(f"{a[1]}, {a[2]}" for a in AWARDS)) + '">',
+        "<style>.aw{animation:lift 6s ease-in-out infinite}"
+        "@keyframes lift{0%,100%{stroke-opacity:.45}"
+        "12%{stroke-opacity:1}30%{stroke-opacity:.45}}" + REDUCE + "</style>",
+    ]
+    x = 8
+    for i, (kind, big, small) in enumerate(AWARDS):
+        p.append(
+            f'<rect class="aw" style="animation-delay:{i * 1.1}s" x="{x}" y="10" '
+            f'width="{cardw}" height="{h - 22}" rx="9" fill="{t["accent"]}" '
+            f'fill-opacity=".055" stroke="{t["accent"]}" stroke-width="1.2"/>'
+        )
+        p.append(_glyph(kind, x + 28, h / 2 - 2, t["accent"]))
+        p.append(f'<text x="{x + 50}" y="{h / 2 - 4}" font-family="{MONO}" '
+                 f'font-size="12.5" font-weight="600" fill="{t["val"]}">{esc(big)}</text>')
+        p.append(f'<text x="{x + 50}" y="{h / 2 + 13}" font-family="{MONO}" '
+                 f'font-size="9.8" fill="{t["dim"]}">{esc(small)}</text>')
+        x += cardw + gap
+    p.append("</svg>")
+    return "\n".join(p) + "\n"
+
+
+# ---------------------------------------------------------------------------
+# stats panel
+#
+# The job every profile hands to a third-party card service. Those services
+# query the API when the page loads, so when the API is unhappy the visitor
+# sees the widget's error message instead of the numbers. This is painted at
+# build time from the same data and can only ever show numbers.
+# ---------------------------------------------------------------------------
+
+LANG_COLOUR = {
+    "Python": "#3572A5", "HTML": "#e34c26", "C++": "#f34b7d",
+    "JavaScript": "#f1e05a", "TypeScript": "#3178c6", "Java": "#b07219",
+    "Assembly": "#6E4C13", "PHP": "#4F5D95", "TeX": "#3D6117",
+    "CSS": "#563d7c", "Jupyter Notebook": "#DA5B0B", "Shell": "#89e051",
+}
+
+
+def stats_svg(t, s):
+    w, h = 880, 168
+    p = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" '
+        f'height="{h}" role="img" aria-label="'
+        f'{s["repos"]} public repositories, {s["stars"]} stars, '
+        f'{s["lang_count"]} languages, last shipped {s["pushed"]}">',
+        "<style>.seg{animation:grow 5s ease-out}"
+        "@keyframes grow{from{opacity:0}to{opacity:1}}" + REDUCE + "</style>",
+        f'<rect width="{w}" height="{h}" rx="10" fill="{t["panel"]}" stroke="{t["line"]}"/>',
+        f'<rect x="0" y="0" width="3.5" height="{h}" rx="2" fill="{t["accent"]}"/>',
+    ]
+
+    cells = [
+        (str(s["repos"]), "PUBLIC REPOS"),
+        (str(s["stars"]), "STARS EARNED"),
+        (str(s["lang_count"]), "LANGUAGES"),
+        (s["pushed"], "LAST SHIPPED"),
+    ]
+    for i, (big, label) in enumerate(cells):
+        cx = 34 + i * 212
+        size = 30 if len(big) <= 4 else 19
+        p.append(f'<text x="{cx}" y="52" font-family="{MONO}" font-size="{size}" '
+                 f'font-weight="700" fill="{t["accent"]}">{esc(big)}</text>')
+        p.append(f'<text x="{cx}" y="70" font-family="{MONO}" font-size="9.3" '
+                 f'fill="{t["dim"]}" letter-spacing="1.3">{label}</text>')
+
+    total = sum(c for _, c in s["langs"]) or 1
+    bx, bw, by, bh = 34, w - 68, 96, 12
+    p.append(f'<text x="{bx}" y="{by - 10}" font-family="{MONO}" font-size="9.3" '
+             f'fill="{t["dim"]}" letter-spacing="1.3">WHAT THE REPOS ARE WRITTEN IN</text>')
+    x = float(bx)
+    shown = s["langs"][:6]
+    other = sum(c for _, c in s["langs"][6:])
+    segs = shown + ([("Other", other)] if other else [])
+    for i, (name, count) in enumerate(segs):
+        seg = bw * count / total
+        r_left = 6 if i == 0 else 0
+        r_right = 6 if i == len(segs) - 1 else 0
+        col = LANG_COLOUR.get(name, t["dim"])
+        p.append(
+            f'<path class="seg" style="animation-delay:{i * .12}s" d="'
+            f'M{x + r_left:.1f} {by} H{x + seg - r_right:.1f} '
+            f'a{r_right} {r_right} 0 0 1 {r_right} {r_right} V{by + bh - r_right} '
+            f'a{r_right} {r_right} 0 0 1 -{r_right} {r_right} H{x + r_left:.1f} '
+            f'a{r_left} {r_left} 0 0 1 -{r_left} -{r_left} V{by + r_left} '
+            f'a{r_left} {r_left} 0 0 1 {r_left} -{r_left} z" fill="{col}"/>'
+        )
+        x += seg
+
+    lx = float(bx)
+    for name, count in segs:
+        col = LANG_COLOUR.get(name, t["dim"])
+        p.append(f'<circle cx="{lx + 4:.1f}" cy="{by + 38}" r="4" fill="{col}"/>')
+        p.append(f'<text x="{lx + 14:.1f}" y="{by + 42}" font-family="{MONO}" '
+                 f'font-size="10.5" fill="{t["val"]}">{esc(name)}</text>')
+        p.append(f'<text x="{lx + 18 + len(name) * 6.4:.1f}" y="{by + 42}" '
+                 f'font-family="{MONO}" font-size="10.5" fill="{t["dim"]}">{count}</text>')
+        lx += 34 + len(name) * 6.4 + len(str(count)) * 6.4
+
+    p.append("</svg>")
+    return "\n".join(p) + "\n"
+
+
+# ---------------------------------------------------------------------------
 # banner
 # ---------------------------------------------------------------------------
 
@@ -354,6 +525,33 @@ def banner_svg(theme):
     return "\n".join(p) + "\n"
 
 
+def footer_svg(theme):
+    dark = theme == "dark"
+    acc = "#58a6ff" if dark else "#0969da"
+    dim = "#6e7681" if dark else "#6e7781"
+    w, h = 1000, 116
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" '
+        f'height="{h}" role="img" aria-label="End of page">'
+        f'<defs><linearGradient id="f" x1="0" y1="0" x2="1" y2="0">'
+        f'<stop offset="0%" stop-color="{acc}" stop-opacity=".55"/>'
+        f'<stop offset="50%" stop-color="{acc}" stop-opacity=".18"/>'
+        f'<stop offset="100%" stop-color="{acc}" stop-opacity=".55"/>'
+        f'</linearGradient></defs>'
+        f'<style>.w{{animation:drift 9s ease-in-out infinite}}'
+        f'@keyframes drift{{0%,100%{{transform:translateX(0)}}'
+        f'50%{{transform:translateX(-18px)}}}}{REDUCE}</style>'
+        f'<path class="w" d="M-20 62 C 140 26, 300 96, 460 62 S 780 26, 1020 62 '
+        f'V{h} H-20 z" fill="url(#f)"/>'
+        f'<path d="M-20 74 C 140 40, 300 108, 460 74 S 780 40, 1020 74" fill="none" '
+        f'stroke="{acc}" stroke-opacity=".45" stroke-width="1.4"/>'
+        f'<text x="{w / 2}" y="34" font-family="{MONO}" font-size="11" fill="{dim}" '
+        f'text-anchor="middle" letter-spacing="1.6">'
+        f'BUILT WITH A SCRIPT, NOT A WIDGET SERVICE</text>'
+        f'</svg>\n'
+    )
+
+
 if __name__ == "__main__":
     s = stats()
     print(f"stats: {s}")
@@ -367,11 +565,17 @@ if __name__ == "__main__":
 
     for theme, t in THEMES.items():
         (OUT / f"banner-{theme}.svg").write_text(banner_svg(theme), encoding="utf-8")
-        made.add(f"banner-{theme}.svg")
-        card = OUT / f"about-{theme}.svg"
-        if s is not None:
-            card.write_text(about_svg(t, s), encoding="utf-8")
-        made.add(card.name)
+        (OUT / f"awards-{theme}.svg").write_text(awards_svg(t), encoding="utf-8")
+        (OUT / f"footer-{theme}.svg").write_text(footer_svg(theme), encoding="utf-8")
+        made |= {f"banner-{theme}.svg", f"awards-{theme}.svg", f"footer-{theme}.svg"}
+
+        # these two carry live numbers, so they are only rewritten when the
+        # numbers were actually retrieved
+        for nm, fn in (("about", about_svg), ("stats", stats_svg)):
+            f = OUT / f"{nm}-{theme}.svg"
+            if s is not None:
+                f.write_text(fn(t, s), encoding="utf-8")
+            made.add(f.name)
 
     # anything left over from an earlier shape of this file, but never sweep
     # away a card that was skipped because the API was down
@@ -380,4 +584,9 @@ if __name__ == "__main__":
             old.unlink()
             print(f"removed stale {old.name}")
 
-    print("\n".join(sorted(made)))
+    # report what is actually on disk, not what we intended to write, so a
+    # skipped card is visible in the log instead of looking like a success
+    for name in sorted(made):
+        print(("  wrote  " if (OUT / name).exists() else "  MISSING ") + name)
+    if s is None:
+        print("\nthe API did not answer, so the cards carrying live numbers were left as they were")

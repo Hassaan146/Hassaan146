@@ -16,9 +16,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # This reads the contribution grid from the GitHub API. When the API is
+      # having a bad day the step fails, which is not worth a red run and an
+      # email, so it is allowed to fail and the publish step is skipped. The
+      # previous snake stays on the output branch and the README keeps working.
       - name: Render the contribution grid as a snake game
+        id: snake
+        continue-on-error: true
         uses: Platane/snk@v3
-        id: snake-gif
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
@@ -26,9 +31,17 @@ jobs:
             dist/snake-light.svg?palette=github-light
 
       - name: Publish to the output branch
+        if: steps.snake.outcome == 'success'
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Say why nothing was published
+        if: steps.snake.outcome != 'success'
+        run: |
+          echo "The contribution API did not answer this time."
+          echo "Keeping the snake already on the output branch."
+          echo "Next scheduled run will try again."

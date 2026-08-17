@@ -34,9 +34,6 @@ USER = "Hassaan146"
 
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 
-# used when the API cannot be reached
-FALLBACK = {"repos": 38, "stars": 26, "pushed": "17 Aug 2026"}
-
 REDUCE = (
     "@media (prefers-reduced-motion: reduce){*{animation:none!important}}"
 )
@@ -56,11 +53,26 @@ def _get(url):
         return json.load(r)
 
 
+def _day_month_year(dt):
+    """Strip the leading zero off the day without relying on a platform flag.
+
+    %-d works on Linux and %#d on Windows, and neither works on both, so the
+    day is formatted by hand.
+    """
+    return f"{dt.day} {dt.strftime('%b %Y')}"
+
+
 def stats():
+    """Live counts, or None when the API cannot be trusted.
+
+    Returning None on failure is deliberate. An earlier version fell back to
+    hardcoded numbers, which meant an API outage would quietly paint stale
+    figures onto the card and commit them. A card that keeps yesterday's
+    correct numbers beats one that confidently shows the wrong ones.
+    """
     try:
         repos, stars, newest = 0, 0, None
-        page = 1
-        while True:
+        for page in range(1, 6):
             batch = _get(f"https://api.github.com/users/{USER}/repos?per_page=100&page={page}")
             if not batch:
                 break
@@ -72,18 +84,13 @@ def stats():
                 ts = r.get("pushed_at")
                 if ts and (newest is None or ts > newest):
                     newest = ts
-            page += 1
-            if page > 5:
-                break
+        if not repos or newest is None:
+            return None
         when = datetime.strptime(newest, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
-        return {"repos": repos, "stars": stars, "pushed": when.strftime("%-d %b %Y")}
-    except (urllib.error.URLError, ValueError, KeyError, TypeError, OSError):
-        try:
-            # %-d is not portable to Windows; retry with the platform variant
-            when = datetime.strptime(newest, "%Y-%m-%dT%H:%M:%SZ")
-            return {"repos": repos, "stars": stars, "pushed": when.strftime("%#d %b %Y")}
-        except Exception:
-            return dict(FALLBACK)
+        return {"repos": repos, "stars": stars, "pushed": _day_month_year(when)}
+    except (urllib.error.URLError, ValueError, KeyError, TypeError, OSError) as e:
+        print(f"could not reach the API ({e}); leaving the About card alone")
+        return None
 
 
 # ---------------------------------------------------------------------------
@@ -351,17 +358,23 @@ if __name__ == "__main__":
     s = stats()
     print(f"stats: {s}")
     made = set()
+
     for name, spec in FLOWS.items():
         for theme, c in FLOW_THEME.items():
             f = OUT / f"flow-{name}-{theme}.svg"
             f.write_text(flow_svg(spec["nodes"], spec["note"], c), encoding="utf-8")
             made.add(f.name)
-    for theme, t in THEMES.items():
-        (OUT / f"about-{theme}.svg").write_text(about_svg(t, s), encoding="utf-8")
-        (OUT / f"banner-{theme}.svg").write_text(banner_svg(theme), encoding="utf-8")
-        made |= {f"about-{theme}.svg", f"banner-{theme}.svg"}
 
-    # anything left over from an earlier shape of this file
+    for theme, t in THEMES.items():
+        (OUT / f"banner-{theme}.svg").write_text(banner_svg(theme), encoding="utf-8")
+        made.add(f"banner-{theme}.svg")
+        card = OUT / f"about-{theme}.svg"
+        if s is not None:
+            card.write_text(about_svg(t, s), encoding="utf-8")
+        made.add(card.name)
+
+    # anything left over from an earlier shape of this file, but never sweep
+    # away a card that was skipped because the API was down
     for old in OUT.glob("*.svg"):
         if old.name not in made:
             old.unlink()

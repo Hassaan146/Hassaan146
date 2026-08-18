@@ -24,7 +24,7 @@ Most AI side projects stop at a notebook. Mine go out with the unglamorous parts
 
 ## 01 · Systems
 
-Five things I built. Each one shows you what it produces before it tells you anything about itself.
+Five things I built. Every diagram below traces the real pipeline, drawn from how the system actually runs.
 
 ### Forge Mentor
 <sub>Claude Code plugin · MIT · v1.28 · **[Repository](https://github.com/Hassaan146/forge-mentor)**</sub>
@@ -32,10 +32,10 @@ Five things I built. Each one shows you what it produces before it tells you any
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/sys-forge-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/sys-forge-light.svg" />
-  <img src="assets/sys-forge-light.svg" alt="A sample session. The plugin asks how sessions should persist, lists three options with their tradeoffs, recommends one, waits for the answer, records the decision to .claude/forge, then opens the gate. 1,216 tests at 100% coverage, v1.28, MIT licence. Python 3.12, MCP, Claude, Git." />
+  <img src="assets/sys-forge-light.svg" alt="question, options, you decide, recorded, code runs" />
 </picture>
 
-An AI agent will happily write two thousand lines on top of a decision nobody made. This one refuses to, and the reasoning it records outlives the sprint.
+AI coding agents will happily write two thousand lines on top of a decision nobody made. This plugin stops that. It teaches the architectural choice, lays out the options with a recommendation, waits for your call, writes it to `.claude/forge/`, then refuses to let code past anything still undecided. The reasoning becomes part of the codebase, so it outlives the sprint.
 
 ```bash
 /plugin marketplace add Hassaan146/forge-marketplace
@@ -47,10 +47,10 @@ An AI agent will happily write two thousand lines on top of a decision nobody ma
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/sys-news-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/sys-news-light.svg" />
-  <img src="assets/sys-news-light.svg" alt="A sample digest. Five items kept from 412 collected, each with its kind and source, delivered at 07:00 daily. Groq writes the summaries with Gemini on standby. 164 sites, 36 channels, live. React, Vite, FastAPI, PostgreSQL, Groq, Gemini, Stripe." />
+  <img src="assets/sys-news-light.svg" alt="scrape, store, rank, summarise, email" />
 </picture>
 
-The AI feed is a firehose. This drinks it and hands back five things before breakfast.
+The AI feed is a firehose. This drinks it for you, across labs, product blogs, newsletters and policy sources, and hands back the five things worth reading before breakfast. Groq writes the summaries and Gemini covers the outages.
 
 ### SkyElite AI
 <sub>3rd Place, National AI Hackathon · **[Repository](https://github.com/Hassaan146/ai-travel-planner)**</sub>
@@ -58,10 +58,10 @@ The AI feed is a firehose. This drinks it and hands back five things before brea
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/sys-skyelite-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/sys-skyelite-light.svg" />
-  <img src="assets/sys-skyelite-light.svg" alt="A sample ranking. Lisbon scores 84 on safety, budget, visa and scenery, with the tradeoff written out and a confidence of 0.78 from six sources, followed by Tbilisi and Medellin. 3rd at a national hackathon, seven graph nodes, zero keys needed to run it. Next.js 15, TypeScript, Three.js, FastAPI, Pydantic v2, LangGraph, Supabase." />
+  <img src="assets/sys-skyelite-light.svg" alt="intake, filter, visa, research, scoring, tradeoff, final" />
 </picture>
 
-It rules out where your passport and budget cannot take you, ranks what survives, and shows its working so you can argue with it.
+Give it your passport, budget and interests. It rules out the destinations you legally or financially cannot reach, ranks what survives, then tells you what it traded away to get there. Confidence levels and source counts on every answer, so you can argue with it.
 
 ### BitMadWall
 <sub>**[bitmadwall.ai](https://www.bitmadwall.ai/)**</sub>
@@ -69,10 +69,10 @@ It rules out where your passport and budget cannot take you, ranks what survives
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/sys-bitmadwall-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/sys-bitmadwall-light.svg" />
-  <img src="assets/sys-bitmadwall-light.svg" alt="A sample relay. A message hops from your phone through two relays to the recipient over Bluetooth LE, Wi-Fi Direct then LoRa, delivered in three hops with no servers, while a second message sits queued for 42 minutes waiting for a peer. AES-256-GCM, seven hops, cryptographic identity with no SIM." />
+  <img src="assets/sys-bitmadwall-light.svg" alt="your phone, relay, relay, recipient" />
 </picture>
 
-For the places where the network is gone or cannot be trusted: continuity of government, disaster response, field teams.
+Encrypted messaging and Bitcoin transactions across a mesh of phones, with no internet, no cell service and nothing in the middle. Messages hop device to device and wait in store and forward when there is nobody to hand them to. Built for continuity of government, disaster response, and field teams working where the network is gone.
 
 ### AI Employee OS
 <sub>**[Repository](https://github.com/Hassaan146/agentic-ai-workflow)**</sub>
@@ -80,10 +80,10 @@ For the places where the network is gone or cannot be trusted: continuity of gov
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/sys-employeeos-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/sys-employeeos-light.svg" />
-  <img src="assets/sys-employeeos-light.svg" alt="A sample run. One plain English request becomes three agents working in dependency order, research then ops then writer, with every step timed, logged and replayable from the trace. Next.js, FastAPI, Pydantic, LangGraph, LangChain, Supabase, Groq." />
+  <img src="assets/sys-employeeos-light.svg" alt="request, decompose, route to agents, validate, trace" />
 </picture>
 
-An org where every seat is an agent, and the whole run is replayable afterwards.
+An org where every seat is an agent. Hand it a messy request in plain English and it works out what the pieces are, who should own each one, and in what order, then hands you the whole execution trace so you can see how it got there.
 
 <details>
 <summary><sub><b>Everything else, 11 more builds</b></sub></summary>

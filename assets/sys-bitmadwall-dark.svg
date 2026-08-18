@@ -1,30 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 212" width="1000" height="212" role="img" aria-label="your phone then relay then relay then recipient. AES-256 gcm encryption, 7 mesh hops, 0 servers in path, NO SIM cryptographic id. Bluetooth LE / Wi-Fi Direct / LoRa / Signal double ratchet / Bitcoin"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.5s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.b{animation:s 5.0s ease-in-out infinite}@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}100%{stroke-opacity:.34;fill-opacity:0}}.t{animation:tt 5.0s ease-in-out infinite}@keyframes tt{0%{fill:#8b867e}7%{fill:#f6cd85}22%{fill:#8b867e}100%{fill:#8b867e}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<rect width="1000" height="212" fill="#0a0b0d"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 278" width="1000" height="278" role="img" aria-label="BitMadWall. your phone then relay then relay then recipient. AES-256 gcm encryption, 7 mesh hops, 0 servers in path, NO SIM cryptographic id. Bluetooth LE / Wi-Fi Direct / LoRa / Signal double ratchet / Bitcoin"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.6s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.b{animation:s 5.0s ease-in-out infinite}@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}100%{stroke-opacity:.34;fill-opacity:0}}.t{animation:tt 5.0s ease-in-out infinite}@keyframes tt{0%{fill:#8b867e}7%{fill:#f6cd85}22%{fill:#8b867e}100%{fill:#8b867e}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="1000" height="278" fill="#0a0b0d"/>
 <line x1="64" y1="1" x2="936" y2="1" stroke="#20242b"/>
-<text x="64" y="52" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#e8a33d" opacity=".45" letter-spacing="-1">04</text>
-<rect class="b" style="animation-delay:0.0s" x="96.0" y="26" width="97.1" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:0.0s" x="144.6" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">your phone</text>
-<path class="e" d="M199.1 40.0 H216.1" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
-<path d="M213.1 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:1.25s" x="221.1" y="26" width="62.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:1.25s" x="252.4" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">relay</text>
-<path class="e" d="M289.7 40.0 H306.7" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
-<path d="M303.7 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:2.5s" x="311.7" y="26" width="62.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:2.5s" x="343.0" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">relay</text>
-<path class="e" d="M380.2 40.0 H397.2" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
-<path d="M394.2 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:3.75s" x="402.2" y="26" width="90.2" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:3.75s" x="447.3" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">recipient</text>
-<text x="96" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5c584f">works where the network is gone or cannot be trusted</text>
-<line x1="96" y1="112" x2="936" y2="112" stroke="#20242b"/>
-<text x="96" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">AES-256</text>
-<text x="96" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">GCM ENCRYPTION</text>
-<text x="308" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">7</text>
-<text x="308" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">MESH HOPS</text>
-<text x="520" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">0</text>
-<text x="520" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">SERVERS IN PATH</text>
-<text x="732" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">NO SIM</text>
-<text x="732" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">CRYPTOGRAPHIC ID</text>
-<text x="96" y="195" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8b867e">Bluetooth LE / Wi-Fi Direct / LoRa / Signal double ratchet / Bitcoin</text>
+<text x="64" y="46" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#eae7e2" letter-spacing="-1.1">BitMadWall</text>
+<text x="936" y="44" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#e8a33d" opacity=".3" text-anchor="end" letter-spacing="-1">04</text>
+<text x="64" y="68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.4" fill="#5c584f" letter-spacing="1.9">PRODUCT WORK  /  SHIPPED  /  bitmadwall.ai</text>
+<rect x="64" y="82" width="38" height="2" fill="#e8a33d"/>
+<rect class="b" style="animation-delay:0.0s" x="64.0" y="106" width="97.1" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:0.0s" x="112.6" y="124.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">your phone</text>
+<path class="e" d="M167.1 120.0 H184.1" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M181.1 117.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:1.25s" x="189.1" y="106" width="62.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:1.25s" x="220.4" y="124.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">relay</text>
+<path class="e" d="M257.7 120.0 H274.7" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M271.7 117.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:2.5s" x="279.7" y="106" width="62.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:2.5s" x="311.0" y="124.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">relay</text>
+<path class="e" d="M348.2 120.0 H365.2" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M362.2 117.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:3.75s" x="370.2" y="106" width="90.2" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:3.75s" x="415.3" y="124.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">recipient</text>
+<text x="64" y="158" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5c584f">works where the network is gone or cannot be trusted</text>
+<line x1="64" y1="186" x2="936" y2="186" stroke="#20242b"/>
+<text x="64" y="216" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">AES-256</text>
+<text x="64" y="233" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">GCM ENCRYPTION</text>
+<text x="282" y="216" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">7</text>
+<text x="282" y="233" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">MESH HOPS</text>
+<text x="500" y="216" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">0</text>
+<text x="500" y="233" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">SERVERS IN PATH</text>
+<text x="718" y="216" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">NO SIM</text>
+<text x="718" y="233" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">CRYPTOGRAPHIC ID</text>
+<text x="64" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.2" fill="#8b867e">Bluetooth LE / Wi-Fi Direct / LoRa / Signal double ratchet / Bitcoin</text>
 </svg>

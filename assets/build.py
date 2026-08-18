@@ -222,6 +222,8 @@ def principles(t):
 
 SYSTEMS = {
     "forge": dict(
+        title="Forge Mentor",
+        meta="CLAUDE CODE PLUGIN  /  MIT  /  v1.28",
         n="01",
         nodes=["question", "options", "you decide", "recorded", "code runs"],
         note="the gate holds until the decision exists",
@@ -229,6 +231,8 @@ SYSTEMS = {
         stack="Python 3.12 / MCP / Claude / Git",
     ),
     "news": dict(
+        title="AI News Aggregator",
+        meta="FULL STACK  /  DEPLOYED  /  DAILY AT 07:00",
         n="02",
         nodes=["scrape", "store", "rank", "summarise", "email"],
         note="two model providers, so one bad day does not kill the digest",
@@ -236,6 +240,8 @@ SYSTEMS = {
         stack="React / Vite / FastAPI / PostgreSQL / Groq / Gemini / Stripe",
     ),
     "skyelite": dict(
+        title="SkyElite AI",
+        meta="HACKATHON BUILD  /  3RD NATIONALLY  /  OPEN SOURCE",
         n="03",
         nodes=["intake", "filter", "visa", "research", "scoring", "tradeoff", "final"],
         note="ranks on safety, budget, visa difficulty and scenery, then shows its working",
@@ -244,6 +250,8 @@ SYSTEMS = {
         stack="Next.js 15 / TypeScript / Three.js / FastAPI / Pydantic v2 / LangGraph / Supabase",
     ),
     "bitmadwall": dict(
+        title="BitMadWall",
+        meta="PRODUCT WORK  /  SHIPPED  /  bitmadwall.ai",
         n="04",
         nodes=["your phone", "relay", "relay", "recipient"],
         note="works where the network is gone or cannot be trusted",
@@ -252,6 +260,8 @@ SYSTEMS = {
         stack="Bluetooth LE / Wi-Fi Direct / LoRa / Signal double ratchet / Bitcoin",
     ),
     "employeeos": dict(
+        title="AI Employee OS",
+        meta="AGENT ORCHESTRATION  /  IN PROGRESS",
         n="05",
         nodes=["request", "decompose", "route to agents", "validate", "trace"],
         note="plain English in, a dependency aware workflow out",
@@ -265,14 +275,19 @@ FS, PAD, GAP, BH = 11.5, 14, 28, 28
 
 
 def card(spec, t):
+    """A project block.
+
+    The card carries its own title, meta strip and stack. The section around it
+    then needs no markdown heading and no grey subtitle line, which were the two
+    plainest things on the page.
+    """
+    w, left, h = 1000, 64, 278
     nodes, note, num = spec["nodes"], spec["note"], spec["n"]
-    w, h = 1000, 212
-    left = 96
-    widths = [mono_w(n, FS) + PAD * 2 for n in nodes]
+    widths = [mono_w(nd, FS) + PAD * 2 for nd in nodes]
     n = len(nodes)
     dur = max(5.0, n * 1.15)
     css = (
-        ".e{stroke-dasharray:2.5 4.5;animation:d 1.5s linear infinite}"
+        ".e{stroke-dasharray:2.5 4.5;animation:d 1.6s linear infinite}"
         "@keyframes d{to{stroke-dashoffset:-7}}"
         f".b{{animation:s {dur}s ease-in-out infinite}}"
         "@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}"
@@ -282,16 +297,23 @@ def card(spec, t):
         f"@keyframes tt{{0%{{fill:{t['dim']}}}7%{{fill:{t['accent2']}}}"
         f"22%{{fill:{t['dim']}}}100%{{fill:{t['dim']}}}}}"
     )
-    lab = (" then ".join(nodes) + ". "
-           + ", ".join(f"{v} {k.lower()}" for v, k in spec["metrics"])
+    lab = (spec["title"] + ". " + " then ".join(nodes) + ". "
+           + ", ".join(f"{v} {k2.lower()}" for v, k2 in spec["metrics"])
            + ". " + spec["stack"])
     p = [head(w, h, lab, css)]
     p.append(f'<rect width="{w}" height="{h}" fill="{t["bg"]}"/>')
-    p.append(f'<line x1="64" y1="1" x2="{w - 64}" y2="1" stroke="{t["rule"]}"/>')
-    p.append(f'<text x="64" y="52" font-family="{SANS}" font-size="34" font-weight="700" '
-             f'fill="{t["accent"]}" opacity=".45" letter-spacing="-1">{num}</text>')
+    p.append(f'<line x1="{left}" y1="1" x2="{w - left}" y2="1" stroke="{t["rule"]}"/>')
 
-    y = 26
+    p.append(f'<text x="{left}" y="46" font-family="{SANS}" font-size="27" font-weight="700" '
+             f'fill="{t["ink"]}" letter-spacing="-1.1">{esc(spec["title"])}</text>')
+    p.append(f'<text x="{w - left}" y="44" font-family="{SANS}" font-size="30" '
+             f'font-weight="700" fill="{t["accent"]}" opacity=".3" text-anchor="end" '
+             f'letter-spacing="-1">{num}</text>')
+    p.append(f'<text x="{left}" y="68" font-family="{MONO}" font-size="9.4" '
+             f'fill="{t["faint"]}" letter-spacing="1.9">{esc(spec["meta"])}</text>')
+    p.append(f'<rect x="{left}" y="82" width="38" height="2" fill="{t["accent"]}"/>')
+
+    y = 106
     x = float(left)
     for i, (label, bw) in enumerate(zip(nodes, widths)):
         d = round(i * dur / n, 2)
@@ -308,22 +330,20 @@ def card(spec, t):
             p.append(f'<path d="M{x + bw + GAP - 8:.1f} {y + BH / 2 - 3:.1f} l3.5 3 l-3.5 3" '
                      f'fill="none" stroke="{t["accent"]}" stroke-opacity=".7" stroke-width="1"/>')
         x += bw + GAP
-
     p.append(f'<text x="{left}" y="{y + BH + 24}" font-family="{MONO}" font-size="10.5" '
              f'fill="{t["faint"]}">{esc(note)}</text>')
-    p.append(f'<line x1="{left}" y1="112" x2="{w - 64}" y2="112" stroke="{t["rule"]}"/>')
 
+    p.append(f'<line x1="{left}" y1="186" x2="{w - left}" y2="186" stroke="{t["rule"]}"/>')
     for i, (val, lab2) in enumerate(spec["metrics"]):
-        cx = left + i * 212
-        p.append(f'<text x="{cx}" y="150" font-family="{SANS}" font-size="21" '
+        cx = left + i * 218
+        p.append(f'<text x="{cx}" y="216" font-family="{SANS}" font-size="21" '
                  f'font-weight="700" fill="{t["ink"]}" letter-spacing="-.6">{esc(val)}</text>')
-        p.append(f'<text x="{cx}" y="167" font-family="{MONO}" font-size="8.6" '
+        p.append(f'<text x="{cx}" y="233" font-family="{MONO}" font-size="8.6" '
                  f'fill="{t["faint"]}" letter-spacing="1.5">{esc(lab2)}</text>')
-
-    p.append(f'<text x="{left}" y="195" font-family="{MONO}" font-size="10.5" '
+    p.append(f'<text x="{left}" y="262" font-family="{MONO}" font-size="10.2" '
              f'fill="{t["dim"]}">{esc(spec["stack"])}</text>')
     p.append("</svg>")
-    return "\n".join(p) + "\n"
+    return chr(10).join(p) + chr(10)
 
 
 # ---------------------------------------------------------------------------

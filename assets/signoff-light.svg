@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 96" width="1000" height="96" role="img" aria-label=""><style>.dash{stroke-dasharray:2 6;animation:g 3s linear infinite}@keyframes g{to{stroke-dashoffset:-8}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="1000" height="96" fill="#fbfaf8"/>
+<line class="dash" x1="64" y1="34" x2="936" y2="34" stroke="#a96a08" stroke-opacity=".5"/>
+<text x="64" y="66" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8b857a" letter-spacing="2.2">EVERY MARK ON THIS PAGE WAS DRAWN BY A SCRIPT IN THIS REPO</text>
+<text x="936" y="66" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#a96a08" letter-spacing="2.2" text-anchor="end">assets/build.py</text>
+</svg>

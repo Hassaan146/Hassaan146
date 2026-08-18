@@ -20,7 +20,7 @@ jobs:
           python-version: "3.12"
 
       - name: Regenerate the art from live GitHub data
-        run: python assets/build_svg.py
+        run: python assets/build.py
 
       - name: Commit only if a number actually changed
         run: |

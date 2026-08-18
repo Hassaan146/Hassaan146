@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-label="Muhammad Hassaan-ul-Mustafa, AI engineer, product and backend"><style>.ln{stroke-dasharray:3 5;animation:flow 2.2s linear infinite}@keyframes flow{to{stroke-dashoffset:-8}}.nd{animation:beat 6s ease-in-out infinite}@keyframes beat{0%,100%{opacity:.42}9%{opacity:1}24%{opacity:.42}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="1000" height="340" fill="#fbfaf8"/>
+<rect x="30" y="26" width="940" height="288" fill="none" stroke="#e2ddd4" stroke-width="1"/>
+<text x="64" y="74" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#a96a08" letter-spacing="3.4">AI ENGINEER &#183; PRODUCT AND BACKEND</text>
+<text x="936" y="74" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8b857a" letter-spacing="2.2" text-anchor="end">ISLAMABAD, PK</text>
+<text x="60" y="158" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#15171b" letter-spacing="-2.2">MUHAMMAD</text>
+<text x="60" y="216" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#15171b" letter-spacing="-2.2">HASSAAN-UL-MUSTAFA</text>
+<rect x="64" y="240" width="132" height="3" fill="#a96a08"/>
+<text x="64" y="278" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="16" fill="#5f5a52">I build AI agents and the backends they run on.</text>
+<text x="64" y="308" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8b857a" letter-spacing="2">ARBISOFT &#183; FAST-NUCES &#183; OPEN TO REMOTE</text>
+<g transform="translate(706,58)">
+<line class="ln" x1="0" y1="40" x2="54" y2="8" stroke="#a96a08" stroke-opacity=".38" stroke-width="1"/>
+<line class="ln" x1="0" y1="40" x2="54" y2="74" stroke="#a96a08" stroke-opacity=".38" stroke-width="1"/>
+<line class="ln" x1="54" y1="8" x2="112" y2="40" stroke="#a96a08" stroke-opacity=".38" stroke-width="1"/>
+<line class="ln" x1="54" y1="74" x2="112" y2="40" stroke="#a96a08" stroke-opacity=".38" stroke-width="1"/>
+<line class="ln" x1="54" y1="74" x2="112" y2="108" stroke="#a96a08" stroke-opacity=".38" stroke-width="1"/>
+<line class="ln" x1="112" y1="40" x2="170" y2="8" stroke="#a96a08" stroke-opacity=".38" stroke-width="1"/>
+<line class="ln" x1="112" y1="40" x2="170" y2="74" stroke="#a96a08" stroke-opacity=".38" stroke-width="1"/>
+<line class="ln" x1="112" y1="108" x2="170" y2="74" stroke="#a96a08" stroke-opacity=".38" stroke-width="1"/>
+<line class="ln" x1="170" y1="8" x2="226" y2="40" stroke="#a96a08" stroke-opacity=".38" stroke-width="1"/>
+<line class="ln" x1="170" y1="74" x2="226" y2="40" stroke="#a96a08" stroke-opacity=".38" stroke-width="1"/>
+<line class="ln" x1="170" y1="74" x2="226" y2="108" stroke="#a96a08" stroke-opacity=".38" stroke-width="1"/>
+<circle class="nd" style="animation-delay:0.0s" cx="0" cy="40" r="3.1" fill="#7d4e05"/>
+<circle class="nd" style="animation-delay:0.62s" cx="54" cy="8" r="3.1" fill="#7d4e05"/>
+<circle class="nd" style="animation-delay:1.24s" cx="54" cy="74" r="3.1" fill="#7d4e05"/>
+<circle class="nd" style="animation-delay:1.86s" cx="112" cy="40" r="4.6" fill="#a96a08"/>
+<circle class="nd" style="animation-delay:2.48s" cx="112" cy="108" r="3.1" fill="#7d4e05"/>
+<circle class="nd" style="animation-delay:3.1s" cx="170" cy="8" r="3.1" fill="#7d4e05"/>
+<circle class="nd" style="animation-delay:3.72s" cx="170" cy="74" r="4.6" fill="#a96a08"/>
+<circle class="nd" style="animation-delay:4.34s" cx="226" cy="40" r="3.1" fill="#7d4e05"/>
+<circle class="nd" style="animation-delay:4.96s" cx="226" cy="108" r="3.1" fill="#7d4e05"/>
+</g>
+</svg>

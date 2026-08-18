@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 618 84" width="618" height="84" role="img" aria-label="request then decompose then route to agents then validate then trace"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.5s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.b{animation:s 5.75s ease-in-out infinite}@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}100%{stroke-opacity:.34;fill-opacity:0}}.t{animation:tt 5.75s ease-in-out infinite}@keyframes tt{0%{fill:#8b867e}7%{fill:#f6cd85}22%{fill:#8b867e}100%{fill:#8b867e}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<text x="2" y="41.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="#e8a33d" opacity=".55">05</text>
+<line x1="34" y1="18" x2="34" y2="54" stroke="#20242b"/>
+<rect class="b" style="animation-delay:0.0s" x="46.0" y="22" width="76.4" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:0.0s" x="84.2" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">request</text>
+<path class="e" d="M129.4 36.0 H147.4" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M144.4 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:1.15s" x="152.4" y="22" width="90.2" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:1.15s" x="197.5" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">decompose</text>
+<path class="e" d="M249.6 36.0 H267.6" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M264.6 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:2.3s" x="272.6" y="22" width="131.7" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:2.3s" x="338.4" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">route to agents</text>
+<path class="e" d="M411.3 36.0 H429.3" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M426.3 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:3.45s" x="434.3" y="22" width="83.3" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:3.45s" x="475.9" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">validate</text>
+<path class="e" d="M524.5 36.0 H542.5" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M539.5 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:4.6s" x="547.5" y="22" width="62.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:4.6s" x="578.8" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">trace</text>
+<text x="46" y="76" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5c584f">dependency aware workflow, execution trace handed back to you</text>
+</svg>

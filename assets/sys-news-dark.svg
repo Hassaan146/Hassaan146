@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514 84" width="514" height="84" role="img" aria-label="scrape then store then rank then summarise then email"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.5s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.b{animation:s 5.75s ease-in-out infinite}@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}100%{stroke-opacity:.34;fill-opacity:0}}.t{animation:tt 5.75s ease-in-out infinite}@keyframes tt{0%{fill:#8b867e}7%{fill:#f6cd85}22%{fill:#8b867e}100%{fill:#8b867e}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<text x="2" y="41.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="#e8a33d" opacity=".55">02</text>
+<line x1="34" y1="18" x2="34" y2="54" stroke="#20242b"/>
+<rect class="b" style="animation-delay:0.0s" x="46.0" y="22" width="69.5" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:0.0s" x="80.7" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">scrape</text>
+<path class="e" d="M122.5 36.0 H140.5" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M137.5 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:1.15s" x="145.5" y="22" width="62.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:1.15s" x="176.7" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">store</text>
+<path class="e" d="M215.0 36.0 H233.0" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M230.0 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:2.3s" x="238.0" y="22" width="55.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:2.3s" x="265.8" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">rank</text>
+<path class="e" d="M300.7 36.0 H318.7" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M315.7 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:3.45s" x="323.7" y="22" width="90.2" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:3.45s" x="368.8" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">summarise</text>
+<path class="e" d="M420.9 36.0 H438.9" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M435.9 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:4.6s" x="443.9" y="22" width="62.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:4.6s" x="475.2" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">email</text>
+<text x="46" y="76" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5c584f">164 sites and 36 YouTube channels, top five per reader, daily</text>
+</svg>

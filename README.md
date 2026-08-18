@@ -1,249 +1,147 @@
 <!-- Muhammad Hassaan-ul-Mustafa. Profile README.
-     All art in assets/ is generated: python assets/build_svg.py
-     Do not hand-edit the SVGs, edit the spec in build_svg.py and rerun.
-     One placeholder left: the portfolio link below. -->
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg" />
-  <img src="assets/banner-light.svg" width="100%" alt="Muhammad Hassaan-ul-Mustafa, AI engineer, product and backend" />
-</picture>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&pause=1400&color=58A6FF&center=true&vCenter=true&width=560&lines=Building+AI+agents+that+reach+production.;Currently+at+Arbisoft.;3rd+Place%2C+National+AI+Hackathon.;CS+at+FAST-NUCES%2C+Islamabad." alt="Building AI agents that reach production" />
-
-<br/>
-
-<!-- Replace the "#" with your portfolio URL once the site is live -->
-[![Portfolio](https://img.shields.io/badge/Portfolio-coming_soon-0d1117?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0d1117)](#)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&labelColor=0d1117)](https://linkedin.com/in/muhammad-hassaan25480a322)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117)](mailto:muhammadhassaanulmustafa@gmail.com)
-
-</div>
-
----
-
-## About
+     Art is generated. Edit the spec in assets/build.py and rerun it:
+         python assets/build.py
+     Never hand-edit an SVG in assets/, the next build overwrites it.
+     One placeholder remains: the portfolio link in section 04. -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/about-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/about-light.svg" />
-  <img src="assets/about-light.svg" width="100%" alt="AI engineer, product and backend. BS Computer Science at FAST-NUCES, 2024 to 2028. Currently at Arbisoft, based in Islamabad, Pakistan, open to remote." />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg" />
+  <img src="assets/hero-light.svg" width="100%" alt="Muhammad Hassaan-ul-Mustafa. AI engineer, product and backend. Islamabad, Pakistan. I build AI agents and the backends they run on. Arbisoft, FAST-NUCES, open to remote." />
 </picture>
 
-I build AI agents and the backends they run on. Most of my projects ship with rate limiting, input validation, row-level security, and a fallback for every external call, because that is the part clients end up depending on.
+## 00 · Identity
 
-Strongest with LangGraph orchestration, FastAPI, and Pydantic v2.
+Computer Science at FAST-NUCES, currently at Arbisoft. I build AI agents and the backends they run on.
 
-### Recognition
+Most AI side projects stop at a notebook. Mine go out with rate limiting, input validation, row-level security, and a fallback for every external call, because that is the part a client ends up depending on. The work I want is the seat where you sit with the person who has the problem, find what it actually is, then build the thing that fixes it.
+
+Deepest with LangGraph orchestration, FastAPI and Pydantic v2.
+
+## 01 · Systems
+
+Five things I built. Every diagram below traces the real pipeline, drawn from how the system actually runs.
+
+### Forge Mentor
+<sub>Claude Code plugin · MIT · v1.28 · **[Repository](https://github.com/Hassaan146/forge-mentor)**</sub>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/awards-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/awards-light.svg" />
-  <img src="assets/awards-light.svg" width="100%" alt="3rd Place at the National AI Hackathon. Production adopter of the Graph Context Framework. 1,216 tests at 100% coverage on Forge Mentor. Four certifications from Anthropic, Harvard and DeepLearning.AI." />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sys-forge-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/sys-forge-light.svg" />
+  <img src="assets/sys-forge-light.svg" alt="question, options, you decide, recorded, code runs" />
 </picture>
 
-<sub>[SkyElite AI](https://github.com/Hassaan146/ai-travel-planner) took 3rd at the National AI Hackathon and is listed as a production adopter of GCF for cross-agent context passing. Certifications: Agent Skills with Anthropic, CS50P at Harvard, AI for Everyone and ChatGPT for Everyone.</sub>
-
----
-
-## Featured work
-
-### 🔨 Forge Mentor
-[Repo](https://github.com/Hassaan146/forge-mentor) · MIT · v1.28
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-forge-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/flow-forge-light.svg" />
-  <img src="assets/flow-forge-light.svg" alt="question, options, you decide, recorded, code runs" />
-</picture>
-
-A Claude Code plugin for the decisions people skip. It teaches the architectural choice, lays out options, waits for your call, writes it to `.claude/forge/`, then blocks code from moving past anything still undecided. 1,216 tests at 100% coverage.
+AI coding agents will happily write two thousand lines on top of a decision nobody made. This plugin stops that. It teaches the architectural choice, lays out the options with a recommendation, waits for your call, writes it to `.claude/forge/`, then blocks code from moving past anything still undecided. The rationale becomes part of the codebase, so the reasoning outlives the sprint. 1,216 tests at 100% coverage.
 
 ```bash
 /plugin marketplace add Hassaan146/forge-marketplace
 ```
 
-`Python 3.12` `MCP` `Claude`
-
-### 📰 AI News Aggregator
-[Live](https://ai-news-aggregator-weld.vercel.app) · [Repo](https://github.com/Hassaan146/ai-news-aggregator)
+### AI News Aggregator
+<sub>**[Live](https://ai-news-aggregator-weld.vercel.app)** · **[Repository](https://github.com/Hassaan146/ai-news-aggregator)**</sub>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-news-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/flow-news-light.svg" />
-  <img src="assets/flow-news-light.svg" alt="scrape, store, rank, summarise, email" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sys-news-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/sys-news-light.svg" />
+  <img src="assets/sys-news-light.svg" alt="scrape, store, rank, summarise, email" />
 </picture>
 
-Scrapes 164 AI sites and 36 YouTube channels, then emails every user a personalised top-5 digest each morning. Groq writes the summaries and Gemini covers the outages. Stripe handles subscriptions.
+The AI feed is a firehose. This drinks it for you: 164 sites and 36 YouTube channels, labs, product blogs, newsletters and policy sources, distilled into five things worth reading and delivered every morning. Groq writes the summaries and Gemini covers the outages, so one provider having a bad day does not kill the digest.
 
-`React` `Vite` `FastAPI` `PostgreSQL` `Groq` `Gemini` `Stripe`
-
-### 🛰️ SkyElite AI
-[Repo](https://github.com/Hassaan146/ai-travel-planner) · 🥉 3rd Place, National AI Hackathon
+### SkyElite AI
+<sub>3rd Place, National AI Hackathon · **[Repository](https://github.com/Hassaan146/ai-travel-planner)**</sub>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-skyelite-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/flow-skyelite-light.svg" />
-  <img src="assets/flow-skyelite-light.svg" alt="intake, filter, visa, research, scoring, tradeoff, final" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sys-skyelite-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/sys-skyelite-light.svg" />
+  <img src="assets/sys-skyelite-light.svg" alt="intake, filter, visa, research, scoring, tradeoff, final" />
 </picture>
 
-Takes your passport, budget and interests, drops the destinations you cannot actually reach, then ranks what is left and writes out what it traded away. Seven-node LangGraph pipeline. Runs with zero API keys because every external call degrades to a mock.
+Give it your passport, budget and interests. It rules out the destinations you legally or financially cannot reach, ranks what survives across safety, budget, visa difficulty and scenery, then tells you what it traded away to get there. Confidence levels and source counts on every answer. Clone it and it runs with zero API keys, because every external call degrades to a mock.
 
-`Next.js 15` `TypeScript` `Three.js` `FastAPI` `Pydantic v2` `LangGraph` `Anthropic API` `Supabase`
-
-### 📡 BitMadWall
-[bitmadwall.ai](https://www.bitmadwall.ai/)
+### BitMadWall
+<sub>**[bitmadwall.ai](https://www.bitmadwall.ai/)**</sub>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-bitmadwall-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/flow-bitmadwall-light.svg" />
-  <img src="assets/flow-bitmadwall-light.svg" alt="your phone, relay, relay, recipient" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sys-bitmadwall-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/sys-bitmadwall-light.svg" />
+  <img src="assets/sys-bitmadwall-light.svg" alt="your phone, relay, relay, recipient" />
 </picture>
 
-Encrypted messaging and Bitcoin transactions across a mesh of phones, with no internet, no cell service and no server involved. Traffic hops device to device over Bluetooth LE, Wi-Fi Direct and optional LoRa, up to seven hops, with store-and-forward for anything that cannot be delivered yet. Identity is cryptographic, so no phone number or SIM.
+Encrypted messaging and Bitcoin transactions across a mesh of phones, with no internet, no cell service and no server in the path. AES-256-GCM with Signal-style double ratchet, hopping device to device over Bluetooth LE, Wi-Fi Direct and optional LoRa, with store and forward for anything undeliverable. Identity is cryptographic, so no phone number and no SIM. Built for continuity of government, disaster response, and field teams where the network is gone or cannot be trusted.
 
-`AES-256-GCM` `double ratchet` `Bluetooth LE` `Wi-Fi Direct` `LoRa` `Bitcoin`
-
-### 🧑‍💼 AI Employee OS
-[Repo](https://github.com/Hassaan146/agentic-ai-workflow)
+### AI Employee OS
+<sub>**[Repository](https://github.com/Hassaan146/agentic-ai-workflow)**</sub>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-employeeos-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/flow-employeeos-light.svg" />
-  <img src="assets/flow-employeeos-light.svg" alt="request, decompose, route to agents, validate, trace" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sys-employeeos-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/sys-employeeos-light.svg" />
+  <img src="assets/sys-employeeos-light.svg" alt="request, decompose, route to agents, validate, trace" />
 </picture>
 
-An org where every seat is an agent. Give it a messy request in plain English and it breaks that into a dependency-aware workflow, routes each piece to the agent that owns it, checks the results, and shows you the whole execution trace.
-
-`Next.js` `FastAPI` `Pydantic` `LangGraph` `LangChain` `Supabase` `Groq`
+An org where every seat is an agent. Hand it a messy request in plain English and it decomposes that into a dependency aware workflow, routes each piece to the agent that owns it, checks what comes back, and hands you the whole execution trace so you can see how it got there.
 
 <details>
-<summary><b>More builds</b></summary>
+<summary><sub><b>Everything else, 11 more builds</b></sub></summary>
 
 <br/>
 
 | Project | What it is | Stack |
 |---|---|---|
 | [AI Fashion Sales Assistant](https://github.com/Hassaan146/ai-fashion-sales-assistant) | Answers Instagram and WhatsApp DMs for clothing brands. 11 intent types, catalog ranking, order state machine, 164 tests | React · Node · MongoDB · LangChain |
-| [PayTrace](https://github.com/Hassaan146/PayTrace) | Desktop reconciliation. Matches invoices to bank records in four passes, with BCrypt audit trails | Java · JavaFX · SQL Server |
+| [PayTrace](https://github.com/Hassaan146/PayTrace) | Desktop reconciliation. Matches invoices to bank records in four passes, BCrypt audit trails | Java · JavaFX · SQL Server |
+| [Preflight](https://github.com/Hassaan146/preflight) | Audits AI-generated projects against a 31 area production standard, then fixes and verifies | LangGraph · Groq |
+| [Agentika](https://github.com/Hassaan146/agentika) | Research agent with a hand written ReAct loop, web search and file analysis | FastAPI · Groq |
 | [Forge Marketplace](https://github.com/Hassaan146/forge-marketplace) | Install source for the Forge Mentor plugin | Claude Code |
-| [Preflight](https://github.com/Hassaan146/preflight) | Audits AI-generated projects against a 31-area production standard, then fixes and verifies | LangGraph · Groq |
-| [Agentika](https://github.com/Hassaan146/agentika) | Research agent with a hand-written ReAct loop, web search and file analysis | FastAPI · Groq |
 | [AI Client Finder](https://github.com/Hassaan146/ai-client-finder) | Sources and qualifies leads | Python |
 | [B2B SaaS](https://github.com/Hassaan146/B2B-SaaS-) | Team collaboration platform with orgs, tasks and subscriptions | FastAPI · Clerk |
 | [CityMind Urban AI](https://github.com/Hassaan146/Citymind_Urban_Ai) | Urban data intelligence prototype | Python |
 | [Consumer Price Index](https://github.com/Hassaan146/Consumer-Price-Index) | CPI pipeline built on discrete mathematics | Python |
 | [ChronoRift OS](https://github.com/Hassaan146/ChronoRiftOS) | Operating systems coursework | C++ |
-| [City Management System](https://github.com/Hassaan146/City-Management-System-DSA) | Graph-heavy simulation | C++ |
-| [Super Mario COAL](https://github.com/Hassaan146/Super-Mario-COAL) | Game written in x86 assembly | Assembly |
-| [Ivor Hospital DB](https://github.com/Hassaan146/IvorHospitalDB) | Hospital database system | PHP · SQL |
+| [Super Mario COAL](https://github.com/Hassaan146/Super-Mario-COAL) | A game written in x86 assembly | Assembly |
 
 </details>
 
----
-
-## Stack
-
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-CC2927?style=flat-square&logo=sqlalchemy&logoColor=white)
-![Assembly](https://img.shields.io/badge/x86-654FF0?style=flat-square&logo=assemblyscript&logoColor=white)
-
-**AI**
-
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langgraph&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![MCP](https://img.shields.io/badge/MCP-000000?style=flat-square&logo=modelcontextprotocol&logoColor=white)
-![Anthropic](https://img.shields.io/badge/Anthropic-D97757?style=flat-square&logo=anthropic&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
-![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square)
-![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
-
-**Backend**
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)
-
-**Frontend**
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
-
-**Data**
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-
-**Ship**
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![Render](https://img.shields.io/badge/Render-000000?style=flat-square&logo=render&logoColor=white)
-![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
-![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white)
-
----
-
-## Activity
-
-<div align="center">
+## 02 · Toolchain
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg" />
-  <img src="assets/stats-light.svg" width="100%" alt="Public repositories, stars earned, languages used, and the date of the last push, with a bar showing the language mix." />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/toolchain-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/toolchain-light.svg" />
+  <img src="assets/toolchain-light.svg" width="100%" alt="Toolchain. Languages: Python, TypeScript, JavaScript, C++, Java, SQL, x86. AI: LangGraph, LangChain, MCP, Anthropic, Groq, Gemini, Pydantic. Backend: FastAPI, Django, DRF, Node, Express, Celery. Frontend: React, Next.js, Vite, Tailwind, Three.js. Data: PostgreSQL, Supabase, MongoDB, Redis, MySQL, SQL Server. Ship: Docker, Git, Linux, Vercel, Render, Railway, Stripe." />
 </picture>
 
-<br/>
+## 03 · Signals
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/signals-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/signals-light.svg" />
+  <img src="assets/signals-light.svg" width="100%" alt="Public repositories, stars earned, languages and last push date, with the language mix and four credentials: 3rd place at the National AI Hackathon, production adopter of the Graph Context Framework, 1,216 tests at 100% coverage on Forge Mentor, and four certifications from Anthropic, Harvard and DeepLearning.AI." />
+</picture>
+
+<div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/snake-light.svg" />
-  <img src="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/snake-light.svg" width="98%" alt="Snake eating the contribution graph" />
+  <img src="https://raw.githubusercontent.com/Hassaan146/Hassaan146/output/snake-light.svg" width="94%" alt="A snake eating my contribution graph" />
 </picture>
-
 </div>
 
----
-
-## Contact
+## 04 · Contact
 
 At Arbisoft right now. Open to contract work and startup collaborations, mostly around AI agents and backend systems.
 
 If you are building something and part of it is stuck, that is the email I like getting.
 
-<div align="center">
-
-[![Email](https://img.shields.io/badge/muhammadhassaanulmustafa@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117)](mailto:muhammadhassaanulmustafa@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&labelColor=0d1117)](https://linkedin.com/in/muhammad-hassaan25480a322)
+|  |  |
+|---|---|
+| **Email** | [muhammadhassaanulmustafa@gmail.com](mailto:muhammadhassaanulmustafa@gmail.com) |
+| **LinkedIn** | [muhammad-hassaan](https://linkedin.com/in/muhammad-hassaan25480a322) |
+| **Portfolio** | coming soon <!-- drop the URL here when the site is live --> |
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg" />
-  <img src="assets/footer-light.svg" width="100%" alt="" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/signoff-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/signoff-light.svg" />
+  <img src="assets/signoff-light.svg" width="100%" alt="" />
 </picture>
 
-</div>
-
----
-
-<sub>**Colophon.** Every diagram here comes out of a script. [`assets/build_svg.py`](assets/build_svg.py) reads a spec, sizes each node from its label so nothing ever clips, and writes animated SVG. The counts on the About card come from the GitHub API, and a [scheduled job](.github/workflows/refresh.yml) redraws the card each morning to keep them current. No image here queries the GitHub API at page load, which is what turns a stat widget into an error box on a bad day. The contribution snake is built by a [job](.github/workflows/snake.yml) that keeps the last good copy when the API is unreachable. Motion switches itself off for anyone whose system asks for less of it.</sub>
+<sub>**Colophon.** Every mark on this page is drawn by [`assets/build.py`](assets/build.py), which reads a spec, measures each label to size its own box so nothing ever clips, and writes animated SVG. The figures in section 03 come from the GitHub API and a [scheduled job](.github/workflows/refresh.yml) redraws them each morning; if the API cannot be reached it keeps the last correct numbers. No image here queries GitHub when you load the page, which is what turns a stat widget into an error box on a bad day. There are no badge services: the toolchain block replaced 42 separate requests to shields.io. Motion switches itself off for anyone whose system asks for less of it.</sub>

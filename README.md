@@ -24,7 +24,7 @@ Most AI side projects stop at a notebook. Mine go out with the unglamorous parts
 
 ## 01 · Systems
 
-Five things I built. Every diagram below traces the real pipeline, drawn from how the system actually runs.
+Five things I built. Each one shows you what it produces before it tells you anything about itself.
 
 ### Forge Mentor
 <sub>Claude Code plugin · MIT · v1.28 · **[Repository](https://github.com/Hassaan146/forge-mentor)**</sub>
@@ -35,7 +35,7 @@ Five things I built. Every diagram below traces the real pipeline, drawn from ho
   <img src="assets/sys-forge-light.svg" alt="question, options, you decide, recorded, code runs" />
 </picture>
 
-AI coding agents will happily write two thousand lines on top of a decision nobody made. This plugin stops that. It teaches the architectural choice, lays out the options with a recommendation, waits for your call, writes it to `.claude/forge/`, then refuses to let code past anything still undecided. The reasoning becomes part of the codebase, so it outlives the sprint.
+An AI agent will happily write two thousand lines on top of a decision nobody made. This one refuses to, and the reasoning it records outlives the sprint.
 
 ```bash
 /plugin marketplace add Hassaan146/forge-marketplace
@@ -50,7 +50,7 @@ AI coding agents will happily write two thousand lines on top of a decision nobo
   <img src="assets/sys-news-light.svg" alt="scrape, store, rank, summarise, email" />
 </picture>
 
-The AI feed is a firehose. This drinks it for you, across labs, product blogs, newsletters and policy sources, and hands back the five things worth reading before breakfast. Groq writes the summaries and Gemini covers the outages.
+The AI feed is a firehose. This drinks it and hands back five things before breakfast.
 
 ### SkyElite AI
 <sub>3rd Place, National AI Hackathon · **[Repository](https://github.com/Hassaan146/ai-travel-planner)**</sub>
@@ -61,7 +61,7 @@ The AI feed is a firehose. This drinks it for you, across labs, product blogs, n
   <img src="assets/sys-skyelite-light.svg" alt="intake, filter, visa, research, scoring, tradeoff, final" />
 </picture>
 
-Give it your passport, budget and interests. It rules out the destinations you legally or financially cannot reach, ranks what survives, then tells you what it traded away to get there. Confidence levels and source counts on every answer, so you can argue with it.
+It rules out where your passport and budget cannot take you, ranks what survives, and shows its working so you can argue with it.
 
 ### BitMadWall
 <sub>**[bitmadwall.ai](https://www.bitmadwall.ai/)**</sub>
@@ -72,7 +72,7 @@ Give it your passport, budget and interests. It rules out the destinations you l
   <img src="assets/sys-bitmadwall-light.svg" alt="your phone, relay, relay, recipient" />
 </picture>
 
-Encrypted messaging and Bitcoin transactions across a mesh of phones, with no internet, no cell service and nothing in the middle. Messages hop device to device and wait in store and forward when there is nobody to hand them to. Built for continuity of government, disaster response, and field teams working where the network is gone.
+For the places where the network is gone or cannot be trusted: continuity of government, disaster response, field teams.
 
 ### AI Employee OS
 <sub>**[Repository](https://github.com/Hassaan146/agentic-ai-workflow)**</sub>
@@ -83,7 +83,7 @@ Encrypted messaging and Bitcoin transactions across a mesh of phones, with no in
   <img src="assets/sys-employeeos-light.svg" alt="request, decompose, route to agents, validate, trace" />
 </picture>
 
-An org where every seat is an agent. Hand it a messy request in plain English and it works out what the pieces are, who should own each one, and in what order, then hands you the whole execution trace so you can see how it got there.
+An org where every seat is an agent, and the whole run is replayable afterwards.
 
 <details>
 <summary><sub><b>Everything else, 11 more builds</b></sub></summary>

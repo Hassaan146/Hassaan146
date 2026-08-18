@@ -1,34 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 212" width="1000" height="212" role="img" aria-label="scrape then store then rank then summarise then email. 164 sites, 36 channels, 5 picks a day, LIVE deployed. React / Vite / FastAPI / PostgreSQL / Groq / Gemini / Stripe"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.5s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.b{animation:s 5.75s ease-in-out infinite}@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}100%{stroke-opacity:.34;fill-opacity:0}}.t{animation:tt 5.75s ease-in-out infinite}@keyframes tt{0%{fill:#5f5a52}7%{fill:#7d4e05}22%{fill:#5f5a52}100%{fill:#5f5a52}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<rect width="1000" height="212" fill="#fbfaf8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 342" width="1000" height="342" role="img" aria-label="A five item digest assembled from 412 collected items and delivered each morning. 164 sites, 36 channels, 5 picks a day, LIVE deployed. React / Vite / FastAPI / PostgreSQL / Groq / Gemini / Stripe"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.6s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.sg{animation:in .9s ease-out both}@keyframes in{from{opacity:0}to{opacity:1}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="1000" height="342" fill="#fbfaf8"/>
 <line x1="64" y1="1" x2="936" y2="1" stroke="#e2ddd4"/>
-<text x="64" y="52" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#a96a08" opacity=".45" letter-spacing="-1">02</text>
-<rect class="b" style="animation-delay:0.0s" x="96.0" y="26" width="69.5" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:0.0s" x="130.7" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">scrape</text>
-<path class="e" d="M171.5 40.0 H188.5" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M185.5 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:1.15s" x="193.5" y="26" width="62.6" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:1.15s" x="224.7" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">store</text>
-<path class="e" d="M262.0 40.0 H279.0" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M276.0 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:2.3s" x="284.0" y="26" width="55.6" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:2.3s" x="311.8" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">rank</text>
-<path class="e" d="M345.7 40.0 H362.7" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M359.7 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:3.45s" x="367.7" y="26" width="90.2" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:3.45s" x="412.8" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">summarise</text>
-<path class="e" d="M463.9 40.0 H480.9" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M477.9 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:4.6s" x="485.9" y="26" width="62.6" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:4.6s" x="517.2" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">email</text>
-<text x="96" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8b857a">two model providers, so one bad day does not kill the digest</text>
-<line x1="96" y1="112" x2="936" y2="112" stroke="#e2ddd4"/>
-<text x="96" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">164</text>
-<text x="96" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">SITES</text>
-<text x="308" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">36</text>
-<text x="308" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">CHANNELS</text>
-<text x="520" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">5</text>
-<text x="520" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">PICKS A DAY</text>
-<text x="732" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">LIVE</text>
-<text x="732" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">DEPLOYED</text>
-<text x="96" y="195" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f5a52">React / Vite / FastAPI / PostgreSQL / Groq / Gemini / Stripe</text>
+<text x="936" y="16" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#a96a08" opacity=".32" text-anchor="end" letter-spacing="-1">02</text>
+<text x="64" y="13" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#8b857a" letter-spacing="1.9">WHAT LANDS IN YOUR INBOX</text>
+<text x="936" y="13" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#8b857a" letter-spacing="1.4" text-anchor="end">sample digest</text>
+<rect x="64" y="22" width="872" height="214" rx="5" fill="#a96a08" fill-opacity=".025" stroke="#e2ddd4"/>
+<text x="86" y="54" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#15171b">Your AI digest</text>
+<text x="914" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8b857a" text-anchor="end">07:00 daily</text>
+<line x1="86" y1="70" x2="914" y2="70" stroke="#e2ddd4"/>
+<text x="86" y="96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#a96a08">1</text>
+<text x="108" y="96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#15171b">model release</text>
+<text x="336" y="96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8b857a">lab blog</text>
+<rect x="486" y="88" width="300" height="2.4" rx="1.2" fill="#5f5a52" opacity="0.34"/>
+<rect x="486" y="95" width="214" height="2.4" rx="1.2" fill="#5f5a52" opacity="0.22000000000000003"/>
+<text x="86" y="123" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#a96a08">2</text>
+<text x="108" y="123" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#15171b">policy update</text>
+<text x="336" y="123" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8b857a">regulator</text>
+<rect x="486" y="115" width="300" height="2.4" rx="1.2" fill="#5f5a52" opacity="0.34"/>
+<rect x="486" y="122" width="214" height="2.4" rx="1.2" fill="#5f5a52" opacity="0.22000000000000003"/>
+<text x="86" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#a96a08">3</text>
+<text x="108" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#15171b">benchmark result</text>
+<text x="336" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8b857a">research paper</text>
+<rect x="486" y="142" width="300" height="2.4" rx="1.2" fill="#5f5a52" opacity="0.34"/>
+<rect x="486" y="149" width="214" height="2.4" rx="1.2" fill="#5f5a52" opacity="0.22000000000000003"/>
+<text x="86" y="177" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#a96a08">4</text>
+<text x="108" y="177" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#15171b">funding round</text>
+<text x="336" y="177" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8b857a">newsletter</text>
+<rect x="486" y="169" width="300" height="2.4" rx="1.2" fill="#5f5a52" opacity="0.34"/>
+<rect x="486" y="176" width="214" height="2.4" rx="1.2" fill="#5f5a52" opacity="0.22000000000000003"/>
+<text x="86" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#a96a08">5</text>
+<text x="108" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#15171b">tooling launch</text>
+<text x="336" y="204" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8b857a">product blog</text>
+<rect x="486" y="196" width="300" height="2.4" rx="1.2" fill="#5f5a52" opacity="0.34"/>
+<rect x="486" y="203" width="214" height="2.4" rx="1.2" fill="#5f5a52" opacity="0.22000000000000003"/>
+<line x1="86" y1="219" x2="914" y2="219" stroke="#e2ddd4"/>
+<text x="86" y="237" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8b857a">5 kept from 412 collected  ·  Groq wrote them  ·  Gemini on standby</text>
+<line x1="64" y1="252" x2="936" y2="252" stroke="#e2ddd4"/>
+<text x="64" y="286" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">164</text>
+<text x="64" y="303" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">SITES</text>
+<text x="282" y="286" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">36</text>
+<text x="282" y="303" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">CHANNELS</text>
+<text x="500" y="286" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">5</text>
+<text x="500" y="303" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">PICKS A DAY</text>
+<text x="718" y="286" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">LIVE</text>
+<text x="718" y="303" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">DEPLOYED</text>
+<text x="64" y="330" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f5a52">React / Vite / FastAPI / PostgreSQL / Groq / Gemini / Stripe</text>
 </svg>

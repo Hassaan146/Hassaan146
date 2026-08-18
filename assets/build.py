@@ -31,12 +31,16 @@ figures beats one confidently showing invented ones.
 
 import json
 import pathlib
+import sys
 import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
 OUT = pathlib.Path(__file__).parent
+sys.path.insert(0, str(OUT))
+from artifacts import ARTIFACTS  # noqa: E402
+
 USER = "Hassaan146"
 
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
@@ -48,11 +52,11 @@ REDUCE = "@media (prefers-reduced-motion:reduce){*{animation:none!important}}"
 THEME = {
     "dark": dict(
         bg="#0a0b0d", rule="#20242b", ink="#eae7e2", dim="#8b867e",
-        faint="#5c584f", accent="#e8a33d", accent2="#f6cd85",
+        faint="#5c584f", accent="#e8a33d", accent2="#f6cd85", good="#7fb069",
     ),
     "light": dict(
         bg="#fbfaf8", rule="#e2ddd4", ink="#15171b", dim="#5f5a52",
-        faint="#8b857a", accent="#a96a08", accent2="#7d4e05",
+        faint="#8b857a", accent="#a96a08", accent2="#7d4e05", good="#3f6b2c",
     ),
 }
 
@@ -222,39 +226,34 @@ def principles(t):
 
 SYSTEMS = {
     "forge": dict(
+        headline="A decision gate holding until the architectural choice is made and recorded",
         n="01",
-        nodes=["question", "options", "you decide", "recorded", "code runs"],
-        note="the gate holds until the decision exists",
         metrics=[("1,216", "TESTS"), ("100%", "COVERAGE"), ("v1.28", "RELEASE"), ("MIT", "LICENCE")],
         stack="Python 3.12 / MCP / Claude / Git",
     ),
     "news": dict(
+        headline="A five item digest assembled from 412 collected items and delivered each morning",
         n="02",
-        nodes=["scrape", "store", "rank", "summarise", "email"],
-        note="two model providers, so one bad day does not kill the digest",
         metrics=[("164", "SITES"), ("36", "CHANNELS"), ("5", "PICKS A DAY"), ("LIVE", "DEPLOYED")],
         stack="React / Vite / FastAPI / PostgreSQL / Groq / Gemini / Stripe",
     ),
     "skyelite": dict(
+        headline="A ranked destination with its component scores, its tradeoff and its confidence",
         n="03",
-        nodes=["intake", "filter", "visa", "research", "scoring", "tradeoff", "final"],
-        note="ranks on safety, budget, visa difficulty and scenery, then shows its working",
         metrics=[("3rd", "NATIONAL HACKATHON"), ("7", "GRAPH NODES"),
                  ("0", "KEYS TO RUN IT"), ("GCF", "PRODUCTION ADOPTER")],
         stack="Next.js 15 / TypeScript / Three.js / FastAPI / Pydantic v2 / LangGraph / Supabase",
     ),
     "bitmadwall": dict(
+        headline="A message relayed phone to phone across a mesh with no network in the path",
         n="04",
-        nodes=["your phone", "relay", "relay", "recipient"],
-        note="works where the network is gone or cannot be trusted",
         metrics=[("AES-256", "GCM ENCRYPTION"), ("7", "MESH HOPS"),
                  ("0", "SERVERS IN PATH"), ("NO SIM", "CRYPTOGRAPHIC ID")],
         stack="Bluetooth LE / Wi-Fi Direct / LoRa / Signal double ratchet / Bitcoin",
     ),
     "employeeos": dict(
+        headline="One plain English request decomposed into a dependency graph of agents",
         n="05",
-        nodes=["request", "decompose", "route to agents", "validate", "trace"],
-        note="plain English in, a dependency aware workflow out",
         metrics=[("1", "MESSY REQUEST"), ("N", "SPECIALIST AGENTS"),
                  ("DAG", "DEPENDENCY AWARE"), ("FULL", "EXECUTION TRACE")],
         stack="Next.js / FastAPI / Pydantic / LangGraph / LangChain / Supabase / Groq",
@@ -264,66 +263,40 @@ SYSTEMS = {
 FS, PAD, GAP, BH = 11.5, 14, 28, 28
 
 
-def card(spec, t):
-    nodes, note, num = spec["nodes"], spec["note"], spec["n"]
-    w, h = 1000, 212
-    left = 96
-    widths = [mono_w(n, FS) + PAD * 2 for n in nodes]
-    n = len(nodes)
-    dur = max(5.0, n * 1.15)
+def card(key, spec, t):
+    """A project block: the thing it produces, then its numbers, then its stack."""
+    w = 1000
     css = (
-        ".e{stroke-dasharray:2.5 4.5;animation:d 1.5s linear infinite}"
+        ".e{stroke-dasharray:2.5 4.5;animation:d 1.6s linear infinite}"
         "@keyframes d{to{stroke-dashoffset:-7}}"
-        f".b{{animation:s {dur}s ease-in-out infinite}}"
-        "@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}"
-        "7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}"
-        "100%{stroke-opacity:.34;fill-opacity:0}}"
-        f".t{{animation:tt {dur}s ease-in-out infinite}}"
-        f"@keyframes tt{{0%{{fill:{t['dim']}}}7%{{fill:{t['accent2']}}}"
-        f"22%{{fill:{t['dim']}}}100%{{fill:{t['dim']}}}}}"
+        ".sg{animation:in .9s ease-out both}@keyframes in{from{opacity:0}to{opacity:1}}"
     )
-    lab = (" then ".join(nodes) + ". "
+    parts, art_bottom = ARTIFACTS[key](t)
+
+    y = art_bottom + 30
+    h = y + 76
+    lab = (spec["headline"] + ". "
            + ", ".join(f"{v} {k.lower()}" for v, k in spec["metrics"])
            + ". " + spec["stack"])
     p = [head(w, h, lab, css)]
     p.append(f'<rect width="{w}" height="{h}" fill="{t["bg"]}"/>')
     p.append(f'<line x1="64" y1="1" x2="{w - 64}" y2="1" stroke="{t["rule"]}"/>')
-    p.append(f'<text x="64" y="52" font-family="{SANS}" font-size="34" font-weight="700" '
-             f'fill="{t["accent"]}" opacity=".45" letter-spacing="-1">{num}</text>')
+    p.append(f'<text x="{w - 64}" y="16" font-family="{SANS}" font-size="26" '
+             f'font-weight="700" fill="{t["accent"]}" opacity=".32" text-anchor="end" '
+             f'letter-spacing="-1">{spec["n"]}</text>')
+    p += parts
 
-    y = 26
-    x = float(left)
-    for i, (label, bw) in enumerate(zip(nodes, widths)):
-        d = round(i * dur / n, 2)
-        p.append(f'<rect class="b" style="animation-delay:{d}s" x="{x:.1f}" y="{y}" '
-                 f'width="{bw:.1f}" height="{BH}" rx="3" fill="{t["accent"]}" fill-opacity="0" '
-                 f'stroke="{t["accent"]}" stroke-opacity=".34" stroke-width="1"/>')
-        p.append(f'<text class="t" style="animation-delay:{d}s" x="{x + bw / 2:.1f}" '
-                 f'y="{y + BH / 2 + 4:.1f}" font-family="{MONO}" font-size="{FS}" '
-                 f'fill="{t["dim"]}" text-anchor="middle">{esc(label)}</text>')
-        if i < n - 1:
-            p.append(f'<path class="e" d="M{x + bw + 6:.1f} {y + BH / 2:.1f} '
-                     f'H{x + bw + GAP - 5:.1f}" stroke="{t["accent"]}" stroke-opacity=".5" '
-                     f'stroke-width="1"/>')
-            p.append(f'<path d="M{x + bw + GAP - 8:.1f} {y + BH / 2 - 3:.1f} l3.5 3 l-3.5 3" '
-                     f'fill="none" stroke="{t["accent"]}" stroke-opacity=".7" stroke-width="1"/>')
-        x += bw + GAP
-
-    p.append(f'<text x="{left}" y="{y + BH + 24}" font-family="{MONO}" font-size="10.5" '
-             f'fill="{t["faint"]}">{esc(note)}</text>')
-    p.append(f'<line x1="{left}" y1="112" x2="{w - 64}" y2="112" stroke="{t["rule"]}"/>')
-
+    p.append(f'<line x1="64" y1="{y - 14}" x2="{w - 64}" y2="{y - 14}" stroke="{t["rule"]}"/>')
     for i, (val, lab2) in enumerate(spec["metrics"]):
-        cx = left + i * 212
-        p.append(f'<text x="{cx}" y="150" font-family="{SANS}" font-size="21" '
+        cx = 64 + i * 218
+        p.append(f'<text x="{cx}" y="{y + 20}" font-family="{SANS}" font-size="21" '
                  f'font-weight="700" fill="{t["ink"]}" letter-spacing="-.6">{esc(val)}</text>')
-        p.append(f'<text x="{cx}" y="167" font-family="{MONO}" font-size="8.6" '
+        p.append(f'<text x="{cx}" y="{y + 37}" font-family="{MONO}" font-size="8.6" '
                  f'fill="{t["faint"]}" letter-spacing="1.5">{esc(lab2)}</text>')
-
-    p.append(f'<text x="{left}" y="195" font-family="{MONO}" font-size="10.5" '
+    p.append(f'<text x="64" y="{y + 64}" font-family="{MONO}" font-size="10.5" '
              f'fill="{t["dim"]}">{esc(spec["stack"])}</text>')
     p.append("</svg>")
-    return "\n".join(p) + "\n"
+    return '\n'.join(p) + '\n'
 
 
 # ---------------------------------------------------------------------------
@@ -477,7 +450,7 @@ if __name__ == "__main__":
             (OUT / f"{stem}-{name}.svg").write_text(fn(t), encoding="utf-8")
             keep.add(f"{stem}-{name}.svg")
         for key, spec in SYSTEMS.items():
-            (OUT / f"sys-{key}-{name}.svg").write_text(card(spec, t), encoding="utf-8")
+            (OUT / f"sys-{key}-{name}.svg").write_text(card(key, spec, t), encoding="utf-8")
             keep.add(f"sys-{key}-{name}.svg")
         f = OUT / f"signals-{name}.svg"
         if s is not None:

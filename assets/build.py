@@ -8,6 +8,11 @@ Palette. Almost every profile on GitHub uses #58a6ff on #0d1117, because that is
 what the badge and card services default to. This one is warm: amber on
 near-black, ink on bone. It reads as chosen rather than inherited.
 
+Weight. The first draft put a designed hero on top of plain markdown, and the
+page fell off a cliff the moment the hero ended. Every project now gets a
+full-width card carrying its pipeline, four hard numbers and its stack, so the
+body holds the same weight as the top.
+
 No badge services. The toolchain used to be 42 separate requests to
 img.shields.io, a wall of brand colours that says very little and is the
 clearest tell of a template profile. It is one typographic block now.
@@ -37,7 +42,7 @@ USER = "Hassaan146"
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 SANS = "Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif"
 
-CW = 0.601          # monospace advance as a fraction of font size
+CW = 0.601
 REDUCE = "@media (prefers-reduced-motion:reduce){*{animation:none!important}}"
 
 THEME = {
@@ -122,7 +127,7 @@ def stats():
 
 
 # ---------------------------------------------------------------------------
-# 1. hero
+# hero
 # ---------------------------------------------------------------------------
 
 NODES = [(0, 40), (54, 8), (54, 74), (112, 40), (112, 108), (170, 8), (170, 74),
@@ -143,23 +148,19 @@ def hero(t):
     p.append(f'<rect width="{w}" height="{h}" fill="{t["bg"]}"/>')
     p.append(f'<rect x="30" y="26" width="{w - 60}" height="{h - 52}" fill="none" '
              f'stroke="{t["rule"]}" stroke-width="1"/>')
-
     p.append(f'<text x="64" y="74" font-family="{MONO}" font-size="10.5" fill="{t["accent"]}" '
              f'letter-spacing="3.4">AI ENGINEER &#183; PRODUCT AND BACKEND</text>')
     p.append(f'<text x="{w - 64}" y="74" font-family="{MONO}" font-size="10.5" '
              f'fill="{t["faint"]}" letter-spacing="2.2" text-anchor="end">ISLAMABAD, PK</text>')
-
     p.append(f'<text x="60" y="158" font-family="{SANS}" font-size="58" font-weight="700" '
              f'fill="{t["ink"]}" letter-spacing="-2.2">MUHAMMAD</text>')
     p.append(f'<text x="60" y="216" font-family="{SANS}" font-size="58" font-weight="700" '
              f'fill="{t["ink"]}" letter-spacing="-2.2">HASSAAN-UL-MUSTAFA</text>')
-
     p.append(f'<rect x="64" y="240" width="132" height="3" fill="{t["accent"]}"/>')
     p.append(f'<text x="64" y="278" font-family="{SANS}" font-size="16" fill="{t["dim"]}">'
              f'I build AI agents and the backends they run on.</text>')
     p.append(f'<text x="64" y="308" font-family="{MONO}" font-size="10.5" fill="{t["faint"]}" '
              f'letter-spacing="2">ARBISOFT &#183; FAST-NUCES &#183; OPEN TO REMOTE</text>')
-
     p.append('<g transform="translate(706,58)">')
     for a, b in EDGES:
         x1, y1 = NODES[a]
@@ -171,13 +172,52 @@ def hero(t):
         col = t["accent"] if big else t["accent2"]
         p.append(f'<circle class="nd" style="animation-delay:{round(i * 0.62, 2)}s" cx="{x}" '
                  f'cy="{y}" r="{4.6 if big else 3.1}" fill="{col}"/>')
-    p.append("</g>")
+    p.append("</g></svg>")
+    return "\n".join(p) + "\n"
+
+
+# ---------------------------------------------------------------------------
+# how I work, three columns under section 00
+# ---------------------------------------------------------------------------
+
+PRINCIPLES = [
+    ("Guardrails first",
+     ["Rate limiting, input validation and row",
+      "level security land before the features do."]),
+    ("Degrade, do not die",
+     ["Every external call has a fallback. Clone",
+      "the repo and it runs with zero API keys."]),
+    ("Decide before coding",
+     ["The architectural choice gets made, and",
+      "written down, ahead of the first line."]),
+]
+
+
+def principles(t):
+    w, h = 1000, 152
+    colw, x0 = 300, 64
+    css = (".pc{animation:rise .8s ease-out both}"
+           "@keyframes rise{from{opacity:0}to{opacity:1}}")
+    lab = " ".join(f"{a}. {' '.join(b)}" for a, b in PRINCIPLES)
+    p = [head(w, h, lab, css)]
+    p.append(f'<rect width="{w}" height="{h}" fill="{t["bg"]}"/>')
+    p.append(f'<line x1="{x0}" y1="18" x2="{w - 64}" y2="18" stroke="{t["rule"]}"/>')
+    for i, (title, lines) in enumerate(PRINCIPLES):
+        x = x0 + i * (colw + 18)
+        p.append(f'<g class="pc" style="animation-delay:{round(i * .12, 2)}s">')
+        p.append(f'<rect x="{x}" y="18" width="46" height="2" fill="{t["accent"]}"/>')
+        p.append(f'<text x="{x}" y="56" font-family="{MONO}" font-size="13" '
+                 f'font-weight="600" fill="{t["ink"]}">{esc(title)}</text>')
+        for j, ln in enumerate(lines):
+            p.append(f'<text x="{x}" y="{82 + j * 19}" font-family="{SANS}" font-size="12.5" '
+                     f'fill="{t["dim"]}">{esc(ln)}</text>')
+        p.append("</g>")
     p.append("</svg>")
     return "\n".join(p) + "\n"
 
 
 # ---------------------------------------------------------------------------
-# 2. systems, one per featured project
+# project cards
 # ---------------------------------------------------------------------------
 
 SYSTEMS = {
@@ -185,38 +225,50 @@ SYSTEMS = {
         n="01",
         nodes=["question", "options", "you decide", "recorded", "code runs"],
         note="the gate holds until the decision exists",
+        metrics=[("1,216", "TESTS"), ("100%", "COVERAGE"), ("v1.28", "RELEASE"), ("MIT", "LICENCE")],
+        stack="Python 3.12 / MCP / Claude / Git",
     ),
     "news": dict(
         n="02",
         nodes=["scrape", "store", "rank", "summarise", "email"],
-        note="164 sites and 36 YouTube channels, top five per reader, daily",
+        note="two model providers, so one bad day does not kill the digest",
+        metrics=[("164", "SITES"), ("36", "CHANNELS"), ("5", "PICKS A DAY"), ("LIVE", "DEPLOYED")],
+        stack="React / Vite / FastAPI / PostgreSQL / Groq / Gemini / Stripe",
     ),
     "skyelite": dict(
         n="03",
         nodes=["intake", "filter", "visa", "research", "scoring", "tradeoff", "final"],
-        note="LangGraph StateGraph, seven nodes, every call has a mock fallback",
+        note="ranks on safety, budget, visa difficulty and scenery, then shows its working",
+        metrics=[("3rd", "NATIONAL HACKATHON"), ("7", "GRAPH NODES"),
+                 ("0", "KEYS TO RUN IT"), ("GCF", "PRODUCTION ADOPTER")],
+        stack="Next.js 15 / TypeScript / Three.js / FastAPI / Pydantic v2 / LangGraph / Supabase",
     ),
     "bitmadwall": dict(
         n="04",
         nodes=["your phone", "relay", "relay", "recipient"],
-        note="Bluetooth LE, Wi-Fi Direct, LoRa. up to seven hops, no server anywhere",
+        note="works where the network is gone or cannot be trusted",
+        metrics=[("AES-256", "GCM ENCRYPTION"), ("7", "MESH HOPS"),
+                 ("0", "SERVERS IN PATH"), ("NO SIM", "CRYPTOGRAPHIC ID")],
+        stack="Bluetooth LE / Wi-Fi Direct / LoRa / Signal double ratchet / Bitcoin",
     ),
     "employeeos": dict(
         n="05",
         nodes=["request", "decompose", "route to agents", "validate", "trace"],
-        note="dependency aware workflow, execution trace handed back to you",
+        note="plain English in, a dependency aware workflow out",
+        metrics=[("1", "MESSY REQUEST"), ("N", "SPECIALIST AGENTS"),
+                 ("DAG", "DEPENDENCY AWARE"), ("FULL", "EXECUTION TRACE")],
+        stack="Next.js / FastAPI / Pydantic / LangGraph / LangChain / Supabase / Groq",
     ),
 }
 
-FS, PAD, GAP, BH = 11.5, 14, 30, 28
+FS, PAD, GAP, BH = 11.5, 14, 28, 28
 
 
-def system(spec, t):
+def card(spec, t):
     nodes, note, num = spec["nodes"], spec["note"], spec["n"]
+    w, h = 1000, 212
+    left = 96
     widths = [mono_w(n, FS) + PAD * 2 for n in nodes]
-    left = 46
-    w = int(left + sum(widths) + GAP * (len(nodes) - 1)) + 8
-    h, y = 84, 22
     n = len(nodes)
     dur = max(5.0, n * 1.15)
     css = (
@@ -230,11 +282,16 @@ def system(spec, t):
         f"@keyframes tt{{0%{{fill:{t['dim']}}}7%{{fill:{t['accent2']}}}"
         f"22%{{fill:{t['dim']}}}100%{{fill:{t['dim']}}}}}"
     )
-    p = [head(w, h, " then ".join(nodes), css)]
-    p.append(f'<text x="2" y="{y + BH / 2 + 5}" font-family="{MONO}" font-size="15" '
-             f'font-weight="700" fill="{t["accent"]}" opacity=".55">{num}</text>')
-    p.append(f'<line x1="34" y1="{y - 4}" x2="34" y2="{y + BH + 4}" stroke="{t["rule"]}"/>')
+    lab = (" then ".join(nodes) + ". "
+           + ", ".join(f"{v} {k.lower()}" for v, k in spec["metrics"])
+           + ". " + spec["stack"])
+    p = [head(w, h, lab, css)]
+    p.append(f'<rect width="{w}" height="{h}" fill="{t["bg"]}"/>')
+    p.append(f'<line x1="64" y1="1" x2="{w - 64}" y2="1" stroke="{t["rule"]}"/>')
+    p.append(f'<text x="64" y="52" font-family="{SANS}" font-size="34" font-weight="700" '
+             f'fill="{t["accent"]}" opacity=".45" letter-spacing="-1">{num}</text>')
 
+    y = 26
     x = float(left)
     for i, (label, bw) in enumerate(zip(nodes, widths)):
         d = round(i * dur / n, 2)
@@ -245,21 +302,32 @@ def system(spec, t):
                  f'y="{y + BH / 2 + 4:.1f}" font-family="{MONO}" font-size="{FS}" '
                  f'fill="{t["dim"]}" text-anchor="middle">{esc(label)}</text>')
         if i < n - 1:
-            p.append(f'<path class="e" d="M{x + bw + 7:.1f} {y + BH / 2:.1f} '
+            p.append(f'<path class="e" d="M{x + bw + 6:.1f} {y + BH / 2:.1f} '
                      f'H{x + bw + GAP - 5:.1f}" stroke="{t["accent"]}" stroke-opacity=".5" '
                      f'stroke-width="1"/>')
             p.append(f'<path d="M{x + bw + GAP - 8:.1f} {y + BH / 2 - 3:.1f} l3.5 3 l-3.5 3" '
                      f'fill="none" stroke="{t["accent"]}" stroke-opacity=".7" stroke-width="1"/>')
         x += bw + GAP
 
-    p.append(f'<text x="{left}" y="{y + BH + 26}" font-family="{MONO}" font-size="10.5" '
+    p.append(f'<text x="{left}" y="{y + BH + 24}" font-family="{MONO}" font-size="10.5" '
              f'fill="{t["faint"]}">{esc(note)}</text>')
+    p.append(f'<line x1="{left}" y1="112" x2="{w - 64}" y2="112" stroke="{t["rule"]}"/>')
+
+    for i, (val, lab2) in enumerate(spec["metrics"]):
+        cx = left + i * 212
+        p.append(f'<text x="{cx}" y="150" font-family="{SANS}" font-size="21" '
+                 f'font-weight="700" fill="{t["ink"]}" letter-spacing="-.6">{esc(val)}</text>')
+        p.append(f'<text x="{cx}" y="167" font-family="{MONO}" font-size="8.6" '
+                 f'fill="{t["faint"]}" letter-spacing="1.5">{esc(lab2)}</text>')
+
+    p.append(f'<text x="{left}" y="195" font-family="{MONO}" font-size="10.5" '
+             f'fill="{t["dim"]}">{esc(spec["stack"])}</text>')
     p.append("</svg>")
     return "\n".join(p) + "\n"
 
 
 # ---------------------------------------------------------------------------
-# 3. toolchain, replacing 42 badge requests with one block
+# toolchain
 # ---------------------------------------------------------------------------
 
 TOOLCHAIN = [
@@ -273,19 +341,19 @@ TOOLCHAIN = [
 
 
 def toolchain(t):
-    rowh, top, labx, itemx = 46, 64, 64, 216
+    rowh, top, labx, itemx = 46, 24, 64, 216
     w = 1000
-    h = top + rowh * len(TOOLCHAIN) + 26 - 40
-    label = "Toolchain. " + " ".join(f"{k}: {', '.join(v)}." for k, v in TOOLCHAIN)
+    h = top + rowh * len(TOOLCHAIN) + 26
+    lab = "Toolchain. " + " ".join(f"{k}: {', '.join(v)}." for k, v in TOOLCHAIN)
     css = ".r{animation:fade .9s ease-out both}@keyframes fade{from{opacity:0}to{opacity:1}}"
-    p = [head(w, h, label, css)]
+    p = [head(w, h, lab, css)]
     p.append(f'<rect width="{w}" height="{h}" fill="{t["bg"]}"/>')
-    for i, (lab, items) in enumerate(TOOLCHAIN):
-        y = top - 40 + i * rowh
+    for i, (lb, items) in enumerate(TOOLCHAIN):
+        y = top + i * rowh
         p.append(f'<line x1="{labx}" y1="{y}" x2="{w - 64}" y2="{y}" stroke="{t["rule"]}"/>')
         p.append(f'<g class="r" style="animation-delay:{round(i * 0.09, 2)}s">')
         p.append(f'<text x="{labx}" y="{y + 29}" font-family="{MONO}" font-size="10" '
-                 f'fill="{t["faint"]}" letter-spacing="1.9">{lab}</text>')
+                 f'fill="{t["faint"]}" letter-spacing="1.9">{lb}</text>')
         x = float(itemx)
         for j, it in enumerate(items):
             if j:
@@ -296,15 +364,14 @@ def toolchain(t):
                      f'fill="{t["ink"]}">{esc(it)}</text>')
             x += mono_w(it, 13) + 12
         p.append("</g>")
-
-    yy = top - 40 + rowh * len(TOOLCHAIN)
+    yy = top + rowh * len(TOOLCHAIN)
     p.append(f'<line x1="{labx}" y1="{yy}" x2="{w - 64}" y2="{yy}" stroke="{t["rule"]}"/>')
     p.append("</svg>")
     return "\n".join(p) + "\n"
 
 
 # ---------------------------------------------------------------------------
-# 4. signals, the numbers, drawn here rather than fetched by a card service
+# signals
 # ---------------------------------------------------------------------------
 
 LANG_COLOUR = {
@@ -380,7 +447,7 @@ def signals(t, s):
 
 
 # ---------------------------------------------------------------------------
-# 5. sign off
+# sign off
 # ---------------------------------------------------------------------------
 
 def signoff(t):
@@ -405,11 +472,12 @@ if __name__ == "__main__":
         print(f"  stats: {s['repos']} repos, {s['stars']} stars, last {s['pushed']}")
     keep = set()
     for name, t in THEME.items():
-        for stem, fn in (("hero", hero), ("toolchain", toolchain), ("signoff", signoff)):
+        for stem, fn in (("hero", hero), ("principles", principles),
+                         ("toolchain", toolchain), ("signoff", signoff)):
             (OUT / f"{stem}-{name}.svg").write_text(fn(t), encoding="utf-8")
             keep.add(f"{stem}-{name}.svg")
         for key, spec in SYSTEMS.items():
-            (OUT / f"sys-{key}-{name}.svg").write_text(system(spec, t), encoding="utf-8")
+            (OUT / f"sys-{key}-{name}.svg").write_text(card(spec, t), encoding="utf-8")
             keep.add(f"sys-{key}-{name}.svg")
         f = OUT / f"signals-{name}.svg"
         if s is not None:
@@ -420,7 +488,16 @@ if __name__ == "__main__":
         if old.name not in keep:
             old.unlink()
             print(f"  removed {old.name}")
+
+    # width guard: nothing may run past the 1000 unit canvas
+    import re as _re
     for n in sorted(keep):
-        print(("  wrote    " if (OUT / n).exists() else "  MISSING  ") + n)
+        f = OUT / n
+        if not f.exists():
+            print("  MISSING  " + n)
+            continue
+        body = f.read_text(encoding="utf-8")
+        over = [float(m) for m in _re.findall(r'x="(\d+\.?\d*)"', body) if float(m) > 1000]
+        print(f"  wrote    {n}" + (f"   OVERFLOW at x={max(over)}" if over else ""))
     if s is None:
         print("\n  the API did not answer, so signals kept its previous numbers")

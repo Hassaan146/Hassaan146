@@ -1,23 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 604 84" width="604" height="84" role="img" aria-label="question then options then you decide then recorded then code runs"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.5s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.b{animation:s 5.75s ease-in-out infinite}@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}100%{stroke-opacity:.34;fill-opacity:0}}.t{animation:tt 5.75s ease-in-out infinite}@keyframes tt{0%{fill:#8b867e}7%{fill:#f6cd85}22%{fill:#8b867e}100%{fill:#8b867e}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<text x="2" y="41.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="#e8a33d" opacity=".55">01</text>
-<line x1="34" y1="18" x2="34" y2="54" stroke="#20242b"/>
-<rect class="b" style="animation-delay:0.0s" x="46.0" y="22" width="83.3" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:0.0s" x="87.6" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">question</text>
-<path class="e" d="M136.3 36.0 H154.3" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
-<path d="M151.3 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:1.15s" x="159.3" y="22" width="76.4" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:1.15s" x="197.5" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">options</text>
-<path class="e" d="M242.7 36.0 H260.7" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
-<path d="M257.7 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:2.3s" x="265.7" y="22" width="97.1" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:2.3s" x="314.2" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">you decide</text>
-<path class="e" d="M369.8 36.0 H387.8" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
-<path d="M384.8 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:3.45s" x="392.8" y="22" width="83.3" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:3.45s" x="434.4" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">recorded</text>
-<path class="e" d="M483.1 36.0 H501.1" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
-<path d="M498.1 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:4.6s" x="506.1" y="22" width="90.2" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:4.6s" x="551.2" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">code runs</text>
-<text x="46" y="76" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5c584f">the gate holds until the decision exists</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 212" width="1000" height="212" role="img" aria-label="question then options then you decide then recorded then code runs. 1,216 tests, 100% coverage, v1.28 release, MIT licence. Python 3.12 / MCP / Claude / Git"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.5s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.b{animation:s 5.75s ease-in-out infinite}@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}100%{stroke-opacity:.34;fill-opacity:0}}.t{animation:tt 5.75s ease-in-out infinite}@keyframes tt{0%{fill:#8b867e}7%{fill:#f6cd85}22%{fill:#8b867e}100%{fill:#8b867e}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="1000" height="212" fill="#0a0b0d"/>
+<line x1="64" y1="1" x2="936" y2="1" stroke="#20242b"/>
+<text x="64" y="52" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#e8a33d" opacity=".45" letter-spacing="-1">01</text>
+<rect class="b" style="animation-delay:0.0s" x="96.0" y="26" width="83.3" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:0.0s" x="137.6" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">question</text>
+<path class="e" d="M185.3 40.0 H202.3" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M199.3 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:1.15s" x="207.3" y="26" width="76.4" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:1.15s" x="245.5" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">options</text>
+<path class="e" d="M289.7 40.0 H306.7" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M303.7 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:2.3s" x="311.7" y="26" width="97.1" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:2.3s" x="360.2" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">you decide</text>
+<path class="e" d="M414.8 40.0 H431.8" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M428.8 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:3.45s" x="436.8" y="26" width="83.3" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:3.45s" x="478.4" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">recorded</text>
+<path class="e" d="M526.1 40.0 H543.1" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M540.1 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:4.6s" x="548.1" y="26" width="90.2" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:4.6s" x="593.2" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">code runs</text>
+<text x="96" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5c584f">the gate holds until the decision exists</text>
+<line x1="96" y1="112" x2="936" y2="112" stroke="#20242b"/>
+<text x="96" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">1,216</text>
+<text x="96" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">TESTS</text>
+<text x="308" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">100%</text>
+<text x="308" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">COVERAGE</text>
+<text x="520" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">v1.28</text>
+<text x="520" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">RELEASE</text>
+<text x="732" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">MIT</text>
+<text x="732" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">LICENCE</text>
+<text x="96" y="195" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8b867e">Python 3.12 / MCP / Claude / Git</text>
 </svg>

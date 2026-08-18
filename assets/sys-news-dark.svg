@@ -1,23 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514 84" width="514" height="84" role="img" aria-label="scrape then store then rank then summarise then email"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.5s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.b{animation:s 5.75s ease-in-out infinite}@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}100%{stroke-opacity:.34;fill-opacity:0}}.t{animation:tt 5.75s ease-in-out infinite}@keyframes tt{0%{fill:#8b867e}7%{fill:#f6cd85}22%{fill:#8b867e}100%{fill:#8b867e}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<text x="2" y="41.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="#e8a33d" opacity=".55">02</text>
-<line x1="34" y1="18" x2="34" y2="54" stroke="#20242b"/>
-<rect class="b" style="animation-delay:0.0s" x="46.0" y="22" width="69.5" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:0.0s" x="80.7" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">scrape</text>
-<path class="e" d="M122.5 36.0 H140.5" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
-<path d="M137.5 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:1.15s" x="145.5" y="22" width="62.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:1.15s" x="176.7" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">store</text>
-<path class="e" d="M215.0 36.0 H233.0" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
-<path d="M230.0 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:2.3s" x="238.0" y="22" width="55.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:2.3s" x="265.8" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">rank</text>
-<path class="e" d="M300.7 36.0 H318.7" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
-<path d="M315.7 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:3.45s" x="323.7" y="22" width="90.2" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:3.45s" x="368.8" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">summarise</text>
-<path class="e" d="M420.9 36.0 H438.9" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
-<path d="M435.9 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:4.6s" x="443.9" y="22" width="62.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:4.6s" x="475.2" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">email</text>
-<text x="46" y="76" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5c584f">164 sites and 36 YouTube channels, top five per reader, daily</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 212" width="1000" height="212" role="img" aria-label="scrape then store then rank then summarise then email. 164 sites, 36 channels, 5 picks a day, LIVE deployed. React / Vite / FastAPI / PostgreSQL / Groq / Gemini / Stripe"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.5s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.b{animation:s 5.75s ease-in-out infinite}@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}100%{stroke-opacity:.34;fill-opacity:0}}.t{animation:tt 5.75s ease-in-out infinite}@keyframes tt{0%{fill:#8b867e}7%{fill:#f6cd85}22%{fill:#8b867e}100%{fill:#8b867e}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="1000" height="212" fill="#0a0b0d"/>
+<line x1="64" y1="1" x2="936" y2="1" stroke="#20242b"/>
+<text x="64" y="52" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#e8a33d" opacity=".45" letter-spacing="-1">02</text>
+<rect class="b" style="animation-delay:0.0s" x="96.0" y="26" width="69.5" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:0.0s" x="130.7" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">scrape</text>
+<path class="e" d="M171.5 40.0 H188.5" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M185.5 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:1.15s" x="193.5" y="26" width="62.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:1.15s" x="224.7" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">store</text>
+<path class="e" d="M262.0 40.0 H279.0" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M276.0 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:2.3s" x="284.0" y="26" width="55.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:2.3s" x="311.8" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">rank</text>
+<path class="e" d="M345.7 40.0 H362.7" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M359.7 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:3.45s" x="367.7" y="26" width="90.2" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:3.45s" x="412.8" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">summarise</text>
+<path class="e" d="M463.9 40.0 H480.9" stroke="#e8a33d" stroke-opacity=".5" stroke-width="1"/>
+<path d="M477.9 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#e8a33d" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:4.6s" x="485.9" y="26" width="62.6" height="28" rx="3" fill="#e8a33d" fill-opacity="0" stroke="#e8a33d" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:4.6s" x="517.2" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#8b867e" text-anchor="middle">email</text>
+<text x="96" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5c584f">two model providers, so one bad day does not kill the digest</text>
+<line x1="96" y1="112" x2="936" y2="112" stroke="#20242b"/>
+<text x="96" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">164</text>
+<text x="96" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">SITES</text>
+<text x="308" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">36</text>
+<text x="308" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">CHANNELS</text>
+<text x="520" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">5</text>
+<text x="520" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">PICKS A DAY</text>
+<text x="732" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#eae7e2" letter-spacing="-.6">LIVE</text>
+<text x="732" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5c584f" letter-spacing="1.5">DEPLOYED</text>
+<text x="96" y="195" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8b867e">React / Vite / FastAPI / PostgreSQL / Groq / Gemini / Stripe</text>
 </svg>

@@ -14,9 +14,13 @@
 
 Computer Science at FAST-NUCES, currently at Arbisoft. I build AI agents and the backends they run on.
 
-Most AI side projects stop at a notebook. Mine go out with rate limiting, input validation, row-level security, and a fallback for every external call, because that is the part a client ends up depending on. The work I want is the seat where you sit with the person who has the problem, find what it actually is, then build the thing that fixes it.
+Most AI side projects stop at a notebook. Mine go out with the unglamorous parts attached, because that is what a client ends up depending on. The work I want is the seat where you sit with the person who has the problem, find what it actually is, then build the thing that fixes it.
 
-Deepest with LangGraph orchestration, FastAPI and Pydantic v2.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/principles-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/principles-light.svg" />
+  <img src="assets/principles-light.svg" width="100%" alt="Guardrails first: rate limiting, input validation and row level security land before the features do. Degrade, do not die: every external call has a fallback, clone the repo and it runs with zero API keys. Decide before coding: the architectural choice gets made, and written down, ahead of the first line." />
+</picture>
 
 ## 01 · Systems
 
@@ -31,7 +35,7 @@ Five things I built. Every diagram below traces the real pipeline, drawn from ho
   <img src="assets/sys-forge-light.svg" alt="question, options, you decide, recorded, code runs" />
 </picture>
 
-AI coding agents will happily write two thousand lines on top of a decision nobody made. This plugin stops that. It teaches the architectural choice, lays out the options with a recommendation, waits for your call, writes it to `.claude/forge/`, then blocks code from moving past anything still undecided. The rationale becomes part of the codebase, so the reasoning outlives the sprint. 1,216 tests at 100% coverage.
+AI coding agents will happily write two thousand lines on top of a decision nobody made. This plugin stops that. It teaches the architectural choice, lays out the options with a recommendation, waits for your call, writes it to `.claude/forge/`, then refuses to let code past anything still undecided. The reasoning becomes part of the codebase, so it outlives the sprint.
 
 ```bash
 /plugin marketplace add Hassaan146/forge-marketplace
@@ -46,7 +50,7 @@ AI coding agents will happily write two thousand lines on top of a decision nobo
   <img src="assets/sys-news-light.svg" alt="scrape, store, rank, summarise, email" />
 </picture>
 
-The AI feed is a firehose. This drinks it for you: 164 sites and 36 YouTube channels, labs, product blogs, newsletters and policy sources, distilled into five things worth reading and delivered every morning. Groq writes the summaries and Gemini covers the outages, so one provider having a bad day does not kill the digest.
+The AI feed is a firehose. This drinks it for you, across labs, product blogs, newsletters and policy sources, and hands back the five things worth reading before breakfast. Groq writes the summaries and Gemini covers the outages.
 
 ### SkyElite AI
 <sub>3rd Place, National AI Hackathon · **[Repository](https://github.com/Hassaan146/ai-travel-planner)**</sub>
@@ -57,7 +61,7 @@ The AI feed is a firehose. This drinks it for you: 164 sites and 36 YouTube chan
   <img src="assets/sys-skyelite-light.svg" alt="intake, filter, visa, research, scoring, tradeoff, final" />
 </picture>
 
-Give it your passport, budget and interests. It rules out the destinations you legally or financially cannot reach, ranks what survives across safety, budget, visa difficulty and scenery, then tells you what it traded away to get there. Confidence levels and source counts on every answer. Clone it and it runs with zero API keys, because every external call degrades to a mock.
+Give it your passport, budget and interests. It rules out the destinations you legally or financially cannot reach, ranks what survives, then tells you what it traded away to get there. Confidence levels and source counts on every answer, so you can argue with it.
 
 ### BitMadWall
 <sub>**[bitmadwall.ai](https://www.bitmadwall.ai/)**</sub>
@@ -68,7 +72,7 @@ Give it your passport, budget and interests. It rules out the destinations you l
   <img src="assets/sys-bitmadwall-light.svg" alt="your phone, relay, relay, recipient" />
 </picture>
 
-Encrypted messaging and Bitcoin transactions across a mesh of phones, with no internet, no cell service and no server in the path. AES-256-GCM with Signal-style double ratchet, hopping device to device over Bluetooth LE, Wi-Fi Direct and optional LoRa, with store and forward for anything undeliverable. Identity is cryptographic, so no phone number and no SIM. Built for continuity of government, disaster response, and field teams where the network is gone or cannot be trusted.
+Encrypted messaging and Bitcoin transactions across a mesh of phones, with no internet, no cell service and nothing in the middle. Messages hop device to device and wait in store and forward when there is nobody to hand them to. Built for continuity of government, disaster response, and field teams working where the network is gone.
 
 ### AI Employee OS
 <sub>**[Repository](https://github.com/Hassaan146/agentic-ai-workflow)**</sub>
@@ -79,7 +83,7 @@ Encrypted messaging and Bitcoin transactions across a mesh of phones, with no in
   <img src="assets/sys-employeeos-light.svg" alt="request, decompose, route to agents, validate, trace" />
 </picture>
 
-An org where every seat is an agent. Hand it a messy request in plain English and it decomposes that into a dependency aware workflow, routes each piece to the agent that owns it, checks what comes back, and hands you the whole execution trace so you can see how it got there.
+An org where every seat is an agent. Hand it a messy request in plain English and it works out what the pieces are, who should own each one, and in what order, then hands you the whole execution trace so you can see how it got there.
 
 <details>
 <summary><sub><b>Everything else, 11 more builds</b></sub></summary>

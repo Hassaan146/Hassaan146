@@ -1,31 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 734 84" width="734" height="84" role="img" aria-label="intake then filter then visa then research then scoring then tradeoff then final"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.5s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.b{animation:s 8.049999999999999s ease-in-out infinite}@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}100%{stroke-opacity:.34;fill-opacity:0}}.t{animation:tt 8.049999999999999s ease-in-out infinite}@keyframes tt{0%{fill:#5f5a52}7%{fill:#7d4e05}22%{fill:#5f5a52}100%{fill:#5f5a52}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<text x="2" y="41.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="#a96a08" opacity=".55">03</text>
-<line x1="34" y1="18" x2="34" y2="54" stroke="#e2ddd4"/>
-<rect class="b" style="animation-delay:0.0s" x="46.0" y="22" width="69.5" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:0.0s" x="80.7" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">intake</text>
-<path class="e" d="M122.5 36.0 H140.5" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M137.5 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:1.15s" x="145.5" y="22" width="69.5" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:1.15s" x="180.2" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">filter</text>
-<path class="e" d="M221.9 36.0 H239.9" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M236.9 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:2.3s" x="244.9" y="22" width="55.6" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:2.3s" x="272.8" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">visa</text>
-<path class="e" d="M307.6 36.0 H325.6" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M322.6 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:3.45s" x="330.6" y="22" width="83.3" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:3.45s" x="372.2" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">research</text>
-<path class="e" d="M420.9 36.0 H438.9" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M435.9 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:4.6s" x="443.9" y="22" width="76.4" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:4.6s" x="482.1" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">scoring</text>
-<path class="e" d="M527.3 36.0 H545.3" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M542.3 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:5.75s" x="550.3" y="22" width="83.3" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:5.75s" x="591.9" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">tradeoff</text>
-<path class="e" d="M640.5 36.0 H658.5" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M655.5 33.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:6.9s" x="663.5" y="22" width="62.6" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:6.9s" x="694.8" y="40.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">final</text>
-<text x="46" y="76" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8b857a">LangGraph StateGraph, seven nodes, every call has a mock fallback</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 212" width="1000" height="212" role="img" aria-label="intake then filter then visa then research then scoring then tradeoff then final. 3rd national hackathon, 7 graph nodes, 0 keys to run it, GCF production adopter. Next.js 15 / TypeScript / Three.js / FastAPI / Pydantic v2 / LangGraph / Supabase"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.5s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.b{animation:s 8.049999999999999s ease-in-out infinite}@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}100%{stroke-opacity:.34;fill-opacity:0}}.t{animation:tt 8.049999999999999s ease-in-out infinite}@keyframes tt{0%{fill:#5f5a52}7%{fill:#7d4e05}22%{fill:#5f5a52}100%{fill:#5f5a52}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="1000" height="212" fill="#fbfaf8"/>
+<line x1="64" y1="1" x2="936" y2="1" stroke="#e2ddd4"/>
+<text x="64" y="52" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#a96a08" opacity=".45" letter-spacing="-1">03</text>
+<rect class="b" style="animation-delay:0.0s" x="96.0" y="26" width="69.5" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:0.0s" x="130.7" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">intake</text>
+<path class="e" d="M171.5 40.0 H188.5" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
+<path d="M185.5 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:1.15s" x="193.5" y="26" width="69.5" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:1.15s" x="228.2" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">filter</text>
+<path class="e" d="M268.9 40.0 H285.9" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
+<path d="M282.9 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:2.3s" x="290.9" y="26" width="55.6" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:2.3s" x="318.8" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">visa</text>
+<path class="e" d="M352.6 40.0 H369.6" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
+<path d="M366.6 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:3.45s" x="374.6" y="26" width="83.3" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:3.45s" x="416.2" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">research</text>
+<path class="e" d="M463.9 40.0 H480.9" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
+<path d="M477.9 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:4.6s" x="485.9" y="26" width="76.4" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:4.6s" x="524.1" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">scoring</text>
+<path class="e" d="M568.3 40.0 H585.3" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
+<path d="M582.3 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:5.75s" x="590.3" y="26" width="83.3" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:5.75s" x="631.9" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">tradeoff</text>
+<path class="e" d="M679.5 40.0 H696.5" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
+<path d="M693.5 37.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
+<rect class="b" style="animation-delay:6.9s" x="701.5" y="26" width="62.6" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
+<text class="t" style="animation-delay:6.9s" x="732.8" y="44.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">final</text>
+<text x="96" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8b857a">ranks on safety, budget, visa difficulty and scenery, then shows its working</text>
+<line x1="96" y1="112" x2="936" y2="112" stroke="#e2ddd4"/>
+<text x="96" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">3rd</text>
+<text x="96" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">NATIONAL HACKATHON</text>
+<text x="308" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">7</text>
+<text x="308" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">GRAPH NODES</text>
+<text x="520" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">0</text>
+<text x="520" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">KEYS TO RUN IT</text>
+<text x="732" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">GCF</text>
+<text x="732" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">PRODUCTION ADOPTER</text>
+<text x="96" y="195" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f5a52">Next.js 15 / TypeScript / Three.js / FastAPI / Pydantic v2 / LangGraph / Supabase</text>
 </svg>

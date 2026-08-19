@@ -1,45 +1,51 @@
-"""Draws every piece of art in the profile README.
+"""Draws the art in the profile README.
 
     python assets/build.py
 
-Design notes, so whoever edits this next knows the rules.
+What it emits, and why each one is drawn rather than fetched.
+
+  hero-{dark,light}          the header
+  orbit                      the illustration beside section 00, one file
+  sys-*-{dark,light}         a card per project: title, meta, pipeline,
+                             four numbers, stack
+  signals-{dark,light}       the counts, painted from live API data
+  signoff-{dark,light}       the closing rule
 
 Palette. Almost every profile on GitHub uses #58a6ff on #0d1117, because that is
 what the badge and card services default to. This one is warm: amber on
-near-black, ink on bone. It reads as chosen rather than inherited.
+near-black, ink on bone, so it reads as chosen rather than inherited.
 
-Weight. The first draft put a designed hero on top of plain markdown, and the
-page fell off a cliff the moment the hero ended. Every project now gets a
-full-width card carrying its pipeline, four hard numbers and its stack, so the
-body holds the same weight as the top.
+Weight. An early draft put a designed hero on top of plain markdown and the page
+fell off a cliff the moment the hero ended. Each card now carries its own title
+and meta strip, so the section around it needs no heading and no grey subtitle.
 
-No badge services. The toolchain used to be 42 separate requests to
-img.shields.io, a wall of brand colours that says very little and is the
-clearest tell of a template profile. It is one typographic block now.
+Animation. CSS keyframes live inside each file. GitHub serves it and the browser
+paints it as an image, so the animation survives, the same mechanism the
+contribution snake uses. Anyone whose system asks for reduced motion gets a
+still frame.
 
-Animation. CSS keyframes live inside each SVG. GitHub serves the file and the
-browser paints it as an image, so the animation survives, the same mechanism the
-contribution snake uses. Reduced-motion systems get a still frame.
+Themes. The panels with a painted background ship as a pair and <picture> picks
+one, which follows the GitHub theme toggle rather than the operating system.
+The orbit is line art on no background, so a single file covers both.
 
-Themes ship as pairs and <picture> chooses, which follows the GitHub theme
-toggle rather than the operating system setting.
-
-Live numbers come from the public API. If it cannot be reached, the affected
-card is left exactly as it was, because a card showing yesterday's correct
-figures beats one confidently showing invented ones.
+Live numbers. From the public API, no token needed. If it cannot be reached the
+affected card is left exactly as it was, because a card showing yesterday's
+correct figures beats one confidently showing invented ones. That path has
+fired for real several times, so it is not theoretical.
 """
 
 import json
 import pathlib
+import sys
 import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
 OUT = pathlib.Path(__file__).parent
-import sys
 sys.path.insert(0, str(OUT))
 from orbit import orbit  # noqa: E402
+
 USER = "Hassaan146"
 
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
@@ -180,46 +186,6 @@ def hero(t):
 
 
 # ---------------------------------------------------------------------------
-# how I work, three columns under section 00
-# ---------------------------------------------------------------------------
-
-PRINCIPLES = [
-    ("Guardrails first",
-     ["Rate limiting, input validation and row",
-      "level security land before the features do."]),
-    ("Degrade, do not die",
-     ["Every external call has a fallback. Clone",
-      "the repo and it runs with zero API keys."]),
-    ("Decide before coding",
-     ["The architectural choice gets made, and",
-      "written down, ahead of the first line."]),
-]
-
-
-def principles(t):
-    w, h = 1000, 152
-    colw, x0 = 300, 64
-    css = (".pc{animation:rise .8s ease-out both}"
-           "@keyframes rise{from{opacity:0}to{opacity:1}}")
-    lab = " ".join(f"{a}. {' '.join(b)}" for a, b in PRINCIPLES)
-    p = [head(w, h, lab, css)]
-    p.append(f'<rect width="{w}" height="{h}" fill="{t["bg"]}"/>')
-    p.append(f'<line x1="{x0}" y1="18" x2="{w - 64}" y2="18" stroke="{t["rule"]}"/>')
-    for i, (title, lines) in enumerate(PRINCIPLES):
-        x = x0 + i * (colw + 18)
-        p.append(f'<g class="pc" style="animation-delay:{round(i * .12, 2)}s">')
-        p.append(f'<rect x="{x}" y="18" width="46" height="2" fill="{t["accent"]}"/>')
-        p.append(f'<text x="{x}" y="56" font-family="{MONO}" font-size="13" '
-                 f'font-weight="600" fill="{t["ink"]}">{esc(title)}</text>')
-        for j, ln in enumerate(lines):
-            p.append(f'<text x="{x}" y="{82 + j * 19}" font-family="{SANS}" font-size="12.5" '
-                     f'fill="{t["dim"]}">{esc(ln)}</text>')
-        p.append("</g>")
-    p.append("</svg>")
-    return "\n".join(p) + "\n"
-
-
-# ---------------------------------------------------------------------------
 # project cards
 # ---------------------------------------------------------------------------
 
@@ -347,50 +313,6 @@ def card(spec, t):
              f'fill="{t["dim"]}">{esc(spec["stack"])}</text>')
     p.append("</svg>")
     return chr(10).join(p) + chr(10)
-
-
-# ---------------------------------------------------------------------------
-# toolchain
-# ---------------------------------------------------------------------------
-
-TOOLCHAIN = [
-    ("LANGUAGES", ["Python", "TypeScript", "JavaScript", "C++", "Java", "SQL", "x86"]),
-    ("AI", ["LangGraph", "LangChain", "MCP", "Anthropic", "Groq", "Gemini", "Pydantic"]),
-    ("BACKEND", ["FastAPI", "Django", "DRF", "Node", "Express", "Celery"]),
-    ("FRONTEND", ["React", "Next.js", "Vite", "Tailwind", "Three.js"]),
-    ("DATA", ["PostgreSQL", "Supabase", "MongoDB", "Redis", "MySQL", "SQL Server"]),
-    ("SHIP", ["Docker", "Git", "Linux", "Vercel", "Render", "Railway", "Stripe"]),
-]
-
-
-def toolchain(t):
-    rowh, top, labx, itemx = 46, 24, 64, 216
-    w = 1000
-    h = top + rowh * len(TOOLCHAIN) + 26
-    lab = "Toolchain. " + " ".join(f"{k}: {', '.join(v)}." for k, v in TOOLCHAIN)
-    css = ".r{animation:fade .9s ease-out both}@keyframes fade{from{opacity:0}to{opacity:1}}"
-    p = [head(w, h, lab, css)]
-    p.append(f'<rect width="{w}" height="{h}" fill="{t["bg"]}"/>')
-    for i, (lb, items) in enumerate(TOOLCHAIN):
-        y = top + i * rowh
-        p.append(f'<line x1="{labx}" y1="{y}" x2="{w - 64}" y2="{y}" stroke="{t["rule"]}"/>')
-        p.append(f'<g class="r" style="animation-delay:{round(i * 0.09, 2)}s">')
-        p.append(f'<text x="{labx}" y="{y + 29}" font-family="{MONO}" font-size="10" '
-                 f'fill="{t["faint"]}" letter-spacing="1.9">{lb}</text>')
-        x = float(itemx)
-        for j, it in enumerate(items):
-            if j:
-                p.append(f'<text x="{x:.1f}" y="{y + 29}" font-family="{MONO}" font-size="13" '
-                         f'fill="{t["rule"]}">/</text>')
-                x += mono_w("/", 13) + 12
-            p.append(f'<text x="{x:.1f}" y="{y + 29}" font-family="{MONO}" font-size="13" '
-                     f'fill="{t["ink"]}">{esc(it)}</text>')
-            x += mono_w(it, 13) + 12
-        p.append("</g>")
-    yy = top + rowh * len(TOOLCHAIN)
-    p.append(f'<line x1="{labx}" y1="{yy}" x2="{w - 64}" y2="{yy}" stroke="{t["rule"]}"/>')
-    p.append("</svg>")
-    return "\n".join(p) + "\n"
 
 
 # ---------------------------------------------------------------------------

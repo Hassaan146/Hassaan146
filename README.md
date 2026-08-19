@@ -1,8 +1,12 @@
 <!-- Muhammad Hassaan-ul-Mustafa. Profile README.
-     The hero, the project cards and the signals panel are generated:
+
+     All art in assets/ is generated. To change it, edit the spec in
+     assets/build.py (or assets/orbit.py for the illustration) and run:
+
          python assets/build.py
+
      Never hand-edit an SVG in assets/, the next build overwrites it.
-     One placeholder remains: the portfolio link in section 04. -->
+     One placeholder remains: the portfolio link at the top. -->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" />
@@ -248,4 +252,4 @@ If you are building something and part of it is stuck, that is the email I like 
 
 </div>
 
-<sub>**Colophon.** The hero, the project cards and the signals panel are drawn by [`assets/build.py`](assets/build.py), which reads a spec, measures each label to size its own box so nothing clips, and writes animated SVG. The figures in section 03 come from the GitHub API and a [scheduled job](.github/workflows/refresh.yml) redraws them each morning; if the API is unreachable it keeps the last correct numbers. Motion switches itself off for anyone whose system asks for less of it.</sub>
+<sub>**Colophon.** The header, the orbit, the five project cards and the signals panel are all drawn by [`assets/build.py`](assets/build.py), which reads a spec, measures every label to size its own box so nothing clips, and writes animated SVG. The figures in section 03 come from the GitHub API, and a [scheduled job](.github/workflows/refresh.yml) redraws them each morning; when the API is unreachable it keeps the last correct numbers and says so in the build log. Motion switches itself off for anyone whose system asks for less of it.</sub>

@@ -22,6 +22,8 @@
 
 ## 🧭 00 · Identity
 
+<img align="right" width="360" src="assets/desk.svg" alt="A developer at a desk with two screens, code filling in line by line, a gear turning in a thought bubble above" />
+
 I build **AI agents** and the **backends** they run on. Computer Science at FAST-NUCES, currently at **Arbisoft**.
 
 > 💡 **What I care about:** most AI side projects stop at a notebook. Mine go out with the unglamorous parts attached, because that is what a client ends up depending on.
@@ -31,6 +33,8 @@ I build **AI agents** and the **backends** they run on. Computer Science at FAST
 - 📐 &nbsp; **Decide before coding** &nbsp;·&nbsp; the architectural choice gets made, and written down, first
 - 🥉 &nbsp; **3rd Place**, National AI Hackathon &nbsp;·&nbsp; ⭐ production adopter of the Graph Context Framework
 - 🌍 &nbsp; Based in Islamabad, Pakistan 🇵🇰 &nbsp;·&nbsp; open to remote
+
+<br clear="right"/>
 
 ---
 

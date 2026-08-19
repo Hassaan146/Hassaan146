@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 400" width="430" height="400" role="img" aria-label="A developer at a desk with two screens, code filling in line by line, a gear turning in a thought bubble above">
+<style>.ln{animation:type 5.5s ease-in-out infinite}@keyframes type{0%{opacity:0}12%{opacity:1}70%{opacity:1}82%{opacity:0}100%{opacity:0}}.car{animation:blink 1.1s steps(1) infinite}@keyframes blink{0%,50%{opacity:1}51%,100%{opacity:0}}.gear{transform-box:fill-box;transform-origin:center;animation:spin 9s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.hand{transform-box:fill-box;transform-origin:center;animation:tap 1.6s ease-in-out infinite}@keyframes tap{0%,100%{transform:translateY(0)}50%{transform:translateY(1.7px)}}.glow{animation:pulse 5.5s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:.05}45%{opacity:.14}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect class="ln" style="animation-delay:0.0s" x="28" y="44" width="88" height="2.4" rx="1.2" fill="#6b7079" opacity=".45"/>
+<rect class="ln" style="animation-delay:0.22s" x="28" y="54" width="62" height="2.4" rx="1.2" fill="#6b7079" opacity=".45"/>
+<rect class="ln" style="animation-delay:0.44s" x="28" y="64" width="74" height="2.4" rx="1.2" fill="#6b7079" opacity=".45"/>
+<rect class="ln" style="animation-delay:0.66s" x="152" y="30" width="96" height="2.4" rx="1.2" fill="#6b7079" opacity=".45"/>
+<rect class="ln" style="animation-delay:0.88s" x="152" y="40" width="70" height="2.4" rx="1.2" fill="#6b7079" opacity=".45"/>
+<rect class="ln" style="animation-delay:1.1s" x="152" y="50" width="88" height="2.4" rx="1.2" fill="#6b7079" opacity=".45"/>
+<rect class="ln" style="animation-delay:1.32s" x="152" y="60" width="54" height="2.4" rx="1.2" fill="#6b7079" opacity=".45"/>
+<ellipse cx="215" cy="356" rx="176" ry="15" fill="#8b8f98" opacity=".12"/>
+<rect x="34" y="252" width="228" height="7" rx="3" fill="#8b8f98" opacity=".75"/>
+<rect x="44" y="259" width="4" height="88" fill="#8b8f98" opacity=".55"/>
+<rect x="248" y="259" width="4" height="88" fill="#8b8f98" opacity=".55"/>
+<rect class="glow" x="52" y="170" width="88" height="64" rx="4" fill="#e8a33d"/>
+<rect x="52" y="170" width="88" height="64" rx="4" fill="none" stroke="#8b8f98" stroke-width="2"/>
+<rect x="88" y="234" width="16" height="12" fill="#8b8f98" opacity=".6"/>
+<rect x="74" y="246" width="44" height="4" rx="2" fill="#8b8f98" opacity=".6"/>
+<rect class="ln" style="animation-delay:0.0s" x="62" y="182" width="46" height="3" rx="1.5" fill="#e8a33d" opacity=".85"/>
+<rect class="ln" style="animation-delay:0.3s" x="62" y="190" width="30" height="3" rx="1.5" fill="#6b7079" opacity=".85"/>
+<rect class="ln" style="animation-delay:0.6s" x="62" y="198" width="54" height="3" rx="1.5" fill="#e8a33d" opacity=".85"/>
+<rect class="ln" style="animation-delay:0.9s" x="62" y="206" width="38" height="3" rx="1.5" fill="#6b7079" opacity=".85"/>
+<rect class="ln" style="animation-delay:1.2s" x="62" y="214" width="44" height="3" rx="1.5" fill="#e8a33d" opacity=".85"/>
+<rect class="glow" style="animation-delay:.7s" x="148" y="160" width="98" height="74" rx="4" fill="#e8a33d"/>
+<rect x="148" y="160" width="98" height="74" rx="4" fill="none" stroke="#8b8f98" stroke-width="2"/>
+<rect x="188" y="234" width="16" height="12" fill="#8b8f98" opacity=".6"/>
+<rect x="174" y="246" width="44" height="4" rx="2" fill="#8b8f98" opacity=".6"/>
+<rect class="ln" style="animation-delay:0.4s" x="158" y="174" width="60" height="3" rx="1.5" fill="#e8a33d" opacity=".85"/>
+<rect class="ln" style="animation-delay:0.7s" x="158" y="182" width="40" height="3" rx="1.5" fill="#6b7079" opacity=".85"/>
+<rect class="ln" style="animation-delay:1.0s" x="158" y="190" width="68" height="3" rx="1.5" fill="#6b7079" opacity=".85"/>
+<rect class="ln" style="animation-delay:1.3s" x="158" y="198" width="34" height="3" rx="1.5" fill="#e8a33d" opacity=".85"/>
+<rect class="ln" style="animation-delay:1.6s" x="158" y="206" width="56" height="3" rx="1.5" fill="#6b7079" opacity=".85"/>
+<rect class="ln" style="animation-delay:1.9s" x="158" y="214" width="46" height="3" rx="1.5" fill="#6b7079" opacity=".85"/>
+<rect class="car" x="158" y="220" width="7" height="3" fill="#e8a33d"/>
+<rect x="96" y="244" width="74" height="7" rx="2.5" fill="#8b8f98" opacity=".8"/>
+<path d="M300 206 q22 0 22 22 v58 q0 16 -18 16 h-6" fill="none" stroke="#8b8f98" stroke-width="7" stroke-linecap="round" opacity=".8"/>
+<rect x="268" y="300" width="52" height="7" rx="3.5" fill="#8b8f98" opacity=".8"/>
+<path d="M294 307 v22" stroke="#8b8f98" stroke-width="5" opacity=".7"/>
+<path d="M272 340 l22 -11 l22 11" fill="none" stroke="#8b8f98" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+<circle cx="270" cy="344" r="5" fill="none" stroke="#8b8f98" stroke-width="3" opacity=".7"/>
+<circle cx="318" cy="344" r="5" fill="none" stroke="#8b8f98" stroke-width="3" opacity=".7"/>
+<path d="M292 232 q-10 34 -2 66" fill="none" stroke="#e8a33d" stroke-width="15" stroke-linecap="round"/>
+<path d="M286 300 q-24 6 -30 26" fill="none" stroke="#6b7079" stroke-width="12" stroke-linecap="round"/>
+<path d="M256 326 q-4 12 -2 20" fill="none" stroke="#6b7079" stroke-width="11" stroke-linecap="round"/>
+<path class="hand" d="M288 246 q-24 4 -44 12" fill="none" stroke="#e8a33d" stroke-width="10" stroke-linecap="round"/>
+<circle cx="290" cy="208" r="17" fill="none" stroke="#8b8f98" stroke-width="3.5"/>
+<path d="M274 202 q4 -18 22 -14 q10 3 10 12" fill="none" stroke="#8b8f98" stroke-width="5" stroke-linecap="round"/>
+<rect x="322" y="96" width="62" height="56" rx="8" fill="none" stroke="#e8a33d" stroke-width="2" opacity=".8"/>
+<path d="M334 152 l6 12 l10 -12" fill="none" stroke="#e8a33d" stroke-width="2" opacity=".8" stroke-linejoin="round"/>
+<g class="gear"><circle cx="353" cy="124" r="13" fill="none" stroke="#e8a33d" stroke-width="3"/><circle cx="353" cy="124" r="4.5" fill="none" stroke="#e8a33d" stroke-width="2.5"/><path d="M366.0 124.0 L371.0 124.0 M362.2 133.2 L365.7 136.7 M353.0 137.0 L353.0 142.0 M343.8 133.2 L340.3 136.7 M340.0 124.0 L335.0 124.0 M343.8 114.8 L340.3 111.3 M353.0 111.0 L353.0 106.0 M362.2 114.8 L365.7 111.3" stroke="#e8a33d" stroke-width="3" stroke-linecap="round"/></g>
+<path d="M356 306 l5 40 h26 l5 -40 z" fill="none" stroke="#8b8f98" stroke-width="2.5" opacity=".6"/>
+<path d="M352 306 h48" stroke="#8b8f98" stroke-width="2.5" opacity=".6"/>
+</svg>

@@ -497,8 +497,7 @@ if __name__ == "__main__":
     (OUT / "orbit.svg").write_text(orbit(), encoding="utf-8")
     keep.add("orbit.svg")
     for name, t in THEME.items():
-        for stem, fn in (("hero", hero), ("principles", principles),
-                         ("toolchain", toolchain), ("signoff", signoff)):
+        for stem, fn in (("hero", hero), ("signoff", signoff)):
             (OUT / f"{stem}-{name}.svg").write_text(fn(t), encoding="utf-8")
             keep.add(f"{stem}-{name}.svg")
         for key, spec in SYSTEMS.items():

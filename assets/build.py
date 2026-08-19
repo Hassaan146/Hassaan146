@@ -39,7 +39,7 @@ from datetime import datetime, timezone
 OUT = pathlib.Path(__file__).parent
 import sys
 sys.path.insert(0, str(OUT))
-from desk import desk  # noqa: E402
+from orbit import orbit  # noqa: E402
 USER = "Hassaan146"
 
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
@@ -494,8 +494,8 @@ if __name__ == "__main__":
     if s:
         print(f"  stats: {s['repos']} repos, {s['stars']} stars, last {s['pushed']}")
     keep = set()
-    (OUT / "desk.svg").write_text(desk(), encoding="utf-8")
-    keep.add("desk.svg")
+    (OUT / "orbit.svg").write_text(orbit(), encoding="utf-8")
+    keep.add("orbit.svg")
     for name, t in THEME.items():
         for stem, fn in (("hero", hero), ("principles", principles),
                          ("toolchain", toolchain), ("signoff", signoff)):

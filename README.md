@@ -20,25 +20,25 @@
 
 ---
 
-## 🧭 00 · Identity
+## 00 · Identity
 
-<img align="right" width="360" src="assets/desk.svg" alt="A developer at a desk with two screens, code filling in line by line, a gear turning in a thought bubble above" />
+<img align="right" width="330" src="assets/orbit.svg" alt="Three rings turning at different speeds around a beating core: data on the inside, the API around it, agents on the outside" />
 
 I build **AI agents** and the **backends** they run on. Computer Science at FAST-NUCES, currently at **Arbisoft**.
 
-> 💡 **What I care about:** most AI side projects stop at a notebook. Mine go out with the unglamorous parts attached, because that is what a client ends up depending on.
+> **What I care about:** most AI side projects stop at a notebook. Mine go out with the unglamorous parts attached, because that is what a client ends up depending on.
 
-- 🛡️ &nbsp; **Guardrails first** &nbsp;·&nbsp; rate limiting, validation and row level security before features
-- 🔌 &nbsp; **Degrade, do not die** &nbsp;·&nbsp; every external call has a fallback, clone it and it runs with zero keys
-- 📐 &nbsp; **Decide before coding** &nbsp;·&nbsp; the architectural choice gets made, and written down, first
-- 🥉 &nbsp; **3rd Place**, National AI Hackathon &nbsp;·&nbsp; ⭐ production adopter of the Graph Context Framework
-- 🌍 &nbsp; Based in Islamabad, Pakistan 🇵🇰 &nbsp;·&nbsp; open to remote
+- **Guardrails first** &nbsp;·&nbsp; rate limiting, validation and row level security before features
+- **Degrade, do not die** &nbsp;·&nbsp; every external call has a fallback, clone it and it runs with zero keys
+- **Decide before coding** &nbsp;·&nbsp; the architectural choice gets made, and written down, first
+- **3rd Place**, National AI Hackathon &nbsp;·&nbsp; production adopter of the Graph Context Framework
+- Based in Islamabad, Pakistan &nbsp;·&nbsp; open to remote
 
 <br clear="right"/>
 
 ---
 
-## 🚀 01 · Systems
+## 01 · Systems
 
 <a id="forge-mentor"></a>
 
@@ -52,16 +52,16 @@ An AI agent will happily write two thousand lines on top of a decision nobody ma
 
 | | |
 |---|---|
-| 🚦 **Decision gate** | Blocks code from moving past an architectural question you have not answered |
-| 📝 **Recorded rationale** | Every call written to `.claude/forge/`, so the reasoning outlives the sprint |
-| 🧪 **1,216 tests** | At 100% coverage |
-| ⚙️ **Three modes** | `pipeline` · `accept-edits` · `auto` |
+| **Decision gate** | Blocks code from moving past an architectural question you have not answered |
+| **Recorded rationale** | Every call written to `.claude/forge/`, so the reasoning outlives the sprint |
+| **1,216 tests** | At 100% coverage |
+| **Three modes** | `pipeline` · `accept-edits` · `auto` |
 
 ```bash
 /plugin marketplace add Hassaan146/forge-marketplace
 ```
 
-[![Repository](https://img.shields.io/badge/⭐_Star_Forge_Mentor-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146/forge-mentor)
+[![Repository](https://img.shields.io/badge/Star_Forge_Mentor-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146/forge-mentor)
 
 <br/>
 
@@ -77,12 +77,12 @@ The AI feed is a firehose. **This drinks it and hands back five things before br
 
 | | |
 |---|---|
-| 🕸️ **Coverage** | 164 sites and 36 YouTube channels: labs, product blogs, newsletters, policy |
-| 🧠 **Summaries** | Groq writes them, Gemini covers the outages |
-| 📬 **Delivery** | A personalised top five, emailed every morning |
-| 💳 **Payments** | Stripe subscriptions, user accounts, review system |
+| **Coverage** | 164 sites and 36 YouTube channels: labs, product blogs, newsletters, policy |
+| **Summaries** | Groq writes them, Gemini covers the outages |
+| **Delivery** | A personalised top five, emailed every morning |
+| **Payments** | Stripe subscriptions, user accounts, review system |
 
-[![Live](https://img.shields.io/badge/▶_Try_it_live-e8a33d?style=for-the-badge&logoColor=white&labelColor=0a0b0d)](https://ai-news-aggregator-weld.vercel.app)
+[![Live](https://img.shields.io/badge/Try_it_live-e8a33d?style=for-the-badge&logoColor=white&labelColor=0a0b0d)](https://ai-news-aggregator-weld.vercel.app)
 [![Repository](https://img.shields.io/badge/Repository-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146/ai-news-aggregator)
 
 <br/>
@@ -99,11 +99,11 @@ It rules out where your passport and budget cannot take you, ranks what survives
 
 | | |
 |---|---|
-| 🥉 **3rd Place** | National AI Hackathon |
-| 🧭 **Seven node graph** | `intake → filter → visa → research → scoring → tradeoff → final` |
-| 🛡️ **Security first** | CORS allow-listing, rate limits, prompt-injection sanitising, RLS on Supabase |
-| 🔑 **Zero keys to run** | Every external call degrades to a mock, so a fresh clone just works |
-| ⭐ **Recognised** | Listed production adopter of the Graph Context Framework |
+| **3rd Place** | National AI Hackathon |
+| **Seven node graph** | `intake → filter → visa → research → scoring → tradeoff → final` |
+| **Security first** | CORS allow-listing, rate limits, prompt-injection sanitising, RLS on Supabase |
+| **Zero keys to run** | Every external call degrades to a mock, so a fresh clone just works |
+| **Recognised** | Listed production adopter of the Graph Context Framework |
 
 [![Repository](https://img.shields.io/badge/Repository-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146/ai-travel-planner)
 
@@ -121,11 +121,11 @@ Encrypted messaging and Bitcoin across a mesh of phones, **for the places where 
 
 | | |
 |---|---|
-| 📡 **Transport** | Bluetooth LE · Wi-Fi Direct · optional LoRa, reaching 2 to 5 km |
-| 🔐 **Crypto** | AES-256-GCM with Signal style double ratchet |
-| 🕸️ **Routing** | Self healing mesh, up to seven hops, store and forward when nobody is in range |
-| 🪪 **Identity** | Cryptographic. No phone number, no SIM |
-| 🧨 **Panic wipe** | On device, for denied environments |
+| **Transport** | Bluetooth LE · Wi-Fi Direct · optional LoRa, reaching 2 to 5 km |
+| **Crypto** | AES-256-GCM with Signal style double ratchet |
+| **Routing** | Self healing mesh, up to seven hops, store and forward when nobody is in range |
+| **Identity** | Cryptographic. No phone number, no SIM |
+| **Panic wipe** | On device, for denied environments |
 
 [![Visit](https://img.shields.io/badge/bitmadwall.ai-e8a33d?style=for-the-badge&logoColor=white&labelColor=0a0b0d)](https://www.bitmadwall.ai/)
 
@@ -143,15 +143,15 @@ An org where **every seat is an agent**, and the whole run is replayable afterwa
 
 | | |
 |---|---|
-| 🗣️ **Input** | One messy request, in plain English |
-| 🧩 **Decompose** | Broken into a dependency aware workflow |
-| 🤝 **Route** | Each piece handed to the agent that owns it |
-| 🔍 **Trace** | Every step timed, logged and replayable |
+| **Input** | One messy request, in plain English |
+| **Decompose** | Broken into a dependency aware workflow |
+| **Route** | Each piece handed to the agent that owns it |
+| **Trace** | Every step timed, logged and replayable |
 
 [![Repository](https://img.shields.io/badge/Repository-161b22?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146/agentic-ai-workflow)
 
 <details>
-<summary><b>📦 Everything else, 11 more builds</b></summary>
+<summary><b>Everything else, 11 more builds</b></summary>
 
 <br/>
 
@@ -173,7 +173,7 @@ An org where **every seat is an agent**, and the whole run is replayable afterwa
 
 ---
 
-## 🛠️ 02 · Toolchain
+## 02 · Toolchain
 
 <div align="center">
 
@@ -211,7 +211,7 @@ An org where **every seat is an agent**, and the whole run is replayable afterwa
 
 ---
 
-## 📊 03 · Signals
+## 03 · Signals
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/signals-dark.svg" />
@@ -229,7 +229,7 @@ An org where **every seat is an agent**, and the whole run is replayable afterwa
 
 ---
 
-## 📬 04 · Contact
+## 04 · Contact
 
 At **Arbisoft** right now. Open to contract work and startup collaborations, mostly around AI agents and backend systems.
 

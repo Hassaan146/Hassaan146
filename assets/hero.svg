@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420" role="img" aria-label="Muhammad Hassaan-ul-Mustafa. AI engineer, product and backend. I build AI agents and the backends they run on. Arbisoft, FAST-NUCES, Islamabad, open to remote."><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0b0618"/><stop offset="100%" stop-color="#07040f"/></linearGradient><filter id="gl" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="gs" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><style>.fl{animation:fl 3.4s ease-in-out infinite}@keyframes fl{0%,100%{opacity:1}47%{opacity:.68}53%{opacity:1}}.sc{animation:sc 6s linear infinite}@keyframes sc{to{transform:translateY(760px)}}.dash{stroke-dasharray:3 6;animation:d 1.5s linear infinite}@keyframes d{to{stroke-dashoffset:-9}}.orb{transform-box:view-box;transform-origin:812px 168px;animation:spin linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="1000" height="420" fill="url(#sky)"/>
+<line x1="0" y1="300" x2="1000" y2="300" stroke="#ff2e88" stroke-width="1" stroke-opacity=".22"/>
+<line x1="0" y1="302" x2="1000" y2="302" stroke="#ff2e88" stroke-width="1" stroke-opacity=".22"/>
+<line x1="0" y1="306" x2="1000" y2="306" stroke="#ff2e88" stroke-width="1" stroke-opacity=".22"/>
+<line x1="0" y1="314" x2="1000" y2="314" stroke="#ff2e88" stroke-width="1" stroke-opacity=".22"/>
+<line x1="0" y1="324" x2="1000" y2="324" stroke="#ff2e88" stroke-width="1" stroke-opacity=".22"/>
+<line x1="0" y1="338" x2="1000" y2="338" stroke="#ff2e88" stroke-width="1" stroke-opacity=".22"/>
+<line x1="0" y1="354" x2="1000" y2="354" stroke="#ff2e88" stroke-width="1" stroke-opacity=".22"/>
+<line x1="0" y1="374" x2="1000" y2="374" stroke="#ff2e88" stroke-width="1" stroke-opacity=".22"/>
+<line x1="0" y1="396" x2="1000" y2="396" stroke="#ff2e88" stroke-width="1" stroke-opacity=".22"/>
+<line x1="500" y1="300" x2="-1700" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="-1500" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="-1300" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="-1100" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="-900" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="-700" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="-500" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="-300" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="-100" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="100" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="300" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="500" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="700" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="900" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="1100" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="1300" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="1500" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="1700" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="1900" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="2100" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="2300" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="2500" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="500" y1="300" x2="2700" y2="420" stroke="#ff2e88" stroke-width="1" stroke-opacity=".16"/>
+<line x1="0" y1="300" x2="1000" y2="300" stroke="#22e3ff" stroke-width="2" filter="url(#gl)"/>
+<circle cx="500" cy="252" r="96" fill="none" stroke="#ff2e88" stroke-width="2" stroke-opacity=".42"/>
+<text class="fl" x="60" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#22e3ff" letter-spacing="4.4" filter="url(#gl)">&gt;&gt; AI ENGINEER / PRODUCT AND BACKEND _</text>
+<text x="57" y="164" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="54" font-weight="800" fill="#ff2e88" opacity=".8" letter-spacing="-2">MUHAMMAD</text>
+<text x="57" y="220" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="54" font-weight="800" fill="#ff2e88" opacity=".8" letter-spacing="-2">HASSAAN</text>
+<text x="63" y="164" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="54" font-weight="800" fill="#22e3ff" opacity=".8" letter-spacing="-2">MUHAMMAD</text>
+<text x="63" y="220" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="54" font-weight="800" fill="#22e3ff" opacity=".8" letter-spacing="-2">HASSAAN</text>
+<text x="60" y="164" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="54" font-weight="800" fill="#eaf2ff" opacity="1" letter-spacing="-2">MUHAMMAD</text>
+<text x="60" y="220" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="54" font-weight="800" fill="#eaf2ff" opacity="1" letter-spacing="-2">HASSAAN</text>
+<rect x="60" y="240" width="140" height="4" fill="#ff2e88" filter="url(#gl)"/>
+<text x="60" y="284" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#9aa4c4">I build AI agents and the backends they run on.</text>
+<circle cx="812" cy="168" r="28" fill="none" stroke="#22e3ff" stroke-width="1.5" stroke-opacity=".4"/>
+<g class="orb" style="animation-duration:13s">
+<circle cx="840.0" cy="168.0" r="5.0" fill="#22e3ff" filter="url(#gl)"/>
+</g>
+<circle cx="812" cy="168" r="48" fill="none" stroke="#a06bff" stroke-width="1.5" stroke-opacity=".4"/>
+<g class="orb" style="animation-duration:21s;animation-direction:reverse">
+<circle cx="860.0" cy="168.0" r="4.4" fill="#22e3ff" filter="url(#gl)"/>
+<circle cx="764.0" cy="168.0" r="4.4" fill="#ff2e88" filter="url(#gl)"/>
+</g>
+<circle cx="812" cy="168" r="68" fill="none" stroke="#22e3ff" stroke-width="1.5" stroke-opacity=".4"/>
+<g class="orb" style="animation-duration:34s">
+<circle cx="880.0" cy="168.0" r="3.8" fill="#22e3ff" filter="url(#gl)"/>
+<circle cx="778.0" cy="226.9" r="3.8" fill="#ff2e88" filter="url(#gl)"/>
+<circle cx="778.0" cy="109.1" r="3.8" fill="#22e3ff" filter="url(#gl)"/>
+</g>
+<circle cx="812" cy="168" r="11" fill="#22e3ff" filter="url(#gs)"/>
+<text x="812" y="266" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#5f6684" letter-spacing="2" text-anchor="middle">DATA / API / AGENTS</text>
+<rect x="60" y="336" width="880" height="54" fill="#0d0a1c" fill-opacity=".72" stroke="#22e3ff" stroke-width="1.5" stroke-opacity=".85"/>
+<path d="M60 336 h14 M60 336 v14" stroke="#ff2e88" stroke-width="2" fill="none" stroke-opacity=".9"/>
+<path d="M940 336 h-14 M940 336 v14" stroke="#ff2e88" stroke-width="2" fill="none" stroke-opacity=".9"/>
+<path d="M60 390 h14 M60 390 v-14" stroke="#ff2e88" stroke-width="2" fill="none" stroke-opacity=".9"/>
+<path d="M940 390 h-14 M940 390 v-14" stroke="#ff2e88" stroke-width="2" fill="none" stroke-opacity=".9"/>
+<text x="82" y="369" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#22e3ff" letter-spacing="2.4">ARBISOFT / FAST-NUCES / ISLAMABAD / OPEN TO REMOTE</text>
+<rect class="sc" x="0" y="-70" width="1000" height="70" fill="#22e3ff" opacity=".045"/>
+</svg>

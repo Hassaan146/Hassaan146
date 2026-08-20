@@ -6,7 +6,7 @@ To change the entire look of the page, edit STYLE below and rerun. Nothing else
 moves: the filenames stay the same, so the README never needs touching, and the
 scheduled job keeps working.
 
-    STYLE = "signal"   the cyber layout with the neon removed, drawn as
+    STYLE = "canvas"   the cyber layout with the neon removed, drawn as
                        instrumentation: graphite grid, one ochre accent
     STYLE = "cyber"    neon grid horizon, chromatic wordmark, scanlines
     STYLE = "luxury"   serif at scale, gold hairlines, wide margins
@@ -41,7 +41,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
-STYLE = "signal"
+STYLE = "canvas"
 
 OUT = pathlib.Path(__file__).parent
 sys.path.insert(0, str(OUT))
@@ -212,17 +212,25 @@ if __name__ == "__main__":
         print("  stats: %d repos, %d stars, last %s" % (s["repos"], s["stars"], s["pushed"]))
 
     keep = set()
-    for stem, fn in (("hero", style.hero), ("principles", style.principles),
-                     ("signoff", style.signoff)):
-        (OUT / ("%s.svg" % stem)).write_text(fn(), encoding="utf-8")
-        keep.add("%s.svg" % stem)
-    for key, spec in SYSTEMS.items():
-        (OUT / ("sys-%s.svg" % key)).write_text(style.card(spec), encoding="utf-8")
-        keep.add("sys-%s.svg" % key)
-    sig = OUT / "signals.svg"
-    if s is not None:
-        sig.write_text(style.signals(s), encoding="utf-8")
-    keep.add(sig.name)
+    if hasattr(style, "canvas"):
+        # one sheet. It carries the live numbers, so a failed fetch leaves the
+        # existing file alone rather than redrawing it without them.
+        out = OUT / "canvas.svg"
+        if s is not None or not out.exists():
+            out.write_text(style.canvas(s), encoding="utf-8")
+        keep.add(out.name)
+    else:
+        for stem, fn in (("hero", style.hero), ("principles", style.principles),
+                         ("signoff", style.signoff)):
+            (OUT / ("%s.svg" % stem)).write_text(fn(), encoding="utf-8")
+            keep.add("%s.svg" % stem)
+        for key, spec in SYSTEMS.items():
+            (OUT / ("sys-%s.svg" % key)).write_text(style.card(spec), encoding="utf-8")
+            keep.add("sys-%s.svg" % key)
+        sig = OUT / "signals.svg"
+        if s is not None:
+            sig.write_text(style.signals(s), encoding="utf-8")
+        keep.add(sig.name)
 
     for old in OUT.glob("*.svg"):
         if old.name not in keep:

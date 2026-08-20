@@ -1,1 +1,8 @@
-[]
+[
+ {
+  "q": "what is Forge Mentor",
+  "a": "Forge Mentor is a Claude Code plugin. It teaches the architectural decision, waits for your call, records it to .claude/forge, and blocks code until the question is answered. 1,216 tests at full coverage.",
+  "who": "Hassaan146",
+  "when": "2026-08-20"
+ }
+]

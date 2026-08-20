@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1992" width="900" height="1992" role="img" aria-label="Muhammad Hassaan-ul-Mustafa, AI engineer, product and backend, Islamabad. I build AI agents and the backends they run on. Five systems: Forge Mentor, Ai News Aggregator, Skyelite Ai, Bitmadwall, Ai Employee Os. Toolchain across languages, AI, backend, frontend, data and shipping. 38 public repositories, 26 stars, last shipped 20 Aug 2026.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 2170" width="900" height="2170" role="img" aria-label="Muhammad Hassaan-ul-Mustafa, AI engineer, product and backend, Islamabad. I build AI agents and the backends they run on. Five systems: Forge Mentor, Ai News Aggregator, Skyelite Ai, Bitmadwall, Ai Employee Os. Toolchain across languages, AI, backend, frontend, data and shipping. 38 public repositories, 26 stars, last shipped 20 Aug 2026.">
 <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0d0d0e"/><stop offset="100%" stop-color="#08080a"/></linearGradient><pattern id="mesh" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" fill="none" stroke="#232329" stroke-width="1"/></pattern></defs>
 <style>@keyframes spin{to{transform:rotate(360deg)}}.orb{transform-box:view-box;transform-origin:742px 150px;animation:spin linear infinite}.tick{animation:tk 5s ease-in-out infinite}@keyframes tk{0%,100%{opacity:.4}18%{opacity:1}42%{opacity:.4}}.dash{stroke-dasharray:2 5;animation:d 2s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<rect width="900" height="1992" fill="url(#bg)"/>
-<rect width="900" height="1992" fill="url(#mesh)" opacity=".45"/>
-<rect x="20" y="20" width="860" height="1952" fill="none" stroke="#232329"/>
+<rect width="900" height="2170" fill="url(#bg)"/>
+<rect width="900" height="2170" fill="url(#mesh)" opacity=".45"/>
+<rect x="20" y="20" width="860" height="2130" fill="none" stroke="#232329"/>
 <text x="56.0" y="62.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#c08a3e" letter-spacing="4">AI ENGINEER / PRODUCT AND BACKEND</text>
 <text x="844.0" y="62.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f5c57" text-anchor="end" letter-spacing="2.4">ISLAMABAD, PK</text>
 <text x="54.0" y="148.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="52" fill="#ece9e4" font-weight="700" letter-spacing="-2.2">MUHAMMAD</text>
@@ -323,6 +323,16 @@
 <line x1="712.7" y1="1918.0" x2="712.7" y2="1915.0" stroke="#232329" stroke-opacity="1"/>
 <line x1="778.3" y1="1918.0" x2="778.3" y2="1915.0" stroke="#232329" stroke-opacity="1"/>
 <line x1="844.0" y1="1918.0" x2="844.0" y2="1912.0" stroke="#c08a3e" stroke-opacity=".65"/>
-<text x="56.0" y="1952.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#5f5c57" letter-spacing="2.2">EVERY MARK ON THIS SHEET IS DRAWN BY A SCRIPT IN THIS REPO</text>
-<text x="844.0" y="1952.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#c08a3e" text-anchor="end" letter-spacing="2.2" class="tick">assets/build.py</text>
+<line x1="56" y1="1958.0" x2="844" y2="1958.0" stroke="#232329" stroke-opacity="1"/>
+<rect x="56" y="1958.0" width="34" height="3" fill="#c08a3e"/>
+<text x="56.0" y="1988.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#c08a3e" letter-spacing="3.6">04 / ASK IT SOMETHING</text>
+<text x="56.0" y="2008.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="12" fill="#9a958d">This sheet answers back. Open an issue titled agent: and your question, and a</text>
+<text x="56.0" y="2027.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="12" fill="#9a958d">workflow routes it, writes the reply here, then closes the issue. Links are below.</text>
+<rect x="56" y="2050.0" width="3" height="40" fill="#c08a3e"/>
+<text x="70.0" y="2061.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">what is Forge Mentor</text>
+<text x="844.0" y="2061.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" text-anchor="end">@Hassaan146</text>
+<text x="70.0" y="2078.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d">Forge Mentor is a Claude Code plugin. It teaches the architectural decision, waits for your call, records it to</text>
+<text x="70.0" y="2093.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d">.claude/forge, and blocks code until the question is answered. 1,216 tests at full coverage.</text>
+<text x="56.0" y="2130.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#5f5c57" letter-spacing="2.2">EVERY MARK ON THIS SHEET IS DRAWN BY A SCRIPT IN THIS REPO</text>
+<text x="844.0" y="2130.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#c08a3e" text-anchor="end" letter-spacing="2.2" class="tick">assets/build.py</text>
 </svg>

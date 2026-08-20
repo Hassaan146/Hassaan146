@@ -1,7 +1,7 @@
 <!-- Muhammad Hassaan-ul-Mustafa. Profile README.
 
      All art in assets/ is generated. To change it, edit the spec in
-     assets/build.py (or assets/orbit.py for the illustration) and run:
+     assets/build.py and run:
 
          python assets/build.py
 
@@ -26,19 +26,17 @@
 
 ## 00 · Identity
 
-<img align="right" width="330" src="assets/orbit.svg" alt="Three rings turning at different speeds around a beating core: data on the inside, the API around it, agents on the outside" />
-
 I build **AI agents** and the **backends** they run on. Computer Science at FAST-NUCES, currently at **Arbisoft**.
 
 > **What I care about:** most AI side projects stop at a notebook. Mine go out with the unglamorous parts attached, because that is what a client ends up depending on.
 
-- **Guardrails first** &nbsp;·&nbsp; rate limiting, validation and row level security before features
-- **Degrade, do not die** &nbsp;·&nbsp; every external call has a fallback, clone it and it runs with zero keys
-- **Decide before coding** &nbsp;·&nbsp; the architectural choice gets made, and written down, first
-- **3rd Place**, National AI Hackathon &nbsp;·&nbsp; production adopter of the Graph Context Framework
-- Based in Islamabad, Pakistan &nbsp;·&nbsp; open to remote
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/principles-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/principles-light.svg" />
+  <img src="assets/principles-light.svg" width="100%" alt="Guardrails first: rate limiting, validation and row level security before features. Degrade, do not die: every external call has a fallback, clone it and it runs with zero keys. Decide before coding: the architectural choice gets made, and written down, first." />
+</picture>
 
-<br clear="right"/>
+**3rd Place**, National AI Hackathon &nbsp;·&nbsp; production adopter of the Graph Context Framework &nbsp;·&nbsp; Islamabad, Pakistan, open to remote
 
 ---
 
@@ -252,4 +250,4 @@ If you are building something and part of it is stuck, that is the email I like 
 
 </div>
 
-<sub>**Colophon.** The header, the orbit, the five project cards and the signals panel are all drawn by [`assets/build.py`](assets/build.py), which reads a spec, measures every label to size its own box so nothing clips, and writes animated SVG. The figures in section 03 come from the GitHub API, and a [scheduled job](.github/workflows/refresh.yml) redraws them each morning; when the API is unreachable it keeps the last correct numbers and says so in the build log. Motion switches itself off for anyone whose system asks for less of it.</sub>
+<sub>**Colophon.** Every tile on this page is drawn by [`assets/build.py`](assets/build.py), which reads a spec, measures every label to size its own box so nothing clips, and writes animated SVG. The figures in section 03 come from the GitHub API, and a [scheduled job](.github/workflows/refresh.yml) redraws them each morning; when the API is unreachable it keeps the last correct numbers and says so in the build log. Motion switches itself off for anyone whose system asks for less of it.</sub>

@@ -2,66 +2,72 @@
 
     python assets/build.py
 
-What it emits, and why each one is drawn rather than fetched.
+Style is bento grid with a neo-brutalist finish: tiles of deliberately different
+sizes, thick borders, a hard offset shadow under every one, and type set far
+larger than a README usually dares.
 
-  hero-{dark,light}          the header
-  orbit                      the illustration beside section 00, one file
-  sys-*-{dark,light}         a card per project: title, meta, pipeline,
-                             four numbers, stack
-  signals-{dark,light}       the counts, painted from live API data
-  signoff-{dark,light}       the closing rule
+The reason is structural. An earlier version made every section an identical
+full-width band, ten of them stacked, so there was no hierarchy and nothing for
+the eye to land on. Restyling the bands never fixed it because the shape never
+changed. Different tile sizes create the hierarchy that was missing.
+
+What it emits:
+
+  hero-{dark,light}        name tile, system tile, strapline tile
+  principles-{dark,light}  three tiles, how the work gets done
+  sys-*-{dark,light}       one tile per project: title, meta, pipeline, numbers
+  signals-{dark,light}     stat tiles plus the language mix, from live API data
+  signoff-{dark,light}     the closing strip
 
 Palette. Almost every profile on GitHub uses #58a6ff on #0d1117, because that is
 what the badge and card services default to. This one is warm: amber on
 near-black, ink on bone, so it reads as chosen rather than inherited.
-
-Weight. An early draft put a designed hero on top of plain markdown and the page
-fell off a cliff the moment the hero ended. Each card now carries its own title
-and meta strip, so the section around it needs no heading and no grey subtitle.
 
 Animation. CSS keyframes live inside each file. GitHub serves it and the browser
 paints it as an image, so the animation survives, the same mechanism the
 contribution snake uses. Anyone whose system asks for reduced motion gets a
 still frame.
 
-Themes. The panels with a painted background ship as a pair and <picture> picks
-one, which follows the GitHub theme toggle rather than the operating system.
-The orbit is line art on no background, so a single file covers both.
+Themes ship as a pair and <picture> picks one, which follows the GitHub theme
+toggle rather than the operating system setting.
 
-Live numbers. From the public API, no token needed. If it cannot be reached the
-affected card is left exactly as it was, because a card showing yesterday's
+Live numbers come from the public API, no token needed. If it cannot be reached
+the affected card is left exactly as it was, because a card showing yesterday's
 correct figures beats one confidently showing invented ones. That path has
 fired for real several times, so it is not theoretical.
 """
 
 import json
+import math
 import pathlib
-import sys
 import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
 OUT = pathlib.Path(__file__).parent
-sys.path.insert(0, str(OUT))
-from orbit import orbit  # noqa: E402
-
 USER = "Hassaan146"
 
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 SANS = "Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif"
 
 CW = 0.601
+W = 1000
+SH = 7          # how far the hard shadow sits below and right of a tile
+BW = 3          # border weight
+
 REDUCE = "@media (prefers-reduced-motion:reduce){*{animation:none!important}}"
 
 THEME = {
     "dark": dict(
-        bg="#0a0b0d", rule="#20242b", ink="#eae7e2", dim="#8b867e",
-        faint="#5c584f", accent="#e8a33d", accent2="#f6cd85",
+        page="#0a0b0d", tile="#14161a", shadow="#000000", ink="#f4f1ec",
+        dim="#9b968e", faint="#6e6a63", accent="#e8a33d", accent2="#f6cd85",
+        onAccent="#0a0b0d",
     ),
     "light": dict(
-        bg="#fbfaf8", rule="#e2ddd4", ink="#15171b", dim="#5f5a52",
-        faint="#8b857a", accent="#a96a08", accent2="#7d4e05",
+        page="#fbfaf8", tile="#ffffff", shadow="#15171b", ink="#15171b",
+        dim="#5f5a52", faint="#8b857a", accent="#c07f10", accent2="#8a5709",
+        onAccent="#fffdf8",
     ),
 }
 
@@ -76,10 +82,21 @@ def mono_w(text, size):
 
 def head(w, h, label, style=""):
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" '
-        f'height="{h}" role="img" aria-label="{esc(label)}">'
-        + (f"<style>{style}{REDUCE}</style>" if style else "")
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d" width="%d" '
+        'height="%d" role="img" aria-label="%s">' % (w, h, w, h, esc(label))
+        + ("<style>%s%s</style>" % (style, REDUCE) if style else "")
     )
+
+
+def tile(t, x, y, w, h, fill=None, stroke=None, sw=BW):
+    """A panel with a hard shadow. The shadow is a solid offset copy, not a
+    blur, which is the whole point of the neo-brutalist look."""
+    fill = fill or t["tile"]
+    stroke = stroke or t["accent"]
+    return ('<rect x="%d" y="%d" width="%d" height="%d" fill="%s" opacity=".9"/>'
+            '<rect x="%d" y="%d" width="%d" height="%d" fill="%s" stroke="%s" '
+            'stroke-width="%d"/>'
+            % (x + SH, y + SH, w, h, t["shadow"], x, y, w, h, fill, stroke, sw))
 
 
 # ---------------------------------------------------------------------------
@@ -101,7 +118,7 @@ def _get(url, tries=4):
 
 
 def _dmy(dt):
-    return f"{dt.day} {dt.strftime('%b %Y')}"
+    return "%d %s" % (dt.day, dt.strftime("%b %Y"))
 
 
 def stats():
@@ -110,7 +127,8 @@ def stats():
         newest = None
         langs = {}
         for page in range(1, 6):
-            batch = _get(f"https://api.github.com/users/{USER}/repos?per_page=100&page={page}")
+            batch = _get("https://api.github.com/users/%s/repos?per_page=100&page=%d"
+                         % (USER, page))
             if not batch:
                 break
             for r in batch:
@@ -126,12 +144,10 @@ def stats():
         if not repos or newest is None or not langs:
             return None
         when = datetime.strptime(newest, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
-        return {
-            "repos": repos, "stars": stars, "pushed": _dmy(when),
-            "langs": sorted(langs.items(), key=lambda kv: -kv[1]),
-        }
+        return {"repos": repos, "stars": stars, "pushed": _dmy(when),
+                "langs": sorted(langs.items(), key=lambda kv: -kv[1])}
     except (urllib.error.URLError, ValueError, KeyError, TypeError, OSError) as e:
-        print(f"  api unreachable ({e}); cards with live numbers left untouched")
+        print("  api unreachable (%s); cards with live numbers left untouched" % e)
         return None
 
 
@@ -139,178 +155,210 @@ def stats():
 # hero
 # ---------------------------------------------------------------------------
 
-NODES = [(0, 40), (54, 8), (54, 74), (112, 40), (112, 108), (170, 8), (170, 74),
-         (226, 40), (226, 108)]
-EDGES = [(0, 1), (0, 2), (1, 3), (2, 3), (2, 4), (3, 5), (3, 6), (4, 6),
-         (5, 7), (6, 7), (6, 8)]
+def _orbit(t, cx, cy, col):
+    """The system motif that used to be a separate file. It lives inside the
+    hero tile now, which is what a bento layout is for."""
+    p = []
+    for i, (r, dur, rev) in enumerate(((30, 13, ""), (52, 21, ";animation-direction:reverse"),
+                                       (74, 34, ""))):
+        p.append('<circle cx="%d" cy="%d" r="%d" fill="none" stroke="%s" stroke-width="2" '
+                 'stroke-opacity=".45"/>' % (cx, cy, r, col))
+        p.append('<g class="orb" style="animation-duration:%ss%s">' % (dur, rev))
+        for k in range(i + 1):
+            ang = 2 * math.pi * k / (i + 1)
+            p.append('<circle cx="%.1f" cy="%.1f" r="%.1f" fill="%s"/>'
+                     % (cx + r * math.cos(ang), cy + r * math.sin(ang), 5.5 - i * 0.7, col))
+        p.append("</g>")
+    p.append('<circle class="pulse" cx="%d" cy="%d" r="13" fill="%s"/>' % (cx, cy, col))
+    return p
 
 
 def hero(t):
-    w, h = 1000, 340
-    css = (
-        ".ln{stroke-dasharray:3 5;animation:flow 2.2s linear infinite}"
-        "@keyframes flow{to{stroke-dashoffset:-8}}"
-        ".nd{animation:beat 6s ease-in-out infinite}"
-        "@keyframes beat{0%,100%{opacity:.42}9%{opacity:1}24%{opacity:.42}}"
-    )
-    p = [head(w, h, "Muhammad Hassaan-ul-Mustafa, AI engineer, product and backend", css)]
-    p.append(f'<rect width="{w}" height="{h}" fill="{t["bg"]}"/>')
-    p.append(f'<rect x="30" y="26" width="{w - 60}" height="{h - 52}" fill="none" '
-             f'stroke="{t["rule"]}" stroke-width="1"/>')
-    p.append(f'<text x="64" y="74" font-family="{MONO}" font-size="10.5" fill="{t["accent"]}" '
-             f'letter-spacing="3.4">AI ENGINEER &#183; PRODUCT AND BACKEND</text>')
-    p.append(f'<text x="{w - 64}" y="74" font-family="{MONO}" font-size="10.5" '
-             f'fill="{t["faint"]}" letter-spacing="2.2" text-anchor="end">ISLAMABAD, PK</text>')
-    p.append(f'<text x="60" y="158" font-family="{SANS}" font-size="58" font-weight="700" '
-             f'fill="{t["ink"]}" letter-spacing="-2.2">MUHAMMAD</text>')
-    p.append(f'<text x="60" y="216" font-family="{SANS}" font-size="58" font-weight="700" '
-             f'fill="{t["ink"]}" letter-spacing="-2.2">HASSAAN-UL-MUSTAFA</text>')
-    p.append(f'<rect x="64" y="240" width="132" height="3" fill="{t["accent"]}"/>')
-    p.append(f'<text x="64" y="278" font-family="{SANS}" font-size="16" fill="{t["dim"]}">'
-             f'I build AI agents and the backends they run on.</text>')
-    p.append(f'<text x="64" y="308" font-family="{MONO}" font-size="10.5" fill="{t["faint"]}" '
-             f'letter-spacing="2">ARBISOFT &#183; FAST-NUCES &#183; OPEN TO REMOTE</text>')
-    p.append('<g transform="translate(706,58)">')
-    for a, b in EDGES:
-        x1, y1 = NODES[a]
-        x2, y2 = NODES[b]
-        p.append(f'<line class="ln" x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" '
-                 f'stroke="{t["accent"]}" stroke-opacity=".38" stroke-width="1"/>')
-    for i, (x, y) in enumerate(NODES):
-        big = i in (3, 6)
-        col = t["accent"] if big else t["accent2"]
-        p.append(f'<circle class="nd" style="animation-delay:{round(i * 0.62, 2)}s" cx="{x}" '
-                 f'cy="{y}" r="{4.6 if big else 3.1}" fill="{col}"/>')
-    p.append("</g></svg>")
-    return "\n".join(p) + "\n"
+    h = 420
+    css = ('.orb{transform-box:view-box;transform-origin:812px 145px;'
+           'animation-name:spin;animation-timing-function:linear;'
+           'animation-iteration-count:infinite}'
+           '@keyframes spin{to{transform:rotate(360deg)}}'
+           '.pulse{transform-box:view-box;transform-origin:812px 145px;'
+           'animation:beat 4s ease-in-out infinite}'
+           '@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}'
+           '.rule{animation:grow 1.4s cubic-bezier(.2,.8,.2,1) both}'
+           '@keyframes grow{from{width:0}to{width:130px}}')
+    p = [head(W, h, "Muhammad Hassaan-ul-Mustafa. AI engineer, product and backend. "
+                    "I build AI agents and the backends they run on. Arbisoft, "
+                    "FAST-NUCES, Islamabad, open to remote.", css)]
+    p.append('<rect width="%d" height="%d" fill="%s"/>' % (W, h, t["page"]))
+
+    # name tile
+    p.append(tile(t, 40, 40, 600, 216))
+    p.append('<text x="70" y="86" font-family="%s" font-size="11" fill="%s" '
+             'letter-spacing="3.2">AI ENGINEER / PRODUCT AND BACKEND</text>'
+             % (MONO, t["accent"]))
+    p.append('<text x="70" y="150" font-family="%s" font-size="52" font-weight="800" '
+             'fill="%s" letter-spacing="-2.4">MUHAMMAD</text>' % (SANS, t["ink"]))
+    p.append('<text x="70" y="204" font-family="%s" font-size="52" font-weight="800" '
+             'fill="%s" letter-spacing="-2.4">HASSAAN</text>' % (SANS, t["accent"]))
+    p.append('<rect class="rule" x="70" y="222" width="130" height="6" fill="%s"/>' % t["accent"])
+
+    # system tile, filled amber so it reads as the loud one
+    p.append(tile(t, 664, 40, 296, 216, fill=t["accent"], stroke=t["ink"]))
+    p.append('<text x="690" y="76" font-family="%s" font-size="10.5" fill="%s" '
+             'letter-spacing="2.6" opacity=".75">THE SHAPE OF THE WORK</text>'
+             % (MONO, t["onAccent"]))
+    p += _orbit(t, 812, 145, t["onAccent"])
+    p.append('<text x="812" y="242" font-family="%s" font-size="9.6" fill="%s" '
+             'letter-spacing="1.8" text-anchor="middle" opacity=".75">'
+             'DATA / API / AGENTS</text>' % (MONO, t["onAccent"]))
+
+    # strapline tile
+    p.append(tile(t, 40, 288, 920, 92))
+    p.append('<text x="70" y="330" font-family="%s" font-size="21" font-weight="600" '
+             'fill="%s" letter-spacing="-.5">I build AI agents and the backends they '
+             'run on.</text>' % (SANS, t["ink"]))
+    p.append('<text x="70" y="358" font-family="%s" font-size="10.5" fill="%s" '
+             'letter-spacing="2.2">ARBISOFT / FAST-NUCES / ISLAMABAD / OPEN TO REMOTE</text>'
+             % (MONO, t["faint"]))
+    p.append("</svg>")
+    return chr(10).join(p) + chr(10)
 
 
 # ---------------------------------------------------------------------------
-# project cards
+# principles
+# ---------------------------------------------------------------------------
+
+PRINCIPLES = [
+    ("01", "GUARDRAILS FIRST",
+     ["Rate limiting, validation and row", "level security before features."]),
+    ("02", "DEGRADE, DO NOT DIE",
+     ["Every external call has a fallback.", "Clone it, it runs with zero keys."]),
+    ("03", "DECIDE BEFORE CODING",
+     ["The architectural choice gets made,", "and written down, first."]),
+]
+
+
+def principles(t):
+    h = 186
+    colw, gap = 293, 20
+    css = ('.pt{animation:lift 6s ease-in-out infinite}'
+           '@keyframes lift{0%,100%{opacity:.55}14%{opacity:1}32%{opacity:.55}}')
+    lab = ". ".join("%s. %s" % (n, " ".join(b)) for _, n, b in PRINCIPLES)
+    p = [head(W, h, lab, css)]
+    p.append('<rect width="%d" height="%d" fill="%s"/>' % (W, h, t["page"]))
+    for i, (num, title, lines) in enumerate(PRINCIPLES):
+        x = 40 + i * (colw + gap)
+        p.append(tile(t, x, 20, colw, 132))
+        p.append('<rect class="pt" style="animation-delay:%ss" x="%d" y="20" width="%d" '
+                 'height="7" fill="%s"/>' % (round(i * 0.8, 2), x, colw, t["accent"]))
+        p.append('<text x="%d" y="66" font-family="%s" font-size="11" fill="%s" '
+                 'font-weight="700">%s</text>' % (x + 24, MONO, t["accent"], num))
+        p.append('<text x="%d" y="96" font-family="%s" font-size="15" font-weight="800" '
+                 'fill="%s" letter-spacing="-.2">%s</text>' % (x + 24, SANS, t["ink"], title))
+        for j, ln in enumerate(lines):
+            p.append('<text x="%d" y="%d" font-family="%s" font-size="11.5" fill="%s">%s</text>'
+                     % (x + 24, 120 + j * 17, SANS, t["dim"], esc(ln)))
+    p.append("</svg>")
+    return chr(10).join(p) + chr(10)
+
+
+# ---------------------------------------------------------------------------
+# project tiles
 # ---------------------------------------------------------------------------
 
 SYSTEMS = {
     "forge": dict(
-        title="Forge Mentor",
-        meta="CLAUDE CODE PLUGIN  /  MIT  /  v1.28",
-        n="01",
+        n="01", title="FORGE MENTOR", meta="CLAUDE CODE PLUGIN / MIT / v1.28",
         nodes=["question", "options", "you decide", "recorded", "code runs"],
         note="the gate holds until the decision exists",
-        metrics=[("1,216", "TESTS"), ("100%", "COVERAGE"), ("v1.28", "RELEASE"), ("MIT", "LICENCE")],
-        stack="Python 3.12 / MCP / Claude / Git",
-    ),
+        metrics=[("1,216", "TESTS"), ("100%", "COVERAGE"), ("3", "MODES"), ("MIT", "LICENCE")],
+        stack="Python 3.12 / MCP / Claude / Git"),
     "news": dict(
-        title="AI News Aggregator",
-        meta="FULL STACK  /  DEPLOYED  /  DAILY AT 07:00",
-        n="02",
+        n="02", title="AI NEWS AGGREGATOR", meta="FULL STACK / DEPLOYED / DAILY AT 07:00",
         nodes=["scrape", "store", "rank", "summarise", "email"],
         note="two model providers, so one bad day does not kill the digest",
         metrics=[("164", "SITES"), ("36", "CHANNELS"), ("5", "PICKS A DAY"), ("LIVE", "DEPLOYED")],
-        stack="React / Vite / FastAPI / PostgreSQL / Groq / Gemini / Stripe",
-    ),
+        stack="React / Vite / FastAPI / PostgreSQL / Groq / Gemini / Stripe"),
     "skyelite": dict(
-        title="SkyElite AI",
-        meta="HACKATHON BUILD  /  3RD NATIONALLY  /  OPEN SOURCE",
-        n="03",
+        n="03", title="SKYELITE AI", meta="HACKATHON BUILD / 3RD NATIONALLY / OPEN SOURCE",
         nodes=["intake", "filter", "visa", "research", "scoring", "tradeoff", "final"],
         note="ranks on safety, budget, visa difficulty and scenery, then shows its working",
-        metrics=[("3rd", "NATIONAL HACKATHON"), ("7", "GRAPH NODES"),
-                 ("0", "KEYS TO RUN IT"), ("GCF", "PRODUCTION ADOPTER")],
-        stack="Next.js 15 / TypeScript / Three.js / FastAPI / Pydantic v2 / LangGraph / Supabase",
-    ),
+        metrics=[("3rd", "NATIONAL"), ("7", "GRAPH NODES"), ("0", "KEYS TO RUN"),
+                 ("GCF", "ADOPTER")],
+        stack="Next.js 15 / TypeScript / Three.js / FastAPI / Pydantic v2 / LangGraph"),
     "bitmadwall": dict(
-        title="BitMadWall",
-        meta="PRODUCT WORK  /  SHIPPED  /  bitmadwall.ai",
-        n="04",
+        n="04", title="BITMADWALL", meta="PRODUCT WORK / SHIPPED / bitmadwall.ai",
         nodes=["your phone", "relay", "relay", "recipient"],
         note="works where the network is gone or cannot be trusted",
-        metrics=[("AES-256", "GCM ENCRYPTION"), ("7", "MESH HOPS"),
-                 ("0", "SERVERS IN PATH"), ("NO SIM", "CRYPTOGRAPHIC ID")],
-        stack="Bluetooth LE / Wi-Fi Direct / LoRa / Signal double ratchet / Bitcoin",
-    ),
+        metrics=[("AES-256", "GCM"), ("7", "MESH HOPS"), ("0", "SERVERS"), ("NO SIM", "CRYPTO ID")],
+        stack="Bluetooth LE / Wi-Fi Direct / LoRa / double ratchet / Bitcoin"),
     "employeeos": dict(
-        title="AI Employee OS",
-        meta="AGENT ORCHESTRATION  /  IN PROGRESS",
-        n="05",
+        n="05", title="AI EMPLOYEE OS", meta="AGENT ORCHESTRATION / IN PROGRESS",
         nodes=["request", "decompose", "route to agents", "validate", "trace"],
         note="plain English in, a dependency aware workflow out",
-        metrics=[("1", "MESSY REQUEST"), ("N", "SPECIALIST AGENTS"),
-                 ("DAG", "DEPENDENCY AWARE"), ("FULL", "EXECUTION TRACE")],
-        stack="Next.js / FastAPI / Pydantic / LangGraph / LangChain / Supabase / Groq",
-    ),
+        metrics=[("1", "REQUEST"), ("N", "AGENTS"), ("DAG", "ORDERED"), ("FULL", "TRACE")],
+        stack="Next.js / FastAPI / Pydantic / LangGraph / LangChain / Supabase / Groq"),
 }
 
-FS, PAD, GAP, BH = 11.5, 14, 28, 28
+FS, PAD, GAP, BH = 11.5, 13, 22, 30
 
 
 def card(spec, t):
-    """A project block.
-
-    The card carries its own title, meta strip and stack. The section around it
-    then needs no markdown heading and no grey subtitle line, which were the two
-    plainest things on the page.
-    """
-    w, left, h = 1000, 64, 278
-    nodes, note, num = spec["nodes"], spec["note"], spec["n"]
-    widths = [mono_w(nd, FS) + PAD * 2 for nd in nodes]
-    n = len(nodes)
+    h = 328
+    left = 70
+    nodes, n = spec["nodes"], len(spec["nodes"])
+    widths = [mono_w(x, FS) + PAD * 2 for x in nodes]
     dur = max(5.0, n * 1.15)
-    css = (
-        ".e{stroke-dasharray:2.5 4.5;animation:d 1.6s linear infinite}"
-        "@keyframes d{to{stroke-dashoffset:-7}}"
-        f".b{{animation:s {dur}s ease-in-out infinite}}"
-        "@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}"
-        "7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}"
-        "100%{stroke-opacity:.34;fill-opacity:0}}"
-        f".t{{animation:tt {dur}s ease-in-out infinite}}"
-        f"@keyframes tt{{0%{{fill:{t['dim']}}}7%{{fill:{t['accent2']}}}"
-        f"22%{{fill:{t['dim']}}}100%{{fill:{t['dim']}}}}}"
-    )
-    lab = (spec["title"] + ". " + " then ".join(nodes) + ". "
-           + ", ".join(f"{v} {k2.lower()}" for v, k2 in spec["metrics"])
-           + ". " + spec["stack"])
-    p = [head(w, h, lab, css)]
-    p.append(f'<rect width="{w}" height="{h}" fill="{t["bg"]}"/>')
-    p.append(f'<line x1="{left}" y1="1" x2="{w - left}" y2="1" stroke="{t["rule"]}"/>')
+    css = ('.e{stroke-dasharray:2.5 4.5;animation:d 1.6s linear infinite}'
+           '@keyframes d{to{stroke-dashoffset:-7}}'
+           '.b{animation:s %ss ease-in-out infinite}'
+           '@keyframes s{0%%{stroke-opacity:.45;fill-opacity:0}'
+           '7%%{stroke-opacity:1;fill-opacity:.18}22%%{stroke-opacity:.45;fill-opacity:0}'
+           '100%%{stroke-opacity:.45;fill-opacity:0}}' % dur)
+    lab = ("%s. %s. %s. %s. %s" % (
+        spec["title"], spec["meta"], " then ".join(nodes),
+        ", ".join("%s %s" % (v, k.lower()) for v, k in spec["metrics"]), spec["stack"]))
+    p = [head(W, h, lab, css)]
+    p.append('<rect width="%d" height="%d" fill="%s"/>' % (W, h, t["page"]))
+    p.append(tile(t, 40, 20, 920, 280))
 
-    p.append(f'<text x="{left}" y="46" font-family="{SANS}" font-size="27" font-weight="700" '
-             f'fill="{t["ink"]}" letter-spacing="-1.1">{esc(spec["title"])}</text>')
-    p.append(f'<text x="{w - left}" y="44" font-family="{SANS}" font-size="30" '
-             f'font-weight="700" fill="{t["accent"]}" opacity=".3" text-anchor="end" '
-             f'letter-spacing="-1">{num}</text>')
-    p.append(f'<text x="{left}" y="68" font-family="{MONO}" font-size="9.4" '
-             f'fill="{t["faint"]}" letter-spacing="1.9">{esc(spec["meta"])}</text>')
-    p.append(f'<rect x="{left}" y="82" width="38" height="2" fill="{t["accent"]}"/>')
+    p.append('<text x="%d" y="72" font-family="%s" font-size="30" font-weight="800" '
+             'fill="%s" letter-spacing="-1.1">%s</text>'
+             % (left, SANS, t["ink"], esc(spec["title"])))
+    p.append('<text x="%d" y="72" font-family="%s" font-size="34" font-weight="800" '
+             'fill="%s" opacity=".28" text-anchor="end">%s</text>'
+             % (W - 70, SANS, t["accent"], spec["n"]))
+    p.append('<text x="%d" y="94" font-family="%s" font-size="9.6" fill="%s" '
+             'letter-spacing="1.9">%s</text>' % (left, MONO, t["faint"], esc(spec["meta"])))
+    p.append('<rect x="%d" y="108" width="40" height="4" fill="%s"/>' % (left, t["accent"]))
 
-    y = 106
+    y = 132
     x = float(left)
     for i, (label, bw) in enumerate(zip(nodes, widths)):
         d = round(i * dur / n, 2)
-        p.append(f'<rect class="b" style="animation-delay:{d}s" x="{x:.1f}" y="{y}" '
-                 f'width="{bw:.1f}" height="{BH}" rx="3" fill="{t["accent"]}" fill-opacity="0" '
-                 f'stroke="{t["accent"]}" stroke-opacity=".34" stroke-width="1"/>')
-        p.append(f'<text class="t" style="animation-delay:{d}s" x="{x + bw / 2:.1f}" '
-                 f'y="{y + BH / 2 + 4:.1f}" font-family="{MONO}" font-size="{FS}" '
-                 f'fill="{t["dim"]}" text-anchor="middle">{esc(label)}</text>')
+        p.append('<rect class="b" style="animation-delay:%ss" x="%.1f" y="%d" width="%.1f" '
+                 'height="%d" fill="%s" fill-opacity="0" stroke="%s" stroke-opacity=".45" '
+                 'stroke-width="2"/>' % (d, x, y, bw, BH, t["accent"], t["accent"]))
+        p.append('<text x="%.1f" y="%.1f" font-family="%s" font-size="%s" fill="%s" '
+                 'text-anchor="middle">%s</text>'
+                 % (x + bw / 2, y + BH / 2 + 4, MONO, FS, t["dim"], esc(label)))
         if i < n - 1:
-            p.append(f'<path class="e" d="M{x + bw + 6:.1f} {y + BH / 2:.1f} '
-                     f'H{x + bw + GAP - 5:.1f}" stroke="{t["accent"]}" stroke-opacity=".5" '
-                     f'stroke-width="1"/>')
-            p.append(f'<path d="M{x + bw + GAP - 8:.1f} {y + BH / 2 - 3:.1f} l3.5 3 l-3.5 3" '
-                     f'fill="none" stroke="{t["accent"]}" stroke-opacity=".7" stroke-width="1"/>')
+            p.append('<path class="e" d="M%.1f %.1f H%.1f" stroke="%s" stroke-opacity=".6" '
+                     'stroke-width="2"/>' % (x + bw + 5, y + BH / 2, x + bw + GAP - 5, t["accent"]))
         x += bw + GAP
-    p.append(f'<text x="{left}" y="{y + BH + 24}" font-family="{MONO}" font-size="10.5" '
-             f'fill="{t["faint"]}">{esc(note)}</text>')
+    p.append('<text x="%d" y="%d" font-family="%s" font-size="10.5" fill="%s">%s</text>'
+             % (left, y + BH + 24, MONO, t["faint"], esc(spec["note"])))
 
-    p.append(f'<line x1="{left}" y1="186" x2="{w - left}" y2="186" stroke="{t["rule"]}"/>')
-    for i, (val, lab2) in enumerate(spec["metrics"]):
-        cx = left + i * 218
-        p.append(f'<text x="{cx}" y="216" font-family="{SANS}" font-size="21" '
-                 f'font-weight="700" fill="{t["ink"]}" letter-spacing="-.6">{esc(val)}</text>')
-        p.append(f'<text x="{cx}" y="233" font-family="{MONO}" font-size="8.6" '
-                 f'fill="{t["faint"]}" letter-spacing="1.5">{esc(lab2)}</text>')
-    p.append(f'<text x="{left}" y="262" font-family="{MONO}" font-size="10.2" '
-             f'fill="{t["dim"]}">{esc(spec["stack"])}</text>')
+    p.append('<line x1="%d" y1="212" x2="%d" y2="212" stroke="%s" stroke-opacity=".25"/>'
+             % (left, W - 70, t["accent"]))
+    for i, (val, cap) in enumerate(spec["metrics"]):
+        cx = left + i * 208
+        p.append('<text x="%d" y="250" font-family="%s" font-size="24" font-weight="800" '
+                 'fill="%s" letter-spacing="-.8">%s</text>' % (cx, SANS, t["ink"], esc(val)))
+        p.append('<text x="%d" y="266" font-family="%s" font-size="8.6" fill="%s" '
+                 'letter-spacing="1.5">%s</text>' % (cx, MONO, t["faint"], esc(cap)))
+    # the stack gets its own row. An earlier version right-anchored it on the
+    # same baseline as the metric labels and it collided on four cards out of five.
+    p.append('<text x="%d" y="288" font-family="%s" font-size="10" fill="%s">%s</text>'
+             % (left, MONO, t["dim"], esc(spec["stack"])))
     p.append("</svg>")
     return chr(10).join(p) + chr(10)
 
@@ -325,70 +373,60 @@ LANG_COLOUR = {
     "TeX": "#5d8a5a", "CSS": "#8d6bb0", "Shell": "#7fb069", "Jupyter Notebook": "#d07b3b",
 }
 
-CREDS = [
-    ("3rd Place", "National AI Hackathon"),
-    ("Production adopter", "Graph Context Framework"),
-    ("1,216 tests", "100% coverage, Forge Mentor"),
-    ("4 certifications", "Anthropic, Harvard, DeepLearning"),
-]
-
 
 def signals(t, s):
-    w, h = 1000, 236
-    labx = 64
-    css = (".sg{animation:in .8s ease-out both}@keyframes in{from{opacity:0}to{opacity:1}}"
-           ".pl{animation:pulse 5s ease-in-out infinite}"
-           "@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}")
-    lab = (f'{s["repos"]} public repositories, {s["stars"]} stars, '
-           f'{len(s["langs"])} languages, last shipped {s["pushed"]}')
-    p = [head(w, h, lab, css)]
-    p.append(f'<rect width="{w}" height="{h}" fill="{t["bg"]}"/>')
-    p.append(f'<line x1="{labx}" y1="26" x2="{w - 64}" y2="26" stroke="{t["rule"]}"/>')
+    h = 306
+    css = ('.sg{animation:in .9s ease-out both}@keyframes in{from{opacity:0}to{opacity:1}}')
+    lab = ("%d public repositories, %d stars, %d languages, last shipped %s"
+           % (s["repos"], s["stars"], len(s["langs"]), s["pushed"]))
+    p = [head(W, h, lab, css)]
+    p.append('<rect width="%d" height="%d" fill="%s"/>' % (W, h, t["page"]))
 
     cells = [(str(s["repos"]), "PUBLIC REPOS"), (str(s["stars"]), "STARS EARNED"),
              (str(len(s["langs"])), "LANGUAGES"), (s["pushed"], "LAST SHIPPED")]
     for i, (big, cap) in enumerate(cells):
-        cx = labx + i * 234
-        size = 34 if len(big) <= 4 else 21
-        p.append(f'<g class="sg" style="animation-delay:{round(i * 0.1, 2)}s">')
-        p.append(f'<text x="{cx}" y="80" font-family="{SANS}" font-size="{size}" '
-                 f'font-weight="700" fill="{t["ink"]}" letter-spacing="-1">{esc(big)}</text>')
-        p.append(f'<text x="{cx}" y="100" font-family="{MONO}" font-size="9.4" '
-                 f'fill="{t["faint"]}" letter-spacing="1.7">{cap}</text>')
+        x = 40 + i * 235
+        filled = i == 0
+        p.append(tile(t, x, 20, 215, 112,
+                      fill=t["accent"] if filled else t["tile"],
+                      stroke=t["ink"] if filled else t["accent"]))
+        col = t["onAccent"] if filled else t["accent"]
+        cap_col = t["onAccent"] if filled else t["faint"]
+        size = 40 if len(big) <= 4 else 24
+        p.append('<g class="sg" style="animation-delay:%ss">' % round(i * 0.1, 2))
+        p.append('<text x="%d" y="86" font-family="%s" font-size="%d" font-weight="800" '
+                 'fill="%s" letter-spacing="-1.5">%s</text>' % (x + 24, SANS, size, col, esc(big)))
+        p.append('<text x="%d" y="108" font-family="%s" font-size="9.4" fill="%s" '
+                 'letter-spacing="1.7" opacity="%s">%s</text>'
+                 % (x + 24, MONO, cap_col, ".8" if filled else "1", cap))
         p.append("</g>")
 
+    p.append(tile(t, 40, 164, 920, 112))
+    p.append('<text x="70" y="196" font-family="%s" font-size="9.6" fill="%s" '
+             'letter-spacing="1.9">WHAT THE REPOSITORIES ARE WRITTEN IN</text>'
+             % (MONO, t["faint"]))
     total = sum(c for _, c in s["langs"]) or 1
-    bx, bw, by, bh = labx, w - 128, 128, 8
+    bx, bw, by, bh = 70, 860, 210, 14
     shown = s["langs"][:6]
     other = sum(c for _, c in s["langs"][6:])
     segs = shown + ([("Other", other)] if other else [])
     x = float(bx)
     for i, (name, count) in enumerate(segs):
         seg = bw * count / total
-        col = LANG_COLOUR.get(name, t["faint"])
-        p.append(f'<rect class="sg" style="animation-delay:{round(0.4 + i * 0.07, 2)}s" '
-                 f'x="{x:.1f}" y="{by}" width="{max(seg - 2, 1):.1f}" height="{bh}" '
-                 f'fill="{col}"/>')
+        p.append('<rect class="sg" style="animation-delay:%ss" x="%.1f" y="%d" width="%.1f" '
+                 'height="%d" fill="%s"/>'
+                 % (round(0.4 + i * 0.07, 2), x, by, max(seg - 3, 1), bh,
+                    LANG_COLOUR.get(name, t["faint"])))
         x += seg
     lx = float(bx)
     for name, count in segs:
-        col = LANG_COLOUR.get(name, t["faint"])
-        p.append(f'<rect x="{lx:.1f}" y="{by + 24}" width="7" height="7" fill="{col}"/>')
-        p.append(f'<text x="{lx + 13:.1f}" y="{by + 31}" font-family="{MONO}" font-size="10.5" '
-                 f'fill="{t["dim"]}">{esc(name)} {count}</text>')
-        lx += 26 + mono_w(f"{name} {count}", 10.5)
-
-    p.append(f'<line x1="{labx}" y1="182" x2="{w - 64}" y2="182" stroke="{t["rule"]}"/>')
-    for i, (big, small) in enumerate(CREDS):
-        cx = labx + i * 234
-        p.append(f'<circle class="pl" style="animation-delay:{round(i * 0.8, 2)}s" '
-                 f'cx="{cx + 3}" cy="205" r="3" fill="{t["accent"]}"/>')
-        p.append(f'<text x="{cx + 14}" y="208" font-family="{MONO}" font-size="11" '
-                 f'font-weight="600" fill="{t["ink"]}">{esc(big)}</text>')
-        p.append(f'<text x="{cx + 14}" y="222" font-family="{MONO}" font-size="9.2" '
-                 f'fill="{t["faint"]}">{esc(small)}</text>')
+        p.append('<rect x="%.1f" y="%d" width="9" height="9" fill="%s"/>'
+                 % (lx, by + 26, LANG_COLOUR.get(name, t["faint"])))
+        p.append('<text x="%.1f" y="%d" font-family="%s" font-size="10.5" fill="%s">%s %d</text>'
+                 % (lx + 15, by + 35, MONO, t["dim"], esc(name), count))
+        lx += 30 + mono_w("%s %d" % (name, count), 10.5)
     p.append("</svg>")
-    return "\n".join(p) + "\n"
+    return chr(10).join(p) + chr(10)
 
 
 # ---------------------------------------------------------------------------
@@ -396,36 +434,35 @@ def signals(t, s):
 # ---------------------------------------------------------------------------
 
 def signoff(t):
-    w, h = 1000, 96
-    css = (".dash{stroke-dasharray:2 6;animation:g 3s linear infinite}"
-           "@keyframes g{to{stroke-dashoffset:-8}}")
-    p = [head(w, h, "", css)]
-    p.append(f'<rect width="{w}" height="{h}" fill="{t["bg"]}"/>')
-    p.append(f'<line class="dash" x1="64" y1="34" x2="{w - 64}" y2="34" '
-             f'stroke="{t["accent"]}" stroke-opacity=".5"/>')
-    p.append(f'<text x="64" y="66" font-family="{MONO}" font-size="10.5" fill="{t["faint"]}" '
-             f'letter-spacing="2.2">EVERY MARK ON THIS PAGE WAS DRAWN BY A SCRIPT IN THIS REPO</text>')
-    p.append(f'<text x="{w - 64}" y="66" font-family="{MONO}" font-size="10.5" '
-             f'fill="{t["accent"]}" letter-spacing="2.2" text-anchor="end">assets/build.py</text>')
+    h = 110
+    css = ('.dash{stroke-dasharray:3 7;animation:g 3s linear infinite}'
+           '@keyframes g{to{stroke-dashoffset:-10}}')
+    p = [head(W, h, "", css)]
+    p.append('<rect width="%d" height="%d" fill="%s"/>' % (W, h, t["page"]))
+    p.append(tile(t, 40, 20, 920, 56, fill=t["accent"], stroke=t["ink"]))
+    p.append('<text x="70" y="55" font-family="%s" font-size="10.5" fill="%s" '
+             'letter-spacing="2.2" opacity=".85">EVERY TILE ON THIS PAGE IS DRAWN BY A '
+             'SCRIPT IN THIS REPO</text>' % (MONO, t["onAccent"]))
+    p.append('<text x="%d" y="55" font-family="%s" font-size="10.5" fill="%s" '
+             'letter-spacing="2.2" text-anchor="end">assets/build.py</text>'
+             % (W - 70, MONO, t["onAccent"]))
     p.append("</svg>")
-    return "\n".join(p) + "\n"
+    return chr(10).join(p) + chr(10)
 
 
 if __name__ == "__main__":
     s = stats()
     if s:
-        print(f"  stats: {s['repos']} repos, {s['stars']} stars, last {s['pushed']}")
+        print("  stats: %d repos, %d stars, last %s" % (s["repos"], s["stars"], s["pushed"]))
     keep = set()
-    (OUT / "orbit.svg").write_text(orbit(), encoding="utf-8")
-    keep.add("orbit.svg")
     for name, t in THEME.items():
-        for stem, fn in (("hero", hero), ("signoff", signoff)):
-            (OUT / f"{stem}-{name}.svg").write_text(fn(t), encoding="utf-8")
-            keep.add(f"{stem}-{name}.svg")
+        for stem, fn in (("hero", hero), ("principles", principles), ("signoff", signoff)):
+            (OUT / ("%s-%s.svg" % (stem, name))).write_text(fn(t), encoding="utf-8")
+            keep.add("%s-%s.svg" % (stem, name))
         for key, spec in SYSTEMS.items():
-            (OUT / f"sys-{key}-{name}.svg").write_text(card(spec, t), encoding="utf-8")
-            keep.add(f"sys-{key}-{name}.svg")
-        f = OUT / f"signals-{name}.svg"
+            (OUT / ("sys-%s-%s.svg" % (key, name))).write_text(card(spec, t), encoding="utf-8")
+            keep.add("sys-%s-%s.svg" % (key, name))
+        f = OUT / ("signals-%s.svg" % name)
         if s is not None:
             f.write_text(signals(t, s), encoding="utf-8")
         keep.add(f.name)
@@ -433,17 +470,9 @@ if __name__ == "__main__":
     for old in OUT.glob("*.svg"):
         if old.name not in keep:
             old.unlink()
-            print(f"  removed {old.name}")
-
-    # width guard: nothing may run past the 1000 unit canvas
-    import re as _re
+            print("  removed %s" % old.name)
     for n in sorted(keep):
-        f = OUT / n
-        if not f.exists():
-            print("  MISSING  " + n)
-            continue
-        body = f.read_text(encoding="utf-8")
-        over = [float(m) for m in _re.findall(r'x="(\d+\.?\d*)"', body) if float(m) > 1000]
-        print(f"  wrote    {n}" + (f"   OVERFLOW at x={max(over)}" if over else ""))
+        print(("  wrote    " if (OUT / n).exists() else "  MISSING  ") + n)
     if s is None:
-        print("\n  the API did not answer, so signals kept its previous numbers")
+        print()
+        print("  the API did not answer, so signals kept its previous numbers")

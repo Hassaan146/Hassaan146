@@ -1,37 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 278" width="1000" height="278" role="img" aria-label="AI Employee OS. request then decompose then route to agents then validate then trace. 1 messy request, N specialist agents, DAG dependency aware, FULL execution trace. Next.js / FastAPI / Pydantic / LangGraph / LangChain / Supabase / Groq"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.6s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.b{animation:s 5.75s ease-in-out infinite}@keyframes s{0%{stroke-opacity:.34;fill-opacity:0}7%{stroke-opacity:1;fill-opacity:.1}22%{stroke-opacity:.34;fill-opacity:0}100%{stroke-opacity:.34;fill-opacity:0}}.t{animation:tt 5.75s ease-in-out infinite}@keyframes tt{0%{fill:#5f5a52}7%{fill:#7d4e05}22%{fill:#5f5a52}100%{fill:#5f5a52}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<rect width="1000" height="278" fill="#fbfaf8"/>
-<line x1="64" y1="1" x2="936" y2="1" stroke="#e2ddd4"/>
-<text x="64" y="46" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#15171b" letter-spacing="-1.1">AI Employee OS</text>
-<text x="936" y="44" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#a96a08" opacity=".3" text-anchor="end" letter-spacing="-1">05</text>
-<text x="64" y="68" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.4" fill="#8b857a" letter-spacing="1.9">AGENT ORCHESTRATION  /  IN PROGRESS</text>
-<rect x="64" y="82" width="38" height="2" fill="#a96a08"/>
-<rect class="b" style="animation-delay:0.0s" x="64.0" y="106" width="76.4" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:0.0s" x="102.2" y="124.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">request</text>
-<path class="e" d="M146.4 120.0 H163.4" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M160.4 117.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:1.15s" x="168.4" y="106" width="90.2" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:1.15s" x="213.5" y="124.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">decompose</text>
-<path class="e" d="M264.6 120.0 H281.6" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M278.6 117.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:2.3s" x="286.6" y="106" width="131.7" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:2.3s" x="352.4" y="124.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">route to agents</text>
-<path class="e" d="M424.3 120.0 H441.3" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M438.3 117.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:3.45s" x="446.3" y="106" width="83.3" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:3.45s" x="487.9" y="124.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">validate</text>
-<path class="e" d="M535.5 120.0 H552.5" stroke="#a96a08" stroke-opacity=".5" stroke-width="1"/>
-<path d="M549.5 117.0 l3.5 3 l-3.5 3" fill="none" stroke="#a96a08" stroke-opacity=".7" stroke-width="1"/>
-<rect class="b" style="animation-delay:4.6s" x="557.5" y="106" width="62.6" height="28" rx="3" fill="#a96a08" fill-opacity="0" stroke="#a96a08" stroke-opacity=".34" stroke-width="1"/>
-<text class="t" style="animation-delay:4.6s" x="588.8" y="124.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">trace</text>
-<text x="64" y="158" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8b857a">plain English in, a dependency aware workflow out</text>
-<line x1="64" y1="186" x2="936" y2="186" stroke="#e2ddd4"/>
-<text x="64" y="216" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">1</text>
-<text x="64" y="233" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">MESSY REQUEST</text>
-<text x="282" y="216" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">N</text>
-<text x="282" y="233" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">SPECIALIST AGENTS</text>
-<text x="500" y="216" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">DAG</text>
-<text x="500" y="233" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">DEPENDENCY AWARE</text>
-<text x="718" y="216" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-.6">FULL</text>
-<text x="718" y="233" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">EXECUTION TRACE</text>
-<text x="64" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.2" fill="#5f5a52">Next.js / FastAPI / Pydantic / LangGraph / LangChain / Supabase / Groq</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 328" width="1000" height="328" role="img" aria-label="AI EMPLOYEE OS. AGENT ORCHESTRATION / IN PROGRESS. request then decompose then route to agents then validate then trace. 1 request, N agents, DAG ordered, FULL trace. Next.js / FastAPI / Pydantic / LangGraph / LangChain / Supabase / Groq"><style>.e{stroke-dasharray:2.5 4.5;animation:d 1.6s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.b{animation:s 5.75s ease-in-out infinite}@keyframes s{0%{stroke-opacity:.45;fill-opacity:0}7%{stroke-opacity:1;fill-opacity:.18}22%{stroke-opacity:.45;fill-opacity:0}100%{stroke-opacity:.45;fill-opacity:0}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="1000" height="328" fill="#fbfaf8"/>
+<rect x="47" y="27" width="920" height="280" fill="#15171b" opacity=".9"/><rect x="40" y="20" width="920" height="280" fill="#ffffff" stroke="#c07f10" stroke-width="3"/>
+<text x="70" y="72" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="30" font-weight="800" fill="#15171b" letter-spacing="-1.1">AI EMPLOYEE OS</text>
+<text x="930" y="72" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#c07f10" opacity=".28" text-anchor="end">05</text>
+<text x="70" y="94" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#8b857a" letter-spacing="1.9">AGENT ORCHESTRATION / IN PROGRESS</text>
+<rect x="70" y="108" width="40" height="4" fill="#c07f10"/>
+<rect class="b" style="animation-delay:0.0s" x="70.0" y="132" width="74.4" height="30" fill="#c07f10" fill-opacity="0" stroke="#c07f10" stroke-opacity=".45" stroke-width="2"/>
+<text x="107.2" y="151.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">request</text>
+<path class="e" d="M149.4 147.0 H161.4" stroke="#c07f10" stroke-opacity=".6" stroke-width="2"/>
+<rect class="b" style="animation-delay:1.15s" x="166.4" y="132" width="88.2" height="30" fill="#c07f10" fill-opacity="0" stroke="#c07f10" stroke-opacity=".45" stroke-width="2"/>
+<text x="210.5" y="151.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">decompose</text>
+<path class="e" d="M259.6 147.0 H271.6" stroke="#c07f10" stroke-opacity=".6" stroke-width="2"/>
+<rect class="b" style="animation-delay:2.3s" x="276.6" y="132" width="129.7" height="30" fill="#c07f10" fill-opacity="0" stroke="#c07f10" stroke-opacity=".45" stroke-width="2"/>
+<text x="341.4" y="151.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">route to agents</text>
+<path class="e" d="M411.3 147.0 H423.3" stroke="#c07f10" stroke-opacity=".6" stroke-width="2"/>
+<rect class="b" style="animation-delay:3.45s" x="428.3" y="132" width="81.3" height="30" fill="#c07f10" fill-opacity="0" stroke="#c07f10" stroke-opacity=".45" stroke-width="2"/>
+<text x="468.9" y="151.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">validate</text>
+<path class="e" d="M514.5 147.0 H526.5" stroke="#c07f10" stroke-opacity=".6" stroke-width="2"/>
+<rect class="b" style="animation-delay:4.6s" x="531.5" y="132" width="60.6" height="30" fill="#c07f10" fill-opacity="0" stroke="#c07f10" stroke-opacity=".45" stroke-width="2"/>
+<text x="561.8" y="151.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#5f5a52" text-anchor="middle">trace</text>
+<text x="70" y="186" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8b857a">plain English in, a dependency aware workflow out</text>
+<line x1="70" y1="212" x2="930" y2="212" stroke="#c07f10" stroke-opacity=".25"/>
+<text x="70" y="250" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#15171b" letter-spacing="-.8">1</text>
+<text x="70" y="266" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">REQUEST</text>
+<text x="278" y="250" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#15171b" letter-spacing="-.8">N</text>
+<text x="278" y="266" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">AGENTS</text>
+<text x="486" y="250" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#15171b" letter-spacing="-.8">DAG</text>
+<text x="486" y="266" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">ORDERED</text>
+<text x="694" y="250" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#15171b" letter-spacing="-.8">FULL</text>
+<text x="694" y="266" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8b857a" letter-spacing="1.5">TRACE</text>
+<text x="70" y="288" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#5f5a52">Next.js / FastAPI / Pydantic / LangGraph / LangChain / Supabase / Groq</text>
 </svg>

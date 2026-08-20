@@ -1,32 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-label="Muhammad Hassaan-ul-Mustafa, AI engineer, product and backend"><style>.ln{stroke-dasharray:3 5;animation:flow 2.2s linear infinite}@keyframes flow{to{stroke-dashoffset:-8}}.nd{animation:beat 6s ease-in-out infinite}@keyframes beat{0%,100%{opacity:.42}9%{opacity:1}24%{opacity:.42}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<rect width="1000" height="340" fill="#0a0b0d"/>
-<rect x="30" y="26" width="940" height="288" fill="none" stroke="#20242b" stroke-width="1"/>
-<text x="64" y="74" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#e8a33d" letter-spacing="3.4">AI ENGINEER &#183; PRODUCT AND BACKEND</text>
-<text x="936" y="74" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5c584f" letter-spacing="2.2" text-anchor="end">ISLAMABAD, PK</text>
-<text x="60" y="158" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#eae7e2" letter-spacing="-2.2">MUHAMMAD</text>
-<text x="60" y="216" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#eae7e2" letter-spacing="-2.2">HASSAAN-UL-MUSTAFA</text>
-<rect x="64" y="240" width="132" height="3" fill="#e8a33d"/>
-<text x="64" y="278" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="16" fill="#8b867e">I build AI agents and the backends they run on.</text>
-<text x="64" y="308" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5c584f" letter-spacing="2">ARBISOFT &#183; FAST-NUCES &#183; OPEN TO REMOTE</text>
-<g transform="translate(706,58)">
-<line class="ln" x1="0" y1="40" x2="54" y2="8" stroke="#e8a33d" stroke-opacity=".38" stroke-width="1"/>
-<line class="ln" x1="0" y1="40" x2="54" y2="74" stroke="#e8a33d" stroke-opacity=".38" stroke-width="1"/>
-<line class="ln" x1="54" y1="8" x2="112" y2="40" stroke="#e8a33d" stroke-opacity=".38" stroke-width="1"/>
-<line class="ln" x1="54" y1="74" x2="112" y2="40" stroke="#e8a33d" stroke-opacity=".38" stroke-width="1"/>
-<line class="ln" x1="54" y1="74" x2="112" y2="108" stroke="#e8a33d" stroke-opacity=".38" stroke-width="1"/>
-<line class="ln" x1="112" y1="40" x2="170" y2="8" stroke="#e8a33d" stroke-opacity=".38" stroke-width="1"/>
-<line class="ln" x1="112" y1="40" x2="170" y2="74" stroke="#e8a33d" stroke-opacity=".38" stroke-width="1"/>
-<line class="ln" x1="112" y1="108" x2="170" y2="74" stroke="#e8a33d" stroke-opacity=".38" stroke-width="1"/>
-<line class="ln" x1="170" y1="8" x2="226" y2="40" stroke="#e8a33d" stroke-opacity=".38" stroke-width="1"/>
-<line class="ln" x1="170" y1="74" x2="226" y2="40" stroke="#e8a33d" stroke-opacity=".38" stroke-width="1"/>
-<line class="ln" x1="170" y1="74" x2="226" y2="108" stroke="#e8a33d" stroke-opacity=".38" stroke-width="1"/>
-<circle class="nd" style="animation-delay:0.0s" cx="0" cy="40" r="3.1" fill="#f6cd85"/>
-<circle class="nd" style="animation-delay:0.62s" cx="54" cy="8" r="3.1" fill="#f6cd85"/>
-<circle class="nd" style="animation-delay:1.24s" cx="54" cy="74" r="3.1" fill="#f6cd85"/>
-<circle class="nd" style="animation-delay:1.86s" cx="112" cy="40" r="4.6" fill="#e8a33d"/>
-<circle class="nd" style="animation-delay:2.48s" cx="112" cy="108" r="3.1" fill="#f6cd85"/>
-<circle class="nd" style="animation-delay:3.1s" cx="170" cy="8" r="3.1" fill="#f6cd85"/>
-<circle class="nd" style="animation-delay:3.72s" cx="170" cy="74" r="4.6" fill="#e8a33d"/>
-<circle class="nd" style="animation-delay:4.34s" cx="226" cy="40" r="3.1" fill="#f6cd85"/>
-<circle class="nd" style="animation-delay:4.96s" cx="226" cy="108" r="3.1" fill="#f6cd85"/>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420" role="img" aria-label="Muhammad Hassaan-ul-Mustafa. AI engineer, product and backend. I build AI agents and the backends they run on. Arbisoft, FAST-NUCES, Islamabad, open to remote."><style>.orb{transform-box:view-box;transform-origin:812px 145px;animation-name:spin;animation-timing-function:linear;animation-iteration-count:infinite}@keyframes spin{to{transform:rotate(360deg)}}.pulse{transform-box:view-box;transform-origin:812px 145px;animation:beat 4s ease-in-out infinite}@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}.rule{animation:grow 1.4s cubic-bezier(.2,.8,.2,1) both}@keyframes grow{from{width:0}to{width:130px}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="1000" height="420" fill="#0a0b0d"/>
+<rect x="47" y="47" width="600" height="216" fill="#000000" opacity=".9"/><rect x="40" y="40" width="600" height="216" fill="#14161a" stroke="#e8a33d" stroke-width="3"/>
+<text x="70" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#e8a33d" letter-spacing="3.2">AI ENGINEER / PRODUCT AND BACKEND</text>
+<text x="70" y="150" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="52" font-weight="800" fill="#f4f1ec" letter-spacing="-2.4">MUHAMMAD</text>
+<text x="70" y="204" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="52" font-weight="800" fill="#e8a33d" letter-spacing="-2.4">HASSAAN</text>
+<rect class="rule" x="70" y="222" width="130" height="6" fill="#e8a33d"/>
+<rect x="671" y="47" width="296" height="216" fill="#000000" opacity=".9"/><rect x="664" y="40" width="296" height="216" fill="#e8a33d" stroke="#f4f1ec" stroke-width="3"/>
+<text x="690" y="76" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#0a0b0d" letter-spacing="2.6" opacity=".75">THE SHAPE OF THE WORK</text>
+<circle cx="812" cy="145" r="30" fill="none" stroke="#0a0b0d" stroke-width="2" stroke-opacity=".45"/>
+<g class="orb" style="animation-duration:13s">
+<circle cx="842.0" cy="145.0" r="5.5" fill="#0a0b0d"/>
+</g>
+<circle cx="812" cy="145" r="52" fill="none" stroke="#0a0b0d" stroke-width="2" stroke-opacity=".45"/>
+<g class="orb" style="animation-duration:21s;animation-direction:reverse">
+<circle cx="864.0" cy="145.0" r="4.8" fill="#0a0b0d"/>
+<circle cx="760.0" cy="145.0" r="4.8" fill="#0a0b0d"/>
+</g>
+<circle cx="812" cy="145" r="74" fill="none" stroke="#0a0b0d" stroke-width="2" stroke-opacity=".45"/>
+<g class="orb" style="animation-duration:34s">
+<circle cx="886.0" cy="145.0" r="4.1" fill="#0a0b0d"/>
+<circle cx="775.0" cy="209.1" r="4.1" fill="#0a0b0d"/>
+<circle cx="775.0" cy="80.9" r="4.1" fill="#0a0b0d"/>
+</g>
+<circle class="pulse" cx="812" cy="145" r="13" fill="#0a0b0d"/>
+<text x="812" y="242" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#0a0b0d" letter-spacing="1.8" text-anchor="middle" opacity=".75">DATA / API / AGENTS</text>
+<rect x="47" y="295" width="920" height="92" fill="#000000" opacity=".9"/><rect x="40" y="288" width="920" height="92" fill="#14161a" stroke="#e8a33d" stroke-width="3"/>
+<text x="70" y="330" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="600" fill="#f4f1ec" letter-spacing="-.5">I build AI agents and the backends they run on.</text>
+<text x="70" y="358" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#6e6a63" letter-spacing="2.2">ARBISOFT / FAST-NUCES / ISLAMABAD / OPEN TO REMOTE</text>
+</svg>

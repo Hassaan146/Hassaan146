@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 236" width="1000" height="236" role="img" aria-label="38 public repositories, 26 stars, 9 languages, last shipped 19 Aug 2026"><style>.sg{animation:in .8s ease-out both}@keyframes in{from{opacity:0}to{opacity:1}}.pl{animation:pulse 5s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 236" width="1000" height="236" role="img" aria-label="38 public repositories, 26 stars, 9 languages, last shipped 20 Aug 2026"><style>.sg{animation:in .8s ease-out both}@keyframes in{from{opacity:0}to{opacity:1}}.pl{animation:pulse 5s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
 <rect width="1000" height="236" fill="#fbfaf8"/>
 <line x1="64" y1="26" x2="936" y2="26" stroke="#e2ddd4"/>
 <g class="sg" style="animation-delay:0.0s">
@@ -14,7 +14,7 @@
 <text x="532" y="100" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.4" fill="#8b857a" letter-spacing="1.7">LANGUAGES</text>
 </g>
 <g class="sg" style="animation-delay:0.3s">
-<text x="766" y="80" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-1">19 Aug 2026</text>
+<text x="766" y="80" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#15171b" letter-spacing="-1">20 Aug 2026</text>
 <text x="766" y="100" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.4" fill="#8b857a" letter-spacing="1.7">LAST SHIPPED</text>
 </g>
 <rect class="sg" style="animation-delay:0.4s" x="64.0" y="128" width="363.7" height="8" fill="#e8a33d"/>

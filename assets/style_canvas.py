@@ -18,7 +18,9 @@ type, a graphite mesh, and a single desaturated ochre for the things worth
 pointing at. Nothing glows.
 """
 
+import json
 import math
+import pathlib
 
 from build import (CW, MONO, PRINCIPLES, REDUCE, SANS, SYSTEMS, esc, mono_w)
 
@@ -42,6 +44,31 @@ TOOLCHAIN = [
 ]
 
 TONE = [ACC, "#a8a29a", ACC2, "#7d7871", "#5f5c57", "#4a4744", "#3a3835"]
+
+
+def wrap(text, size, width):
+    """Break a line to fit the sheet, measured rather than guessed."""
+    words, lines, cur = text.split(), [], ""
+    for w in words:
+        trial = (cur + " " + w).strip()
+        if mono_w(trial, size) > width and cur:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = trial
+    if cur:
+        lines.append(cur)
+    return lines
+
+
+def asked():
+    p = pathlib.Path(__file__).parent / "asked.json"
+    if p.exists():
+        try:
+            return json.loads(p.read_text(encoding="utf-8"))
+        except ValueError:
+            pass
+    return []
 
 
 def txt(x, y, s, size=11, fill=None, font=None, weight=None, anchor=None,
@@ -230,7 +257,33 @@ def canvas(s):
             lx += 28 + mono_w("%s %d" % (name, count), 10)
         y += 26
     p += scale(y, M, R)
+    y += 40
+
+    # --------------------------------------------------------------------- ask
+    p += marker(y, "04 / ASK IT SOMETHING")
+    y += 50
+    p.append(txt(M, y, "This sheet answers back. Open an issue titled agent: and your "
+                       "question, and a", 12, DIM, SANS))
+    y += 19
+    p.append(txt(M, y, "workflow routes it, writes the reply here, then closes the issue. "
+                       "Links are below.", 12, DIM, SANS))
     y += 34
+
+    log = asked()
+    if not log:
+        p.append(txt(M, y, "Nobody has asked anything yet. Be the first.", 11, FAINT))
+        y += 26
+    for item in log[:3]:
+        p.append('<rect x="%d" y="%.1f" width="3" height="%d" fill="%s"/>'
+                 % (M, y - 11, 40, ACC))
+        p.append(txt(M + 14, y, item.get("q", "")[:78], 11.5, INK))
+        p.append(txt(R, y, "@" + str(item.get("who", ""))[:24], 9, FAINT, anchor="end"))
+        y += 17
+        for ln in wrap(str(item.get("a", "")), 10.5, R - M - 14)[:3]:
+            p.append(txt(M + 14, y, ln, 10.5, DIM))
+            y += 15
+        y += 16
+    y += 6
 
     # --------------------------------------------------------------- colophon
     p.append(txt(M, y, "EVERY MARK ON THIS SHEET IS DRAWN BY A SCRIPT IN THIS REPO",

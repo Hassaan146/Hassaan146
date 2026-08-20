@@ -33,6 +33,17 @@
   <a href="#">Portfolio, soon</a>
 </p>
 
+<p align="center">
+  <sub><b>ASK THE SHEET</b> &nbsp; one click opens a pre-filled issue, a workflow answers it and writes the reply above</sub>
+  <br/>
+  <a href="https://github.com/Hassaan146/Hassaan146/issues/new?title=agent%3A%20what%20is%20Forge%20Mentor"><b>What is Forge Mentor</b></a> &nbsp;&#183;&nbsp;
+  <a href="https://github.com/Hassaan146/Hassaan146/issues/new?title=agent%3A%20what%20stack%20do%20you%20use"><b>What stack</b></a> &nbsp;&#183;&nbsp;
+  <a href="https://github.com/Hassaan146/Hassaan146/issues/new?title=agent%3A%20are%20you%20available%20for%20work"><b>Are you available</b></a> &nbsp;&#183;&nbsp;
+  <a href="https://github.com/Hassaan146/Hassaan146/issues/new?title=agent%3A%20how%20does%20this%20agent%20work"><b>How does this work</b></a>
+  <br/>
+  <sub><a href="https://github.com/Hassaan146/Hassaan146/issues/new?title=agent%3A%20">or ask it anything else</a></sub>
+</p>
+
 <details>
 <summary align="center"><sub>Install the plugin, and eleven more builds</sub></summary>
 

@@ -1,0 +1,66 @@
+name: Answer a question on the sheet
+
+# Someone opens an issue titled "agent: <question>". This routes it, writes the
+# answer onto the sheet, replies on the issue and closes it.
+#
+# The question is read from the issue title only, and passed to the script as an
+# argument rather than interpolated into a shell line, so a title can never turn
+# into a command. Nothing in the issue body is used at all.
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  answer:
+    if: startsWith(github.event.issue.title, 'agent:')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Route the question and redraw the sheet
+        id: run
+        env:
+          TITLE: ${{ github.event.issue.title }}
+          WHO: ${{ github.event.issue.user.login }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          set -eu
+          REPLY=$(python assets/agent.py "$TITLE" "$WHO" "$(date -u +%Y-%m-%d)" \
+                  | sed -n 's/^REPLY:://p')
+          python assets/build.py
+          {
+            echo "reply<<END"
+            echo "$REPLY"
+            echo "END"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Commit the new sheet
+        run: |
+          if [ -z "$(git status --porcelain assets)" ]; then
+            echo "sheet unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git commit -m "Answer from @${{ github.event.issue.user.login }}'s question"
+          git push
+
+      - name: Reply and close
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BODY: ${{ steps.run.outputs.reply }}
+        run: |
+          printf '%s\n\n---\n\nThis is now on the sheet at the top of the profile. Thanks for asking.\n' \
+            "$BODY" > reply.md
+          gh issue comment "${{ github.event.issue.number }}" --body-file reply.md
+          gh issue close "${{ github.event.issue.number }}"

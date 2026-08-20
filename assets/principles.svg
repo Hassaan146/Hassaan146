@@ -1,31 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 186" width="1000" height="186" role="img" aria-label="GUARDRAILS FIRST. Rate limiting, validation and row level security before features.. DEGRADE, DO NOT DIE. Every external call has a fallback. Clone it, it runs with zero keys.. DECIDE BEFORE CODING. The architectural choice gets made, and written down, first."><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0b0618"/><stop offset="100%" stop-color="#07040f"/></linearGradient><filter id="gl" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="gs" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><style>.fl{animation:fl 3.4s ease-in-out infinite}@keyframes fl{0%,100%{opacity:1}47%{opacity:.68}53%{opacity:1}}.sc{animation:sc 6s linear infinite}@keyframes sc{to{transform:translateY(760px)}}.dash{stroke-dasharray:3 6;animation:d 1.5s linear infinite}@keyframes d{to{stroke-dashoffset:-9}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<rect width="1000" height="186" fill="url(#sky)"/>
-<rect x="40" y="20" width="293" height="132" fill="#0d0a1c" fill-opacity=".72" stroke="#22e3ff" stroke-width="1.5" stroke-opacity=".85"/>
-<path d="M40 20 h11 M40 20 v11" stroke="#22e3ff" stroke-width="2" fill="none" stroke-opacity=".9"/>
-<path d="M333 20 h-11 M333 20 v11" stroke="#22e3ff" stroke-width="2" fill="none" stroke-opacity=".9"/>
-<path d="M40 152 h11 M40 152 v-11" stroke="#22e3ff" stroke-width="2" fill="none" stroke-opacity=".9"/>
-<path d="M333 152 h-11 M333 152 v-11" stroke="#22e3ff" stroke-width="2" fill="none" stroke-opacity=".9"/>
-<text x="62" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#22e3ff" font-weight="700" filter="url(#gl)">01</text>
-<text x="62" y="90" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="800" fill="#eaf2ff">GUARDRAILS FIRST</text>
-<text x="62" y="114" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9aa4c4">Rate limiting, validation and row</text>
-<text x="62" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9aa4c4">level security before features.</text>
-<rect x="353" y="20" width="293" height="132" fill="#0d0a1c" fill-opacity=".72" stroke="#ff2e88" stroke-width="1.5" stroke-opacity=".85"/>
-<path d="M353 20 h11 M353 20 v11" stroke="#ff2e88" stroke-width="2" fill="none" stroke-opacity=".9"/>
-<path d="M646 20 h-11 M646 20 v11" stroke="#ff2e88" stroke-width="2" fill="none" stroke-opacity=".9"/>
-<path d="M353 152 h11 M353 152 v-11" stroke="#ff2e88" stroke-width="2" fill="none" stroke-opacity=".9"/>
-<path d="M646 152 h-11 M646 152 v-11" stroke="#ff2e88" stroke-width="2" fill="none" stroke-opacity=".9"/>
-<text x="375" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#ff2e88" font-weight="700" filter="url(#gl)">02</text>
-<text x="375" y="90" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="800" fill="#eaf2ff">DEGRADE, DO NOT DIE</text>
-<text x="375" y="114" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9aa4c4">Every external call has a fallback.</text>
-<text x="375" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9aa4c4">Clone it, it runs with zero keys.</text>
-<rect x="666" y="20" width="293" height="132" fill="#0d0a1c" fill-opacity=".72" stroke="#a06bff" stroke-width="1.5" stroke-opacity=".85"/>
-<path d="M666 20 h11 M666 20 v11" stroke="#a06bff" stroke-width="2" fill="none" stroke-opacity=".9"/>
-<path d="M959 20 h-11 M959 20 v11" stroke="#a06bff" stroke-width="2" fill="none" stroke-opacity=".9"/>
-<path d="M666 152 h11 M666 152 v-11" stroke="#a06bff" stroke-width="2" fill="none" stroke-opacity=".9"/>
-<path d="M959 152 h-11 M959 152 v-11" stroke="#a06bff" stroke-width="2" fill="none" stroke-opacity=".9"/>
-<text x="688" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#a06bff" font-weight="700" filter="url(#gl)">03</text>
-<text x="688" y="90" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="800" fill="#eaf2ff">DECIDE BEFORE CODING</text>
-<text x="688" y="114" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9aa4c4">The architectural choice gets made,</text>
-<text x="688" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9aa4c4">and written down, first.</text>
-<rect class="sc" x="0" y="-70" width="1000" height="70" fill="#22e3ff" opacity=".045"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 190" width="1000" height="190" role="img" aria-label="GUARDRAILS FIRST. Rate limiting, validation and row level security before features.. DEGRADE, DO NOT DIE. Every external call has a fallback. Clone it, it runs with zero keys.. DECIDE BEFORE CODING. The architectural choice gets made, and written down, first."><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#141826"/><stop offset="55%" stop-color="#1d1630"/><stop offset="100%" stop-color="#0e1018"/></linearGradient><filter id="soft" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="46"/></filter><linearGradient id="frost" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ffffff" stop-opacity=".14"/><stop offset="100%" stop-color="#ffffff" stop-opacity=".035"/></linearGradient><linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ffffff" stop-opacity=".38"/><stop offset="60%" stop-color="#ffffff" stop-opacity=".1"/></linearGradient></defs><style>.dr{animation:dr 14s ease-in-out infinite}@keyframes dr{0%,100%{transform:translate(0,0)}50%{transform:translate(26px,-18px)}}.dr2{animation:dr2 18s ease-in-out infinite}@keyframes dr2{0%,100%{transform:translate(0,0)}50%{transform:translate(-22px,16px)}}.sh{animation:sh 7s ease-in-out infinite}@keyframes sh{0%,100%{opacity:.5}50%{opacity:1}}.dash{stroke-dasharray:3 6;animation:d 1.7s linear infinite}@keyframes d{to{stroke-dashoffset:-9}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="1000" height="190" fill="url(#bg)"/>
+<g filter="url(#soft)">
+<circle class="dr" cx="180" cy="60" r="100" fill="#8ea2ff" opacity=".4"/>
+<circle class="dr2" cx="820" cy="140" r="110" fill="#ffb572" opacity=".26"/>
+</g>
+<rect x="40" y="22" width="293" height="136" rx="16" fill="url(#frost)" stroke="url(#edge)" stroke-width="1.3"/>
+<rect x="62" y="22" width="46" height="4" rx="2" fill="#8ea2ff"/>
+<text x="62" y="62" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#8ea2ff" font-weight="700">01</text>
+<text x="62" y="92" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#f2f4fb">GUARDRAILS FIRST</text>
+<text x="62" y="118" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" fill="#b9c0d4">Rate limiting, validation and row</text>
+<text x="62" y="135" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" fill="#b9c0d4">level security before features.</text>
+<rect x="353" y="22" width="293" height="136" rx="16" fill="url(#frost)" stroke="url(#edge)" stroke-width="1.3"/>
+<rect x="375" y="22" width="46" height="4" rx="2" fill="#5ee0c8"/>
+<text x="375" y="62" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5ee0c8" font-weight="700">02</text>
+<text x="375" y="92" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#f2f4fb">DEGRADE, DO NOT DIE</text>
+<text x="375" y="118" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" fill="#b9c0d4">Every external call has a fallback.</text>
+<text x="375" y="135" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" fill="#b9c0d4">Clone it, it runs with zero keys.</text>
+<rect x="666" y="22" width="293" height="136" rx="16" fill="url(#frost)" stroke="url(#edge)" stroke-width="1.3"/>
+<rect x="688" y="22" width="46" height="4" rx="2" fill="#ffb572"/>
+<text x="688" y="62" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#ffb572" font-weight="700">03</text>
+<text x="688" y="92" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#f2f4fb">DECIDE BEFORE CODING</text>
+<text x="688" y="118" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" fill="#b9c0d4">The architectural choice gets made,</text>
+<text x="688" y="135" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" fill="#b9c0d4">and written down, first.</text>
 </svg>

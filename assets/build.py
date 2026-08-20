@@ -6,6 +6,8 @@ To change the entire look of the page, edit STYLE below and rerun. Nothing else
 moves: the filenames stay the same, so the README never needs touching, and the
 scheduled job keeps working.
 
+    STYLE = "signal"   the cyber layout with the neon removed, drawn as
+                       instrumentation: graphite grid, one ochre accent
     STYLE = "cyber"    neon grid horizon, chromatic wordmark, scanlines
     STYLE = "luxury"   serif at scale, gold hairlines, wide margins
     STYLE = "glass"    frosted panels over drifting colour, real gaussian blur
@@ -39,7 +41,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
-STYLE = "glass"
+STYLE = "signal"
 
 OUT = pathlib.Path(__file__).parent
 sys.path.insert(0, str(OUT))

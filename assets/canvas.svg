@@ -1,186 +1,338 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1748" width="900" height="1748" role="img" aria-label="Hassaan-ul-Mustafa, builder of agents and the backends they run on, Islamabad. Edition number 38, 21 August 2026. Lead: the unglamorous parts are the product. Computer Science at FAST-NUCES, currently at Arbisoft. Five systems: Forge Mentor, Ai News Aggregator, Skyelite Ai, Bitmadwall, Ai Employee Os. 38 public repositories, 26 stars, last shipped 21 Aug 2026.">
-<defs><linearGradient id="pg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f5f2ea"/><stop offset="100%" stop-color="#efeade"/></linearGradient></defs>
-<style>.ink{animation:ink 1.2s ease-out both}@keyframes ink{from{opacity:0}to{opacity:1}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<rect width="900" height="1748" fill="url(#pg)"/>
-<line x1="54.0" y1="34.0" x2="846.0" y2="34.0" stroke="#17150f" stroke-width="3"/>
-<line x1="54.0" y1="40.0" x2="846.0" y2="40.0" stroke="#17150f" stroke-width="1"/>
-<text x="450.0" y="104.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="50" fill="#17150f" font-weight="700" text-anchor="middle" letter-spacing="-1">HASSAAN-UL-MUSTAFA</text>
-<text x="450.0" y="126.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#4a463c" text-anchor="middle" letter-spacing="3.6">BUILDER OF AGENTS AND THE BACKENDS THEY RUN ON</text>
-<line x1="54.0" y1="142.0" x2="846.0" y2="142.0" stroke="#17150f" stroke-width="1"/>
-<text x="54.0" y="160.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#8a8375" letter-spacing="2">ISLAMABAD, PAKISTAN</text>
-<text x="450.0" y="160.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#8a8375" text-anchor="middle" letter-spacing="2">FRIDAY 21 AUGUST 2026</text>
-<text x="846.0" y="160.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#8a8375" text-anchor="end" letter-spacing="2">EDITION No. 38</text>
-<line x1="54.0" y1="170.0" x2="846.0" y2="170.0" stroke="#17150f" stroke-width="1.6"/>
-<text x="54.0" y="210.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="34" fill="#17150f" font-weight="700" letter-spacing="-.8">The unglamorous parts are the product</text>
-<text x="54.0" y="236.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="13" fill="#4a463c" font-style="italic">Computer Science at FAST-NUCES. Currently at Arbisoft.</text>
-<line x1="54.0" y1="262.0" x2="846.0" y2="262.0" stroke="#c6bfae" stroke-width="1"/>
-<text x="54.0" y="286.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#17150f">Most AI side projects stop at a</text>
-<text x="54.0" y="302.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#17150f">notebook. These go out with rate</text>
-<text x="54.0" y="319.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#17150f">limiting, input validation and row</text>
-<text x="54.0" y="335.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#17150f">level security attached, because that</text>
-<text x="54.0" y="352.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#17150f">is the part a client ends up depending</text>
-<line x1="315.0" y1="274.0" x2="315.0" y2="364.5" stroke="#c6bfae"/>
-<text x="324.0" y="286.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#17150f">on. The work worth having is the seat</text>
-<text x="324.0" y="302.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#17150f">next to the person with the problem:</text>
-<text x="324.0" y="319.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#17150f">find what it actually is, then build</text>
-<text x="324.0" y="335.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#17150f">the thing that fixes it. Third place</text>
-<text x="324.0" y="352.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#17150f">at the National AI Hackathon, and a</text>
-<line x1="585.0" y1="274.0" x2="585.0" y2="364.5" stroke="#c6bfae"/>
-<text x="594.0" y="286.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#17150f">listed production adopter of the Graph</text>
-<text x="594.0" y="302.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#17150f">Context Framework for cross agent</text>
-<text x="594.0" y="319.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11.5" fill="#17150f">context.</text>
-<rect x="54" y="384.5" width="792.0" height="74" fill="#efeade" stroke="#c6bfae"/>
-<text x="70.0" y="410.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">Guardrails First</text>
-<text x="70.0" y="428.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4a463c">Rate limiting, validation and row</text>
-<text x="70.0" y="442.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4a463c">level security before features.</text>
-<text x="323.3" y="410.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">Degrade, Do Not Die</text>
-<text x="323.3" y="428.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4a463c">Every external call has a fallback.</text>
-<text x="323.3" y="442.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4a463c">Clone it, it runs with zero keys.</text>
-<text x="576.7" y="410.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">Decide Before Coding</text>
-<text x="576.7" y="428.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4a463c">The architectural choice gets made,</text>
-<text x="576.7" y="442.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="9.6" fill="#4a463c">and written down, first.</text>
-<line x1="54.0" y1="484.5" x2="846.0" y2="484.5" stroke="#17150f" stroke-width="1.6"/>
-<text x="54.0" y="504.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#a8321e" font-weight="700" letter-spacing="3.4">THE WORK</text>
-<line x1="54.0" y1="514.5" x2="846.0" y2="514.5" stroke="#c6bfae" stroke-width="1"/>
-<text x="54.0" y="536.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="19" fill="#17150f" font-weight="700" letter-spacing="-.4">A plugin that refuses to write the code</text>
-<text x="846.0" y="536.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#a8321e" text-anchor="end" letter-spacing="1.8">FORGE MENTOR</text>
-<text x="54.0" y="556.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">An agent will happily add two thousand lines on top of a decision nobody</text>
-<text x="54.0" y="572.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">made. This one stops, states the architectural question, lays out the</text>
-<text x="54.0" y="587.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">options, and waits. The answer is written into the repository so the</text>
-<text x="54.0" y="603.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">reasoning outlives the sprint.</text>
-<line x1="531.0" y1="542.5" x2="531.0" y2="616.5" stroke="#c6bfae"/>
-<text x="545.0" y="556.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">1,216</text>
-<text x="607.0" y="556.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">tests</text>
-<text x="545.0" y="573.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">100%</text>
-<text x="607.0" y="573.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">coverage</text>
-<text x="545.0" y="590.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">3</text>
-<text x="607.0" y="590.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">modes</text>
-<text x="545.0" y="607.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">MIT</text>
-<text x="607.0" y="607.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">licence</text>
-<text x="54.0" y="634.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#8a8375">Python 3.12 / MCP / Claude / Git</text>
-<line x1="54.0" y1="650.5" x2="846.0" y2="650.5" stroke="#c6bfae" stroke-width="1"/>
-<text x="54.0" y="672.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="19" fill="#17150f" font-weight="700" letter-spacing="-.4">Four hundred items in, five come out</text>
-<text x="846.0" y="672.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#a8321e" text-anchor="end" letter-spacing="1.8">AI NEWS AGGREGATOR</text>
-<text x="54.0" y="692.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">One hundred and sixty four sites and thirty six channels are read every</text>
-<text x="54.0" y="708.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">night. What survives the ranking is summarised and posted before</text>
-<text x="54.0" y="723.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">breakfast. Groq writes it; Gemini covers the outages.</text>
-<line x1="531.0" y1="678.5" x2="531.0" y2="737.0" stroke="#c6bfae"/>
-<text x="545.0" y="692.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">164</text>
-<text x="607.0" y="692.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">sites</text>
-<text x="545.0" y="709.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">36</text>
-<text x="607.0" y="709.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">channels</text>
-<text x="545.0" y="726.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">5</text>
-<text x="607.0" y="726.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">picks a day</text>
-<text x="545.0" y="743.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">LIVE</text>
-<text x="607.0" y="743.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">deployed</text>
-<text x="54.0" y="770.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#8a8375">React / Vite / FastAPI / PostgreSQL / Groq / Gemini / Stripe</text>
-<line x1="54.0" y1="786.5" x2="846.0" y2="786.5" stroke="#c6bfae" stroke-width="1"/>
-<text x="54.0" y="808.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="19" fill="#17150f" font-weight="700" letter-spacing="-.4">It tells you what it gave up</text>
-<text x="846.0" y="808.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#a8321e" text-anchor="end" letter-spacing="1.8">SKYELITE AI</text>
-<text x="54.0" y="828.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">Passport and budget rule most of the world out before the ranking begins.</text>
-<text x="54.0" y="844.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">What remains is scored on safety, cost, visa difficulty and scenery, and</text>
-<text x="54.0" y="859.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">the tradeoff is printed alongside the answer. Third nationally, out of a</text>
-<text x="54.0" y="875.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">hackathon weekend.</text>
-<line x1="531.0" y1="814.5" x2="531.0" y2="888.5" stroke="#c6bfae"/>
-<text x="545.0" y="828.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">3rd</text>
-<text x="607.0" y="828.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">national</text>
-<text x="545.0" y="845.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">7</text>
-<text x="607.0" y="845.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">graph nodes</text>
-<text x="545.0" y="862.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">0</text>
-<text x="607.0" y="862.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">keys to run</text>
-<text x="545.0" y="879.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">GCF</text>
-<text x="607.0" y="879.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">adopter</text>
-<text x="54.0" y="906.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#8a8375">Next.js 15 / TypeScript / Three.js / FastAPI / Pydantic v2 / LangGraph</text>
-<line x1="54.0" y1="922.5" x2="846.0" y2="922.5" stroke="#c6bfae" stroke-width="1"/>
-<text x="54.0" y="944.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="19" fill="#17150f" font-weight="700" letter-spacing="-.4">Messages that need no network</text>
-<text x="846.0" y="944.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#a8321e" text-anchor="end" letter-spacing="1.8">BITMADWALL</text>
-<text x="54.0" y="964.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">Encrypted traffic and Bitcoin move phone to phone across Bluetooth, Wi-Fi</text>
-<text x="54.0" y="980.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">Direct and LoRa. Up to seven hops, nothing in the middle, and anything</text>
-<text x="54.0" y="995.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">undeliverable waits in the pocket until a peer walks past.</text>
-<line x1="531.0" y1="950.5" x2="531.0" y2="1009.0" stroke="#c6bfae"/>
-<text x="545.0" y="964.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">AES-256</text>
-<text x="607.0" y="964.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">gcm</text>
-<text x="545.0" y="981.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">7</text>
-<text x="607.0" y="981.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">mesh hops</text>
-<text x="545.0" y="998.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">0</text>
-<text x="607.0" y="998.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">servers</text>
-<text x="545.0" y="1015.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">NO SIM</text>
-<text x="607.0" y="1015.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">crypto id</text>
-<text x="54.0" y="1042.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#8a8375">Bluetooth LE / Wi-Fi Direct / LoRa / double ratchet / Bitcoin</text>
-<line x1="54.0" y1="1058.5" x2="846.0" y2="1058.5" stroke="#c6bfae" stroke-width="1"/>
-<text x="54.0" y="1080.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="19" fill="#17150f" font-weight="700" letter-spacing="-.4">Every seat in the company is an agent</text>
-<text x="846.0" y="1080.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#a8321e" text-anchor="end" letter-spacing="1.8">AI EMPLOYEE OS</text>
-<text x="54.0" y="1100.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">A sentence in plain English becomes a dependency aware plan. Each piece</text>
-<text x="54.0" y="1116.0" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">goes to the agent that owns it, results are checked before they move on,</text>
-<text x="54.0" y="1131.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c">and the whole run is handed back as a trace you can read.</text>
-<line x1="531.0" y1="1086.5" x2="531.0" y2="1145.0" stroke="#c6bfae"/>
-<text x="545.0" y="1100.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">1</text>
-<text x="607.0" y="1100.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">request</text>
-<text x="545.0" y="1117.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">N</text>
-<text x="607.0" y="1117.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">agents</text>
-<text x="545.0" y="1134.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">DAG</text>
-<text x="607.0" y="1134.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">ordered</text>
-<text x="545.0" y="1151.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12.5" fill="#17150f" font-weight="700">FULL</text>
-<text x="607.0" y="1151.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#8a8375">trace</text>
-<text x="54.0" y="1178.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#8a8375">Next.js / FastAPI / Pydantic / LangGraph / LangChain / Supabase / Groq</text>
-<line x1="54.0" y1="1204.5" x2="846.0" y2="1204.5" stroke="#17150f" stroke-width="1.6"/>
-<text x="54.0" y="1224.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#a8321e" font-weight="700" letter-spacing="3.4">BY THE NUMBERS</text>
-<line x1="54.0" y1="1234.5" x2="846.0" y2="1234.5" stroke="#c6bfae" stroke-width="1"/>
-<text x="54.0" y="1254.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="34" fill="#17150f" font-weight="700">38</text>
-<text x="54.0" y="1271.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#8a8375">public repositories</text>
-<text x="252.0" y="1254.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="34" fill="#17150f" font-weight="700">26</text>
-<text x="252.0" y="1271.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#8a8375">stars earned</text>
-<text x="450.0" y="1254.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="34" fill="#17150f" font-weight="700">9</text>
-<text x="450.0" y="1271.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#8a8375">languages</text>
-<text x="648.0" y="1254.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="19" fill="#17150f" font-weight="700">21 Aug 2026</text>
-<text x="648.0" y="1271.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#8a8375">last shipped</text>
-<rect x="54.0" y="1296.5" width="330.1" height="9" fill="#17150f"/>
-<rect x="386.1" y="1296.5" width="176.8" height="9" fill="#4a463c"/>
-<rect x="565.0" y="1296.5" width="74.6" height="9" fill="#6f6a5c"/>
-<rect x="641.6" y="1296.5" width="74.6" height="9" fill="#8a8375"/>
-<rect x="718.3" y="1296.5" width="23.5" height="9" fill="#a49d8c"/>
-<rect x="743.8" y="1296.5" width="23.5" height="9" fill="#bdb5a2"/>
-<rect x="769.4" y="1296.5" width="74.6" height="9" fill="#a8321e"/>
-<rect x="54.0" y="1313.5" width="7" height="7" fill="#17150f"/>
-<text x="66.0" y="1320.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#4a463c">Python 13</text>
-<rect x="131.9" y="1313.5" width="7" height="7" fill="#4a463c"/>
-<text x="143.9" y="1320.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#4a463c">HTML 7</text>
-<rect x="192.5" y="1313.5" width="7" height="7" fill="#6f6a5c"/>
-<text x="204.5" y="1320.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#4a463c">JavaScript 3</text>
-<rect x="287.8" y="1313.5" width="7" height="7" fill="#8a8375"/>
-<text x="299.8" y="1320.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#4a463c">C++ 3</text>
-<rect x="342.6" y="1313.5" width="7" height="7" fill="#a49d8c"/>
-<text x="354.6" y="1320.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#4a463c">TypeScript 1</text>
-<rect x="437.9" y="1313.5" width="7" height="7" fill="#bdb5a2"/>
-<text x="449.9" y="1320.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#4a463c">PHP 1</text>
-<rect x="492.7" y="1313.5" width="7" height="7" fill="#a8321e"/>
-<text x="504.7" y="1320.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#4a463c">Other 3</text>
-<line x1="54.0" y1="1346.5" x2="846.0" y2="1346.5" stroke="#17150f" stroke-width="1.6"/>
-<text x="54.0" y="1366.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#a8321e" font-weight="700" letter-spacing="3.4">TOOLS OF THE TRADE</text>
-<line x1="54.0" y1="1376.5" x2="846.0" y2="1376.5" stroke="#c6bfae" stroke-width="1"/>
-<text x="54.0" y="1396.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#a8321e" letter-spacing="1.8">LANGUAGES</text>
-<text x="170.0" y="1396.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#17150f">Python, TypeScript, JavaScript, C++, Java, SQL, x86 assembly</text>
-<text x="54.0" y="1420.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#a8321e" letter-spacing="1.8">AI</text>
-<text x="170.0" y="1420.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#17150f">LangGraph, LangChain, MCP, Anthropic, Groq, Gemini, Pydantic</text>
-<text x="54.0" y="1444.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#a8321e" letter-spacing="1.8">BACKEND</text>
-<text x="170.0" y="1444.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#17150f">FastAPI, Django, DRF, Node, Express, Celery</text>
-<text x="54.0" y="1468.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#a8321e" letter-spacing="1.8">FRONTEND</text>
-<text x="170.0" y="1468.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#17150f">React, Next.js, Vite, Tailwind, Three.js</text>
-<text x="54.0" y="1492.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#a8321e" letter-spacing="1.8">DATA</text>
-<text x="170.0" y="1492.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#17150f">PostgreSQL, Supabase, MongoDB, Redis, MySQL, SQL Server</text>
-<text x="54.0" y="1516.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#a8321e" letter-spacing="1.8">SHIP</text>
-<text x="170.0" y="1516.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#17150f">Docker, Git, Linux, Vercel, Render, Railway, Stripe</text>
-<line x1="54.0" y1="1546.5" x2="846.0" y2="1546.5" stroke="#17150f" stroke-width="1.6"/>
-<text x="54.0" y="1566.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#a8321e" font-weight="700" letter-spacing="3.4">LETTERS TO THE EDITOR</text>
-<line x1="54.0" y1="1576.5" x2="846.0" y2="1576.5" stroke="#c6bfae" stroke-width="1"/>
-<text x="54.0" y="1596.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c" font-style="italic">This paper answers correspondence. Open an issue titled agent: with your question and</text>
-<text x="54.0" y="1612.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="11" fill="#4a463c" font-style="italic">the reply is set in the next edition, usually within a minute. Links sit below the paper.</text>
-<text x="54.0" y="1638.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="12" fill="#17150f" font-weight="700">“what is Forge Mentor”</text>
-<text x="846.0" y="1638.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#8a8375" text-anchor="end">@Hassaan146</text>
-<text x="68.0" y="1655.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#4a463c">Forge Mentor is a Claude Code plugin. It teaches the architectural decision, waits for your call, records it to .claude/forge, and</text>
-<text x="68.0" y="1669.5" font-family="Georgia, 'Times New Roman', Times, serif" font-size="10.5" fill="#4a463c">blocks code until the question is answered. 1,216 tests at full coverage.</text>
-<line x1="54.0" y1="1701.5" x2="846.0" y2="1701.5" stroke="#17150f" stroke-width="1.6"/>
-<text x="54.0" y="1721.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#8a8375" letter-spacing="1.8">SET AND PRINTED BY assets/build.py</text>
-<text x="450.0" y="1721.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#8a8375" text-anchor="middle">38</text>
-<text x="846.0" y="1721.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.8" fill="#8a8375" text-anchor="end" letter-spacing="1.8">github.com/Hassaan146</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 2170" width="900" height="2170" role="img" aria-label="Muhammad Hassaan-ul-Mustafa, AI engineer, product and backend, Islamabad. I build AI agents and the backends they run on. Five systems: Forge Mentor, Ai News Aggregator, Skyelite Ai, Bitmadwall, Ai Employee Os. Toolchain across languages, AI, backend, frontend, data and shipping. 38 public repositories, 26 stars, last shipped 21 Aug 2026.">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0d0d0e"/><stop offset="100%" stop-color="#08080a"/></linearGradient><pattern id="mesh" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" fill="none" stroke="#232329" stroke-width="1"/></pattern></defs>
+<style>@keyframes spin{to{transform:rotate(360deg)}}.orb{transform-box:view-box;transform-origin:742px 150px;animation:spin linear infinite}.tick{animation:tk 5s ease-in-out infinite}@keyframes tk{0%,100%{opacity:.4}18%{opacity:1}42%{opacity:.4}}.dash{stroke-dasharray:2 5;animation:d 2s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="900" height="2170" fill="url(#bg)"/>
+<rect width="900" height="2170" fill="url(#mesh)" opacity=".45"/>
+<rect x="20" y="20" width="860" height="2130" fill="none" stroke="#232329"/>
+<text x="56.0" y="62.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#c08a3e" letter-spacing="4">AI ENGINEER / PRODUCT AND BACKEND</text>
+<text x="844.0" y="62.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f5c57" text-anchor="end" letter-spacing="2.4">ISLAMABAD, PK</text>
+<text x="54.0" y="148.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="52" fill="#ece9e4" font-weight="700" letter-spacing="-2.2">MUHAMMAD</text>
+<text x="54.0" y="202.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="52" fill="#ece9e4" font-weight="700" letter-spacing="-2.2">HASSAAN</text>
+<rect x="56" y="222" width="124" height="3" fill="#c08a3e"/>
+<text x="56.0" y="258.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#9a958d">I build AI agents and the backends they run on.</text>
+<circle cx="742" cy="150" r="26" fill="none" stroke="#232329"/>
+<g class="orb" style="animation-duration:15s">
+<circle cx="768.0" cy="150.0" r="4.0" fill="#c08a3e"/>
+</g>
+<circle cx="742" cy="150" r="45" fill="none" stroke="#232329"/>
+<g class="orb" style="animation-duration:24s;animation-direction:reverse">
+<circle cx="787.0" cy="150.0" r="3.5" fill="#c08a3e"/>
+<circle cx="697.0" cy="150.0" r="3.5" fill="#8d6b3a"/>
+</g>
+<circle cx="742" cy="150" r="64" fill="none" stroke="#232329"/>
+<g class="orb" style="animation-duration:38s">
+<circle cx="806.0" cy="150.0" r="3.0" fill="#c08a3e"/>
+<circle cx="710.0" cy="205.4" r="3.0" fill="#8d6b3a"/>
+<circle cx="710.0" cy="94.6" r="3.0" fill="#8d6b3a"/>
+</g>
+<circle class="tick" cx="742" cy="150" r="7.5" fill="#c08a3e"/>
+<text x="742.0" y="238.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" text-anchor="middle" letter-spacing="1.8">DATA / API / AGENTS</text>
+<line x1="56" y1="300.0" x2="844" y2="300.0" stroke="#232329" stroke-opacity="1"/>
+<rect x="56" y="300.0" width="34" height="3" fill="#c08a3e"/>
+<text x="56.0" y="330.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#c08a3e" letter-spacing="3.6">00 / IDENTITY</text>
+<text x="56.0" y="352.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="12" fill="#9a958d">Computer Science at FAST-NUCES, currently at Arbisoft. Most AI side projects stop at a</text>
+<text x="56.0" y="371.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="12" fill="#9a958d">notebook. Mine go out with the unglamorous parts attached, because that is what a client</text>
+<text x="56.0" y="390.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="12" fill="#9a958d">ends up depending on.</text>
+<rect class="tick" style="animation-delay:0.0s" x="56.0" y="424.0" width="26" height="2" fill="#c08a3e"/>
+<text x="56.0" y="450.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" fill="#ece9e4" font-weight="700">GUARDRAILS FIRST</text>
+<text x="56.0" y="470.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f5c57">Rate limiting, validation and row</text>
+<text x="56.0" y="485.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f5c57">level security before features.</text>
+<rect class="tick" style="animation-delay:0.7s" x="325.3" y="424.0" width="26" height="2" fill="#c08a3e"/>
+<text x="325.3" y="450.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" fill="#ece9e4" font-weight="700">DEGRADE, DO NOT DIE</text>
+<text x="325.3" y="470.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f5c57">Every external call has a fallback.</text>
+<text x="325.3" y="485.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f5c57">Clone it, it runs with zero keys.</text>
+<rect class="tick" style="animation-delay:1.4s" x="594.7" y="424.0" width="26" height="2" fill="#c08a3e"/>
+<text x="594.7" y="450.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" fill="#ece9e4" font-weight="700">DECIDE BEFORE CODING</text>
+<text x="594.7" y="470.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f5c57">The architectural choice gets made,</text>
+<text x="594.7" y="485.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f5c57">and written down, first.</text>
+<text x="56.0" y="516.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#c08a3e">3rd Place, National AI Hackathon   /   production adopter, Graph Context Framework</text>
+<line x1="56" y1="546.0" x2="844" y2="546.0" stroke="#232329" stroke-opacity="1"/>
+<rect x="56" y="546.0" width="34" height="3" fill="#c08a3e"/>
+<text x="56.0" y="576.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#c08a3e" letter-spacing="3.6">01 / SYSTEMS</text>
+<text x="56.0" y="594.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="22" fill="#ece9e4" font-weight="700" letter-spacing="-.7">FORGE MENTOR</text>
+<text x="844.0" y="594.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="22" fill="#c08a3e" font-weight="700" text-anchor="end" opacity=".4">01</text>
+<text x="56.0" y="612.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" letter-spacing="1.7">CLAUDE CODE PLUGIN / MIT / v1.28</text>
+<rect x="56.0" y="638.0" width="70.5" height="24" fill="none" stroke="#232329"/>
+<text x="91.2" y="654.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">question</text>
+<path class="dash" d="M130.5 650.0 H138.5" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="142.5" y="638.0" width="64.2" height="24" fill="none" stroke="#232329"/>
+<text x="174.6" y="654.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">options</text>
+<path class="dash" d="M210.7 650.0 H218.7" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="222.7" y="638.0" width="83.1" height="24" fill="none" stroke="#232329"/>
+<text x="264.2" y="654.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">you decide</text>
+<path class="dash" d="M309.8 650.0 H317.8" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="321.8" y="638.0" width="70.5" height="24" fill="none" stroke="#232329"/>
+<text x="357.0" y="654.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">recorded</text>
+<path class="dash" d="M396.2 650.0 H404.2" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="408.2" y="638.0" width="76.8" height="24" fill="none" stroke="#232329"/>
+<text x="446.6" y="654.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">code runs</text>
+<text x="56.0" y="676.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#5f5c57">the gate holds until the decision exists</text>
+<text x="56.0" y="702.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">1,216</text>
+<text x="56.0" y="717.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">TESTS</text>
+<text x="253.0" y="702.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">100%</text>
+<text x="253.0" y="717.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">COVERAGE</text>
+<text x="450.0" y="702.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">3</text>
+<text x="450.0" y="717.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">MODES</text>
+<text x="647.0" y="702.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">MIT</text>
+<text x="647.0" y="717.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">LICENCE</text>
+<text x="56.0" y="736.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#9a958d">Python 3.12 / MCP / Claude / Git</text>
+<line x1="56" y1="754.0" x2="844" y2="754.0" stroke="#232329" stroke-opacity=".7"/>
+<text x="56.0" y="782.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="22" fill="#ece9e4" font-weight="700" letter-spacing="-.7">AI NEWS AGGREGATOR</text>
+<text x="844.0" y="782.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="22" fill="#c08a3e" font-weight="700" text-anchor="end" opacity=".4">02</text>
+<text x="56.0" y="800.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" letter-spacing="1.7">FULL STACK / DEPLOYED / DAILY AT 07:00</text>
+<rect x="56.0" y="826.0" width="57.9" height="24" fill="none" stroke="#232329"/>
+<text x="84.9" y="842.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">scrape</text>
+<path class="dash" d="M117.9 838.0 H125.9" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="129.9" y="826.0" width="51.6" height="24" fill="none" stroke="#232329"/>
+<text x="155.6" y="842.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">store</text>
+<path class="dash" d="M185.4 838.0 H193.4" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="197.4" y="826.0" width="45.2" height="24" fill="none" stroke="#232329"/>
+<text x="220.0" y="842.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">rank</text>
+<path class="dash" d="M246.7 838.0 H254.7" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="258.7" y="826.0" width="76.8" height="24" fill="none" stroke="#232329"/>
+<text x="297.1" y="842.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">summarise</text>
+<path class="dash" d="M339.5 838.0 H347.5" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="351.5" y="826.0" width="51.6" height="24" fill="none" stroke="#232329"/>
+<text x="377.2" y="842.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">email</text>
+<text x="56.0" y="864.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#5f5c57">two model providers, so one bad day does not kill the digest</text>
+<text x="56.0" y="890.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">164</text>
+<text x="56.0" y="905.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">SITES</text>
+<text x="253.0" y="890.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">36</text>
+<text x="253.0" y="905.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">CHANNELS</text>
+<text x="450.0" y="890.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">5</text>
+<text x="450.0" y="905.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">PICKS A DAY</text>
+<text x="647.0" y="890.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">LIVE</text>
+<text x="647.0" y="905.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">DEPLOYED</text>
+<text x="56.0" y="924.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#9a958d">React / Vite / FastAPI / PostgreSQL / Groq / Gemini / Stripe</text>
+<line x1="56" y1="942.0" x2="844" y2="942.0" stroke="#232329" stroke-opacity=".7"/>
+<text x="56.0" y="970.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="22" fill="#ece9e4" font-weight="700" letter-spacing="-.7">SKYELITE AI</text>
+<text x="844.0" y="970.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="22" fill="#c08a3e" font-weight="700" text-anchor="end" opacity=".4">03</text>
+<text x="56.0" y="988.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" letter-spacing="1.7">HACKATHON BUILD / 3RD NATIONALLY / OPEN SOURCE</text>
+<rect x="56.0" y="1014.0" width="57.9" height="24" fill="none" stroke="#232329"/>
+<text x="84.9" y="1030.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">intake</text>
+<path class="dash" d="M117.9 1026.0 H125.9" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="129.9" y="1014.0" width="57.9" height="24" fill="none" stroke="#232329"/>
+<text x="158.8" y="1030.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">filter</text>
+<path class="dash" d="M191.7 1026.0 H199.7" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="203.7" y="1014.0" width="45.2" height="24" fill="none" stroke="#232329"/>
+<text x="226.3" y="1030.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">visa</text>
+<path class="dash" d="M253.0 1026.0 H261.0" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="265.0" y="1014.0" width="70.5" height="24" fill="none" stroke="#232329"/>
+<text x="300.2" y="1030.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">research</text>
+<path class="dash" d="M339.5 1026.0 H347.5" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="351.5" y="1014.0" width="64.2" height="24" fill="none" stroke="#232329"/>
+<text x="383.5" y="1030.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">scoring</text>
+<path class="dash" d="M419.6 1026.0 H427.6" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="431.6" y="1014.0" width="70.5" height="24" fill="none" stroke="#232329"/>
+<text x="466.9" y="1030.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">tradeoff</text>
+<path class="dash" d="M506.1 1026.0 H514.1" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="518.1" y="1014.0" width="51.6" height="24" fill="none" stroke="#232329"/>
+<text x="543.9" y="1030.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">final</text>
+<text x="56.0" y="1052.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#5f5c57">ranks on safety, budget, visa difficulty and scenery, then shows its working</text>
+<text x="56.0" y="1078.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">3rd</text>
+<text x="56.0" y="1093.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">NATIONAL</text>
+<text x="253.0" y="1078.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">7</text>
+<text x="253.0" y="1093.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">GRAPH NODES</text>
+<text x="450.0" y="1078.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">0</text>
+<text x="450.0" y="1093.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">KEYS TO RUN</text>
+<text x="647.0" y="1078.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">GCF</text>
+<text x="647.0" y="1093.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">ADOPTER</text>
+<text x="56.0" y="1112.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#9a958d">Next.js 15 / TypeScript / Three.js / FastAPI / Pydantic v2 / LangGraph</text>
+<line x1="56" y1="1130.0" x2="844" y2="1130.0" stroke="#232329" stroke-opacity=".7"/>
+<text x="56.0" y="1158.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="22" fill="#ece9e4" font-weight="700" letter-spacing="-.7">BITMADWALL</text>
+<text x="844.0" y="1158.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="22" fill="#c08a3e" font-weight="700" text-anchor="end" opacity=".4">04</text>
+<text x="56.0" y="1176.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" letter-spacing="1.7">PRODUCT WORK / SHIPPED / bitmadwall.ai</text>
+<rect x="56.0" y="1202.0" width="83.1" height="24" fill="none" stroke="#232329"/>
+<text x="97.6" y="1218.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">your phone</text>
+<path class="dash" d="M143.1 1214.0 H151.1" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="155.1" y="1202.0" width="51.6" height="24" fill="none" stroke="#232329"/>
+<text x="180.9" y="1218.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">relay</text>
+<path class="dash" d="M210.7 1214.0 H218.7" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="222.7" y="1202.0" width="51.6" height="24" fill="none" stroke="#232329"/>
+<text x="248.4" y="1218.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">relay</text>
+<path class="dash" d="M278.2 1214.0 H286.2" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="290.2" y="1202.0" width="76.8" height="24" fill="none" stroke="#232329"/>
+<text x="328.6" y="1218.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">recipient</text>
+<text x="56.0" y="1240.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#5f5c57">works where the network is gone or cannot be trusted</text>
+<text x="56.0" y="1266.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">AES-256</text>
+<text x="56.0" y="1281.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">GCM</text>
+<text x="253.0" y="1266.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">7</text>
+<text x="253.0" y="1281.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">MESH HOPS</text>
+<text x="450.0" y="1266.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">0</text>
+<text x="450.0" y="1281.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">SERVERS</text>
+<text x="647.0" y="1266.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">NO SIM</text>
+<text x="647.0" y="1281.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">CRYPTO ID</text>
+<text x="56.0" y="1300.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#9a958d">Bluetooth LE / Wi-Fi Direct / LoRa / double ratchet / Bitcoin</text>
+<line x1="56" y1="1318.0" x2="844" y2="1318.0" stroke="#232329" stroke-opacity=".7"/>
+<text x="56.0" y="1346.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="22" fill="#ece9e4" font-weight="700" letter-spacing="-.7">AI EMPLOYEE OS</text>
+<text x="844.0" y="1346.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="22" fill="#c08a3e" font-weight="700" text-anchor="end" opacity=".4">05</text>
+<text x="56.0" y="1364.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" letter-spacing="1.7">AGENT ORCHESTRATION / IN PROGRESS</text>
+<rect x="56.0" y="1390.0" width="64.2" height="24" fill="none" stroke="#232329"/>
+<text x="88.1" y="1406.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">request</text>
+<path class="dash" d="M124.2 1402.0 H132.2" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="136.2" y="1390.0" width="76.8" height="24" fill="none" stroke="#232329"/>
+<text x="174.6" y="1406.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">decompose</text>
+<path class="dash" d="M217.0 1402.0 H225.0" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="229.0" y="1390.0" width="114.7" height="24" fill="none" stroke="#232329"/>
+<text x="286.3" y="1406.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">route to agents</text>
+<path class="dash" d="M347.6 1402.0 H355.6" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="359.6" y="1390.0" width="70.5" height="24" fill="none" stroke="#232329"/>
+<text x="394.9" y="1406.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">validate</text>
+<path class="dash" d="M434.1 1402.0 H442.1" stroke="#8d6b3a" stroke-opacity=".8"/>
+<rect x="446.1" y="1390.0" width="51.6" height="24" fill="none" stroke="#232329"/>
+<text x="471.9" y="1406.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" text-anchor="middle">trace</text>
+<text x="56.0" y="1428.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#5f5c57">plain English in, a dependency aware workflow out</text>
+<text x="56.0" y="1454.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">1</text>
+<text x="56.0" y="1469.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">REQUEST</text>
+<text x="253.0" y="1454.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">N</text>
+<text x="253.0" y="1469.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">AGENTS</text>
+<text x="450.0" y="1454.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">DAG</text>
+<text x="450.0" y="1469.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">ORDERED</text>
+<text x="647.0" y="1454.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="19" fill="#ece9e4" font-weight="700" letter-spacing="-.5">FULL</text>
+<text x="647.0" y="1469.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.2" fill="#5f5c57" letter-spacing="1.4">TRACE</text>
+<text x="56.0" y="1488.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#9a958d">Next.js / FastAPI / Pydantic / LangGraph / LangChain / Supabase / Groq</text>
+<line x1="56" y1="1506.0" x2="844" y2="1506.0" stroke="#232329" stroke-opacity=".7"/>
+<line x1="56" y1="1522.0" x2="844" y2="1522.0" stroke="#232329" stroke-opacity="1"/>
+<rect x="56" y="1522.0" width="34" height="3" fill="#c08a3e"/>
+<text x="56.0" y="1552.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#c08a3e" letter-spacing="3.6">02 / TOOLCHAIN</text>
+<text x="56.0" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" letter-spacing="1.8">LANGUAGES</text>
+<text x="172.0" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Python</text>
+<text x="223.5" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="240.4" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">TypeScript</text>
+<text x="319.5" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="336.4" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">JavaScript</text>
+<text x="415.5" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="432.4" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">C++</text>
+<text x="463.2" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="480.1" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Java</text>
+<text x="517.7" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="534.6" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">SQL</text>
+<text x="565.4" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="582.3" y="1578.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">x86</text>
+<line x1="56" y1="1584.0" x2="844" y2="1584.0" stroke="#232329" stroke-opacity=".6"/>
+<text x="56.0" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" letter-spacing="1.8">AI</text>
+<text x="172.0" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">LangGraph</text>
+<text x="244.2" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="261.1" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">LangChain</text>
+<text x="333.3" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="350.2" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">MCP</text>
+<text x="381.0" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="397.9" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Anthropic</text>
+<text x="470.1" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="487.0" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Groq</text>
+<text x="524.6" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="541.5" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Gemini</text>
+<text x="593.0" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="609.9" y="1608.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Pydantic</text>
+<line x1="56" y1="1614.0" x2="844" y2="1614.0" stroke="#232329" stroke-opacity=".6"/>
+<text x="56.0" y="1638.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" letter-spacing="1.8">BACKEND</text>
+<text x="172.0" y="1638.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">FastAPI</text>
+<text x="230.4" y="1638.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="247.3" y="1638.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Django</text>
+<text x="298.8" y="1638.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="315.7" y="1638.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">DRF</text>
+<text x="346.4" y="1638.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="363.3" y="1638.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Node</text>
+<text x="401.0" y="1638.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="417.9" y="1638.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Express</text>
+<text x="476.3" y="1638.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="493.2" y="1638.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Celery</text>
+<line x1="56" y1="1644.0" x2="844" y2="1644.0" stroke="#232329" stroke-opacity=".6"/>
+<text x="56.0" y="1668.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" letter-spacing="1.8">FRONTEND</text>
+<text x="172.0" y="1668.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">React</text>
+<text x="216.6" y="1668.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="233.5" y="1668.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Next.js</text>
+<text x="291.8" y="1668.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="308.8" y="1668.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Vite</text>
+<text x="346.4" y="1668.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="363.3" y="1668.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Tailwind</text>
+<text x="428.6" y="1668.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="445.5" y="1668.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Three.js</text>
+<line x1="56" y1="1674.0" x2="844" y2="1674.0" stroke="#232329" stroke-opacity=".6"/>
+<text x="56.0" y="1698.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" letter-spacing="1.8">DATA</text>
+<text x="172.0" y="1698.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">PostgreSQL</text>
+<text x="251.1" y="1698.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="268.0" y="1698.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Supabase</text>
+<text x="333.3" y="1698.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="350.2" y="1698.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">MongoDB</text>
+<text x="408.6" y="1698.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="425.5" y="1698.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Redis</text>
+<text x="470.1" y="1698.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="487.0" y="1698.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">MySQL</text>
+<text x="531.5" y="1698.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="548.5" y="1698.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">SQL Server</text>
+<line x1="56" y1="1704.0" x2="844" y2="1704.0" stroke="#232329" stroke-opacity=".6"/>
+<text x="56.0" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" letter-spacing="1.8">SHIP</text>
+<text x="172.0" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Docker</text>
+<text x="223.5" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="240.4" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Git</text>
+<text x="271.1" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="288.0" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Linux</text>
+<text x="332.6" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="349.5" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Vercel</text>
+<text x="401.0" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="417.9" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Render</text>
+<text x="469.3" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="486.3" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Railway</text>
+<text x="544.6" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#232329">/</text>
+<text x="561.5" y="1728.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">Stripe</text>
+<line x1="56" y1="1734.0" x2="844" y2="1734.0" stroke="#232329" stroke-opacity=".6"/>
+<line x1="56" y1="1762.0" x2="844" y2="1762.0" stroke="#232329" stroke-opacity="1"/>
+<rect x="56" y="1762.0" width="34" height="3" fill="#c08a3e"/>
+<text x="56.0" y="1792.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#c08a3e" letter-spacing="3.6">03 / SIGNALS</text>
+<text x="56.0" y="1814.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="34" fill="#c08a3e" font-weight="700" letter-spacing="-1.2">38</text>
+<text x="56.0" y="1832.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5f5c57" letter-spacing="1.6">PUBLIC REPOS</text>
+<text x="253.0" y="1814.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="34" fill="#ece9e4" font-weight="700" letter-spacing="-1.2">26</text>
+<text x="253.0" y="1832.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5f5c57" letter-spacing="1.6">STARS EARNED</text>
+<text x="450.0" y="1814.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="34" fill="#ece9e4" font-weight="700" letter-spacing="-1.2">9</text>
+<text x="450.0" y="1832.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5f5c57" letter-spacing="1.6">LANGUAGES</text>
+<text x="647.0" y="1814.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="20" fill="#ece9e4" font-weight="700" letter-spacing="-1.2">21 Aug 2026</text>
+<text x="647.0" y="1832.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.6" fill="#5f5c57" letter-spacing="1.6">LAST SHIPPED</text>
+<rect x="56.0" y="1862.0" width="327.5" height="11" fill="#c08a3e"/>
+<rect x="386.5" y="1862.0" width="174.9" height="11" fill="#a8a29a"/>
+<rect x="564.4" y="1862.0" width="73.3" height="11" fill="#8d6b3a"/>
+<rect x="640.6" y="1862.0" width="73.3" height="11" fill="#7d7871"/>
+<rect x="716.9" y="1862.0" width="22.4" height="11" fill="#5f5c57"/>
+<rect x="742.3" y="1862.0" width="22.4" height="11" fill="#4a4744"/>
+<rect x="767.7" y="1862.0" width="73.3" height="11" fill="#3a3835"/>
+<rect x="56.0" y="1885.0" width="7" height="7" fill="#c08a3e"/>
+<text x="68.0" y="1892.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#9a958d">Python 13</text>
+<rect x="138.1" y="1885.0" width="7" height="7" fill="#a8a29a"/>
+<text x="150.1" y="1892.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#9a958d">HTML 7</text>
+<rect x="202.2" y="1885.0" width="7" height="7" fill="#8d6b3a"/>
+<text x="214.2" y="1892.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#9a958d">JavaScript 3</text>
+<rect x="302.3" y="1885.0" width="7" height="7" fill="#7d7871"/>
+<text x="314.3" y="1892.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#9a958d">C++ 3</text>
+<rect x="360.3" y="1885.0" width="7" height="7" fill="#5f5c57"/>
+<text x="372.3" y="1892.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#9a958d">TypeScript 1</text>
+<rect x="460.4" y="1885.0" width="7" height="7" fill="#4a4744"/>
+<text x="472.4" y="1892.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#9a958d">PHP 1</text>
+<rect x="518.5" y="1885.0" width="7" height="7" fill="#3a3835"/>
+<text x="530.5" y="1892.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#9a958d">Other 3</text>
+<line x1="56" y1="1918.0" x2="844" y2="1918.0" stroke="#232329" stroke-opacity="1"/>
+<line x1="56.0" y1="1918.0" x2="56.0" y2="1912.0" stroke="#c08a3e" stroke-opacity=".65"/>
+<line x1="121.7" y1="1918.0" x2="121.7" y2="1915.0" stroke="#232329" stroke-opacity="1"/>
+<line x1="187.3" y1="1918.0" x2="187.3" y2="1915.0" stroke="#232329" stroke-opacity="1"/>
+<line x1="253.0" y1="1918.0" x2="253.0" y2="1915.0" stroke="#232329" stroke-opacity="1"/>
+<line x1="318.7" y1="1918.0" x2="318.7" y2="1912.0" stroke="#c08a3e" stroke-opacity=".65"/>
+<line x1="384.3" y1="1918.0" x2="384.3" y2="1915.0" stroke="#232329" stroke-opacity="1"/>
+<line x1="450.0" y1="1918.0" x2="450.0" y2="1915.0" stroke="#232329" stroke-opacity="1"/>
+<line x1="515.7" y1="1918.0" x2="515.7" y2="1915.0" stroke="#232329" stroke-opacity="1"/>
+<line x1="581.3" y1="1918.0" x2="581.3" y2="1912.0" stroke="#c08a3e" stroke-opacity=".65"/>
+<line x1="647.0" y1="1918.0" x2="647.0" y2="1915.0" stroke="#232329" stroke-opacity="1"/>
+<line x1="712.7" y1="1918.0" x2="712.7" y2="1915.0" stroke="#232329" stroke-opacity="1"/>
+<line x1="778.3" y1="1918.0" x2="778.3" y2="1915.0" stroke="#232329" stroke-opacity="1"/>
+<line x1="844.0" y1="1918.0" x2="844.0" y2="1912.0" stroke="#c08a3e" stroke-opacity=".65"/>
+<line x1="56" y1="1958.0" x2="844" y2="1958.0" stroke="#232329" stroke-opacity="1"/>
+<rect x="56" y="1958.0" width="34" height="3" fill="#c08a3e"/>
+<text x="56.0" y="1988.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#c08a3e" letter-spacing="3.6">04 / ASK IT SOMETHING</text>
+<text x="56.0" y="2008.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="12" fill="#9a958d">This sheet answers back. Open an issue titled agent: and your question, and a</text>
+<text x="56.0" y="2027.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="12" fill="#9a958d">workflow routes it, writes the reply here, then closes the issue. Links are below.</text>
+<rect x="56" y="2050.0" width="3" height="40" fill="#c08a3e"/>
+<text x="70.0" y="2061.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#ece9e4">what is Forge Mentor</text>
+<text x="844.0" y="2061.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5f5c57" text-anchor="end">@Hassaan146</text>
+<text x="70.0" y="2078.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d">Forge Mentor is a Claude Code plugin. It teaches the architectural decision, waits for your call, records it to</text>
+<text x="70.0" y="2093.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d">.claude/forge, and blocks code until the question is answered. 1,216 tests at full coverage.</text>
+<text x="56.0" y="2130.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#5f5c57" letter-spacing="2.2">EVERY MARK ON THIS SHEET IS DRAWN BY A SCRIPT IN THIS REPO</text>
+<text x="844.0" y="2130.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.6" fill="#c08a3e" text-anchor="end" letter-spacing="2.2" class="tick">assets/build.py</text>
 </svg>

@@ -41,7 +41,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
-STYLE = "press"
+STYLE = "canvas"
 
 OUT = pathlib.Path(__file__).parent
 sys.path.insert(0, str(OUT))

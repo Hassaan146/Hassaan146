@@ -1,58 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420" role="img" aria-label="Muhammad Hassaan-ul-Mustafa. AI engineer, product and backend. I build AI agents and the backends they run on. Arbisoft, FAST-NUCES, Islamabad, open to remote."><defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0d0d0e"/><stop offset="100%" stop-color="#08080a"/></linearGradient><pattern id="mesh" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" fill="none" stroke="#24242a" stroke-width="1"/></pattern></defs><style>.tick{animation:tk 5s ease-in-out infinite}@keyframes tk{0%,100%{opacity:.35}18%{opacity:1}40%{opacity:.35}}.dash{stroke-dasharray:2 5;animation:d 2s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.sweep{animation:sw 9s ease-in-out infinite}@keyframes sw{0%,100%{opacity:.18}50%{opacity:.5}}.orb{transform-box:view-box;transform-origin:816px 158px;animation:spin linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<rect width="1000" height="420" fill="url(#bg)"/>
-<rect width="1000" height="420" fill="url(#mesh)" opacity=".5"/>
-<line class="sweep" x1="0" y1="300" x2="1000" y2="300" stroke="#c08a3e"/>
-<line x1="60" y1="300" x2="940" y2="300" stroke="#24242a"/>
-<line x1="60.0" y1="300" x2="60.0" y2="293" stroke="#c08a3e" stroke-opacity=".7"/>
-<line x1="100.0" y1="300" x2="100.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="140.0" y1="300" x2="140.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="180.0" y1="300" x2="180.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="220.0" y1="300" x2="220.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="260.0" y1="300" x2="260.0" y2="293" stroke="#c08a3e" stroke-opacity=".7"/>
-<line x1="300.0" y1="300" x2="300.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="340.0" y1="300" x2="340.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="380.0" y1="300" x2="380.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="420.0" y1="300" x2="420.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="460.0" y1="300" x2="460.0" y2="293" stroke="#c08a3e" stroke-opacity=".7"/>
-<line x1="500.0" y1="300" x2="500.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="540.0" y1="300" x2="540.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="580.0" y1="300" x2="580.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="620.0" y1="300" x2="620.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="660.0" y1="300" x2="660.0" y2="293" stroke="#c08a3e" stroke-opacity=".7"/>
-<line x1="700.0" y1="300" x2="700.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="740.0" y1="300" x2="740.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="780.0" y1="300" x2="780.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="820.0" y1="300" x2="820.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="860.0" y1="300" x2="860.0" y2="293" stroke="#c08a3e" stroke-opacity=".7"/>
-<line x1="900.0" y1="300" x2="900.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<line x1="940.0" y1="300" x2="940.0" y2="296" stroke="#24242a" stroke-opacity="1"/>
-<text x="60" y="82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#c08a3e" letter-spacing="4">AI ENGINEER / PRODUCT AND BACKEND</text>
-<text x="940" y="82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5f5c57" letter-spacing="2.4" text-anchor="end">ISLAMABAD, PK</text>
-<text x="58" y="164" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#ece9e4" letter-spacing="-2.2">MUHAMMAD</text>
-<text x="58" y="220" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#ece9e4" letter-spacing="-2.2">HASSAAN</text>
-<rect x="60" y="240" width="132" height="3" fill="#c08a3e"/>
-<text x="60" y="278" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#9a958d">I build AI agents and the backends they run on.</text>
-<circle cx="816" cy="158" r="28" fill="none" stroke="#24242a" stroke-opacity=".9"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400" role="img" aria-label="Muhammad Hassaan-ul-Mustafa. AI engineer, product and backend. I build AI agents and the backends they run on. Arbisoft, FAST-NUCES, Islamabad, open to remote."><defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0b0e0d"/><stop offset="100%" stop-color="#070908"/></linearGradient><linearGradient id="spine" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6ea88a"/><stop offset="100%" stop-color="#40705d"/></linearGradient></defs><style>.tick{animation:tk 5s ease-in-out infinite}@keyframes tk{0%,100%{opacity:.4}18%{opacity:1}42%{opacity:.4}}.dash{stroke-dasharray:2 5;animation:d 2s linear infinite}@keyframes d{to{stroke-dashoffset:-7}}.cell{animation:in .9s ease-out both}@keyframes in{from{opacity:0}to{opacity:1}}.orb{transform-box:view-box;transform-origin:812px 152px;animation:spin linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="1000" height="400" fill="url(#bg)"/>
+<rect x="40" y="40" width="920" height="300" fill="#101413" fill-opacity=".7"/>
+<rect x="40" y="40" width="3" height="300" fill="url(#spine)"/>
+<line x1="40" y1="40" x2="960" y2="40" stroke="#1d2422"/>
+<line x1="40" y1="340" x2="960" y2="340" stroke="#1d2422"/>
+<text x="72.0" y="84.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#6ea88a" letter-spacing="4">AI ENGINEER / PRODUCT AND BACKEND</text>
+<text x="928.0" y="84.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#5a6560" text-anchor="end" letter-spacing="2.4">ISLAMABAD, PK</text>
+<text x="70.0" y="168.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="54" fill="#e6ebe8" font-weight="700" letter-spacing="-2.2">MUHAMMAD</text>
+<text x="70.0" y="224.0" font-family="Segoe UI, ui-sans-serif, -apple-system, Helvetica, Arial, sans-serif" font-size="54" fill="#e6ebe8" font-weight="700" letter-spacing="-2.2">HASSAAN</text>
+<rect x="72" y="244" width="128" height="3" fill="#6ea88a"/>
+<text x="72.0" y="282.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#93a09a">I build AI agents and the backends they run on.</text>
+<text x="72.0" y="312.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#5a6560" letter-spacing="2.2">ARBISOFT / FAST-NUCES / OPEN TO REMOTE</text>
+<circle cx="812" cy="152" r="28" fill="none" stroke="#1d2422"/>
 <g class="orb" style="animation-duration:15s">
-<circle cx="844.0" cy="158.0" r="4.2" fill="#c08a3e"/>
+<circle cx="840.0" cy="152.0" r="4.2" fill="#6ea88a"/>
 </g>
-<circle cx="816" cy="158" r="48" fill="none" stroke="#24242a" stroke-opacity=".9"/>
+<circle cx="812" cy="152" r="48" fill="none" stroke="#1d2422"/>
 <g class="orb" style="animation-duration:24s;animation-direction:reverse">
-<circle cx="864.0" cy="158.0" r="3.7" fill="#c08a3e"/>
-<circle cx="768.0" cy="158.0" r="3.7" fill="#8d6b3a"/>
+<circle cx="860.0" cy="152.0" r="3.7" fill="#6ea88a"/>
+<circle cx="764.0" cy="152.0" r="3.7" fill="#40705d"/>
 </g>
-<circle cx="816" cy="158" r="68" fill="none" stroke="#24242a" stroke-opacity=".9"/>
+<circle cx="812" cy="152" r="68" fill="none" stroke="#1d2422"/>
 <g class="orb" style="animation-duration:38s">
-<circle cx="884.0" cy="158.0" r="3.2" fill="#c08a3e"/>
-<circle cx="782.0" cy="216.9" r="3.2" fill="#8d6b3a"/>
-<circle cx="782.0" cy="99.1" r="3.2" fill="#8d6b3a"/>
+<circle cx="880.0" cy="152.0" r="3.2" fill="#6ea88a"/>
+<circle cx="778.0" cy="210.9" r="3.2" fill="#40705d"/>
+<circle cx="778.0" cy="93.1" r="3.2" fill="#40705d"/>
 </g>
-<circle class="tick" cx="816" cy="158" r="8" fill="#c08a3e"/>
-<text x="816" y="252" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" fill="#5f5c57" letter-spacing="1.8" text-anchor="middle">DATA / API / AGENTS</text>
-<rect x="60" y="334" width="880" height="54" fill="#111113" fill-opacity=".82" stroke="#24242a" stroke-width="1"/>
-<path d="M60 334 h13 M60 334 v13" stroke="#c08a3e" stroke-width="1.4" fill="none" stroke-opacity=".8"/>
-<path d="M940 334 h-13 M940 334 v13" stroke="#c08a3e" stroke-width="1.4" fill="none" stroke-opacity=".8"/>
-<path d="M60 388 h13 M60 388 v-13" stroke="#c08a3e" stroke-width="1.4" fill="none" stroke-opacity=".8"/>
-<path d="M940 388 h-13 M940 388 v-13" stroke="#c08a3e" stroke-width="1.4" fill="none" stroke-opacity=".8"/>
-<text x="82" y="367" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9a958d" letter-spacing="2.4">ARBISOFT / FAST-NUCES / ISLAMABAD / OPEN TO REMOTE</text>
+<circle class="tick" cx="812" cy="152" r="8" fill="#6ea88a"/>
+<text x="812.0" y="246.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5a6560" text-anchor="middle" letter-spacing="1.8">DATA / API / AGENTS</text>
 </svg>

@@ -41,7 +41,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
-STYLE = "signal"
+STYLE = "grid"
 
 OUT = pathlib.Path(__file__).parent
 sys.path.insert(0, str(OUT))
@@ -135,6 +135,35 @@ def _dmy(dt):
     return "%d %s" % (dt.day, dt.strftime("%b %Y"))
 
 
+
+def contributions():
+    """The contribution calendar, read from the page GitHub already renders.
+
+    The activity graph widget that used to sit on this page answered HTTP 200
+    with an error drawn inside the image, which is why nothing caught it for a
+    day. This reads the real cells instead: a date and a level from zero to four
+    for each day, plus the yearly total. No token, no third party.
+    """
+    try:
+        req = urllib.request.Request(
+            "https://github.com/users/%s/contributions" % USER,
+            headers={"User-Agent": "Mozilla/5.0 readme-build"})
+        with urllib.request.urlopen(req, timeout=25) as r:
+            page = r.read().decode("utf-8", "ignore")
+        cells = re.findall(r'data-date="(\d{4}-\d{2}-\d{2})"[^>]*data-level="(\d)"', page)
+        if not cells:
+            cells = [(m.group(2), m.group(1)) for m in
+                     re.finditer(r'data-level="(\d)"[^>]*data-date="(\d{4}-\d{2}-\d{2})"', page)]
+        if not cells:
+            return None
+        m = re.search(r"([\d,]+)\s+contributions?\s+in the last year", page)
+        total = int(m.group(1).replace(",", "")) if m else None
+        return {"cells": [(d, int(lv)) for d, lv in cells], "total": total}
+    except (urllib.error.URLError, ValueError, OSError) as e:
+        print("  contributions unavailable (%s); the graph keeps its last draw" % e)
+        return None
+
+
 def stats():
     try:
         repos = stars = 0
@@ -158,8 +187,13 @@ def stats():
         if not repos or newest is None or not langs:
             return None
         when = datetime.strptime(newest, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
-        return {"repos": repos, "stars": stars, "pushed": _dmy(when),
-                "langs": sorted(langs.items(), key=lambda kv: -kv[1])}
+        out = {"repos": repos, "stars": stars, "pushed": _dmy(when),
+               "langs": sorted(langs.items(), key=lambda kv: -kv[1])}
+        c = contributions()
+        if c:
+            out["cells"] = c["cells"]
+            out["contrib"] = c["total"]
+        return out
     except (urllib.error.URLError, ValueError, KeyError, TypeError, OSError) as e:
         print("  api unreachable (%s); cards with live numbers left untouched" % e)
         return None
@@ -224,6 +258,11 @@ if __name__ == "__main__":
                   ("signoff", style.signoff)]
         if hasattr(style, "asked"):
             pieces.append(("asked", style.asked))
+        if hasattr(style, "contributions") and s is not None:
+            (OUT / "contributions.svg").write_text(style.contributions(s), encoding="utf-8")
+            keep.add("contributions.svg")
+        elif hasattr(style, "contributions"):
+            keep.add("contributions.svg")
         for stem, fn in pieces:
             (OUT / ("%s.svg" % stem)).write_text(fn(), encoding="utf-8")
             keep.add("%s.svg" % stem)

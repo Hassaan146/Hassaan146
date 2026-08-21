@@ -4,7 +4,7 @@
      assets/build.py and run:
 
      STYLE at the top of that file switches the whole look:
-     "signal", "glass", "luxury" or "cyber".
+     "grid", "signal", "canvas", "press", "glass", "luxury" or "cyber".
 
          python assets/build.py
 
@@ -15,9 +15,9 @@
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-coming_soon-c08a3e?style=for-the-badge&logo=vercel&logoColor=white&labelColor=08080a)](#)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-9a958d?style=for-the-badge&labelColor=08080a)](https://linkedin.com/in/muhammad-hassaan25480a322)
-[![Email](https://img.shields.io/badge/Email-8d6b3a?style=for-the-badge&logo=gmail&logoColor=white&labelColor=08080a)](mailto:muhammadhassaanulmustafa@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-coming_soon-6ea88a?style=for-the-badge&logo=vercel&logoColor=white&labelColor=070908)](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-93a09a?style=for-the-badge&labelColor=070908)](https://linkedin.com/in/muhammad-hassaan25480a322)
+[![Email](https://img.shields.io/badge/Email-40705d?style=for-the-badge&logo=gmail&logoColor=white&labelColor=070908)](mailto:muhammadhassaanulmustafa@gmail.com)
 
 </div>
 
@@ -54,7 +54,7 @@ An AI agent will happily write two thousand lines on top of a decision nobody ma
 /plugin marketplace add Hassaan146/forge-marketplace
 ```
 
-[![Repository](https://img.shields.io/badge/Star_Forge_Mentor-111113?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146/forge-mentor)
+[![Repository](https://img.shields.io/badge/Star_Forge_Mentor-101413?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146/forge-mentor)
 
 <br/>
 
@@ -71,8 +71,8 @@ The AI feed is a firehose. **This drinks it and hands back five things before br
 | **Delivery** | A personalised top five, emailed every morning |
 | **Payments** | Stripe subscriptions, user accounts, review system |
 
-[![Live](https://img.shields.io/badge/Try_it_live-c08a3e?style=for-the-badge&logoColor=white&labelColor=08080a)](https://ai-news-aggregator-weld.vercel.app)
-[![Repository](https://img.shields.io/badge/Repository-111113?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146/ai-news-aggregator)
+[![Live](https://img.shields.io/badge/Try_it_live-6ea88a?style=for-the-badge&logoColor=white&labelColor=070908)](https://ai-news-aggregator-weld.vercel.app)
+[![Repository](https://img.shields.io/badge/Repository-101413?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146/ai-news-aggregator)
 
 <br/>
 
@@ -90,7 +90,7 @@ It rules out where your passport and budget cannot take you, ranks what survives
 | **Zero keys to run** | Every external call degrades to a mock, so a fresh clone just works |
 | **Recognised** | Listed production adopter of the Graph Context Framework |
 
-[![Repository](https://img.shields.io/badge/Repository-111113?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146/ai-travel-planner)
+[![Repository](https://img.shields.io/badge/Repository-101413?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146/ai-travel-planner)
 
 <br/>
 
@@ -108,7 +108,7 @@ Encrypted messaging and Bitcoin across a mesh of phones, **for the places where 
 | **Identity** | Cryptographic. No phone number, no SIM |
 | **Panic wipe** | On device, for denied environments |
 
-[![Visit](https://img.shields.io/badge/bitmadwall.ai-c08a3e?style=for-the-badge&logoColor=white&labelColor=08080a)](https://www.bitmadwall.ai/)
+[![Visit](https://img.shields.io/badge/bitmadwall.ai-6ea88a?style=for-the-badge&logoColor=white&labelColor=070908)](https://www.bitmadwall.ai/)
 
 <br/>
 
@@ -125,7 +125,7 @@ An org where **every seat is an agent**, and the whole run is replayable afterwa
 | **Route** | Each piece handed to the agent that owns it |
 | **Trace** | Every step timed, logged and replayable |
 
-[![Repository](https://img.shields.io/badge/Repository-111113?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146/agentic-ai-workflow)
+[![Repository](https://img.shields.io/badge/Repository-101413?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hassaan146/agentic-ai-workflow)
 
 <details>
 <summary><b>Everything else, 11 more builds</b></summary>
@@ -190,6 +190,8 @@ An org where **every seat is an agent**, and the whole run is replayable afterwa
 
 ## 03 · Signals
 
+<img src="assets/contributions.svg" width="100%" alt="A year of commits drawn from the live contribution calendar, 1,768 contributions in the last year." />
+
 <img src="assets/signals.svg" width="100%" alt="Public repositories, stars earned, languages and last push date, with the language mix and four credentials: 3rd place at the National AI Hackathon, production adopter of the Graph Context Framework, 1,216 tests at 100% coverage on Forge Mentor, and four certifications from Anthropic, Harvard and DeepLearning.AI." />
 
 <div align="center">
@@ -227,8 +229,8 @@ If you are building something and part of it is stuck, that is the email I like 
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/muhammadhassaanulmustafa@gmail.com-8d6b3a?style=for-the-badge&logo=gmail&logoColor=white&labelColor=08080a)](mailto:muhammadhassaanulmustafa@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-9a958d?style=for-the-badge&labelColor=08080a)](https://linkedin.com/in/muhammad-hassaan25480a322)
+[![Email](https://img.shields.io/badge/muhammadhassaanulmustafa@gmail.com-40705d?style=for-the-badge&logo=gmail&logoColor=white&labelColor=070908)](mailto:muhammadhassaanulmustafa@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-93a09a?style=for-the-badge&labelColor=070908)](https://linkedin.com/in/muhammad-hassaan25480a322)
 
 <img src="assets/signoff.svg" width="100%" alt="" />
 

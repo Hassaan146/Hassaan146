@@ -16,7 +16,9 @@ needs pointing at. Every rule is hairline. Nothing glows.
 The result keeps the density that made the layout work and loses the costume.
 """
 
+import json
 import math
+import pathlib
 
 from build import (BH, CW, FS, GAP, MONO, PAD, PRINCIPLES, REDUCE, SANS, W,
                    esc, mono_w)
@@ -286,5 +288,67 @@ def signoff():
     p.append('<text class="tick" x="%d" y="54" font-family="%s" font-size="10.5" fill="%s" '
              'letter-spacing="2.2" text-anchor="end">assets/build.py</text>'
              % (W - 70, MONO, ACC))
+    p.append("</svg>")
+    return chr(10).join(p) + chr(10)
+
+
+def _asked():
+    p = pathlib.Path(__file__).parent / "asked.json"
+    if p.exists():
+        try:
+            return json.loads(p.read_text(encoding="utf-8"))
+        except ValueError:
+            pass
+    return []
+
+
+def _flow(text, size, width):
+    words, lines, cur = text.split(), [], ""
+    for w in words:
+        t = (cur + " " + w).strip()
+        if mono_w(t, size) > width and cur:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = t
+    if cur:
+        lines.append(cur)
+    return lines
+
+
+def asked():
+    """The questions strangers have put to the agent, and what it said back."""
+    log = _asked()[:3]
+    rows = sum(2 + len(_flow(str(i.get("a", "")), 10.5, 800)[:3]) for i in log) or 2
+    h = 96 + rows * 16
+    lab = "Questions asked of the agent" + (
+        ". " + " ".join("%s. %s" % (i.get("q", ""), i.get("a", "")) for i in log) if log else
+        ". None yet.")
+    p = [head(h, lab)]
+    p += ground(h)
+    p.append(panel(40, 20, 920, h - 40))
+    p += corners(40, 20, 920, h - 40)
+    p.append('<text x="70" y="52" font-family="%s" font-size="9.6" fill="%s" '
+             'letter-spacing="1.9">ASK IT SOMETHING</text>' % (MONO, ACC))
+    p.append('<text x="70" y="72" font-family="%s" font-size="11" fill="%s">'
+             'Open an issue titled agent: and your question. A workflow answers it, '
+             'writes the reply here, then closes the issue.</text>' % (MONO, FAINT))
+    y = 104
+    if not log:
+        p.append('<text x="70" y="%d" font-family="%s" font-size="11" fill="%s">'
+                 'Nobody has asked anything yet.</text>' % (y, MONO, FAINT))
+    for item in log:
+        p.append('<rect x="70" y="%d" width="3" height="30" fill="%s"/>' % (y - 11, ACC))
+        p.append('<text x="84" y="%d" font-family="%s" font-size="11.5" fill="%s">%s</text>'
+                 % (y, MONO, INK, esc(str(item.get("q", ""))[:76])))
+        p.append('<text x="930" y="%d" font-family="%s" font-size="9" fill="%s" '
+                 'text-anchor="end">@%s</text>'
+                 % (y, MONO, FAINT, esc(str(item.get("who", ""))[:22])))
+        y += 16
+        for ln in _flow(str(item.get("a", "")), 10.5, 800)[:3]:
+            p.append('<text x="84" y="%d" font-family="%s" font-size="10.5" fill="%s">%s</text>'
+                     % (y, MONO, DIM, esc(ln)))
+            y += 15
+        y += 12
     p.append("</svg>")
     return chr(10).join(p) + chr(10)

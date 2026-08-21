@@ -41,7 +41,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
-STYLE = "canvas"
+STYLE = "signal"
 
 OUT = pathlib.Path(__file__).parent
 sys.path.insert(0, str(OUT))
@@ -220,8 +220,11 @@ if __name__ == "__main__":
             out.write_text(style.canvas(s), encoding="utf-8")
         keep.add(out.name)
     else:
-        for stem, fn in (("hero", style.hero), ("principles", style.principles),
-                         ("signoff", style.signoff)):
+        pieces = [("hero", style.hero), ("principles", style.principles),
+                  ("signoff", style.signoff)]
+        if hasattr(style, "asked"):
+            pieces.append(("asked", style.asked))
+        for stem, fn in pieces:
             (OUT / ("%s.svg" % stem)).write_text(fn(), encoding="utf-8")
             keep.add("%s.svg" % stem)
         for key, spec in SYSTEMS.items():

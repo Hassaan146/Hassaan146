@@ -1,9 +1,15 @@
-"""Slate and sage.
+"""Obsidian and champagne.
 
-A new palette and a reworked panel. The ochre on neutral black is gone; this is
-a cold near-black with a green cast, bone type, and a desaturated sage that is
-close enough to the colour GitHub already uses for contributions that the
-heatmap and the accent belong to the same family instead of fighting.
+The sage is gone. This is a neutral obsidian ground with no colour cast, warm
+bone type, and a single muted champagne used only where something needs
+pointing at. Sage was chosen to sit in the same family as GitHub's own
+contribution greens, but the heatmap here is drawn from the real calendar by
+this module, not fetched, so there is no external palette left to match. That
+freed the accent, and a warm metal on a cold neutral reads as expensive in a
+way a desaturated green does not.
+
+Champagne rather than gold: the value is held near 60% and the saturation low,
+because a dense panel layout at full-saturation gold looks like a certificate.
 
 The panel treatment changed too. The registration brackets are gone, replaced by
 a solid spine down the left edge of every block and a single rule across the
@@ -21,13 +27,13 @@ import math
 from build import (BH, CW, FS, GAP, MONO, PAD, PRINCIPLES, REDUCE, SANS, W,
                    esc, mono_w)
 
-BG0, BG1 = "#0b0e0d", "#070908"
-PANEL = "#101413"
-INK, DIM, FAINT = "#e6ebe8", "#93a09a", "#5a6560"
-LINE = "#1d2422"
-ACC, ACC2 = "#6ea88a", "#40705d"
+BG0, BG1 = "#0a0a0b", "#050506"
+PANEL = "#0f0f11"
+INK, DIM, FAINT = "#ece7dd", "#9c968a", "#615c53"
+LINE = "#1f1e1c"
+ACC, ACC2 = "#c9a961", "#8a7440"
 
-HEAT = ["#161d1a", "#24503c", "#356d51", "#4d9270", "#6fbd94"]
+HEAT = ["#18160f", "#3a301a", "#5c4b28", "#8d7539", "#c9a961"]
 
 DEFS = (
     '<defs>'
@@ -236,7 +242,7 @@ def contributions(s):
 
 # ---------------------------------------------------------------- signals
 
-TONE = [ACC, "#8fb8a6", ACC2, "#7d8a84", "#5a6560", "#454f4a", "#333b37"]
+TONE = [ACC, "#e2cb92", ACC2, "#8a8378", "#615c53", "#47433c", "#34312c"]
 
 
 def signals(s):

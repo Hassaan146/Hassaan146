@@ -37,22 +37,15 @@ I build AI systems that make decisions under real constraints — and then I put
 
 Most "AI projects" stop at a notebook. Mine ship with rate limiting, input validation, row-level security, graceful degradation when an API key is missing, and a URL you can open. That gap — between a working prototype and something a client can depend on — is the part I care about.
 
-```yaml
-name:      Muhammad Hassaan-ul-Mustafa
-role:      AI Forward-Deployed Engineer · Product & Backend
-studying:  BS Computer Science, FAST-NUCES  (Aug 2024 → May 2028)
-based_in:  Islamabad, Pakistan  ·  open to remote
-now_at:    Arbisoft
-before:    Tashi — enterprise AI (BitMadWall, tashitech.ai)
-building:
-  - Forge Mentor — a Claude Code plugin, now at v1.28
-  - AI Employee OS — an org where every seat is an agent
-strongest_at:
-  - LangGraph / multi-agent orchestration & context passing
-  - FastAPI + Pydantic v2 backends that survive production
-  - Turning a vague client problem into a shipped, scoped system
-looking_for:  Forward-deployed engineering · AI product roles
-```
+- 🔭 &nbsp; Currently building **Forge Mentor** (v1.28) and **AI Employee OS**
+- 🧠 &nbsp; Deep into LangGraph, multi-agent orchestration & context passing
+- ⚙️ &nbsp; FastAPI + Pydantic v2 backends that survive production
+- 🎓 &nbsp; BS Computer Science, FAST-NUCES &middot; Aug 2024 → May 2028
+- 💼 &nbsp; Now at **Arbisoft** &middot; previously **Tashi** — enterprise AI
+- 🌍 &nbsp; Islamabad, Pakistan 🇵🇰 &middot; open to remote
+- 📬 &nbsp; Open to forward-deployed engineering & AI product roles
+
+> 💡 &nbsp;**What drives me:** turning a vague client problem into a shipped, scoped system — and leaving the reasoning where the next person can find it.
 
 <br clear="right"/>
 
@@ -84,79 +77,108 @@ flowchart LR
 
 ## Featured work
 
-### 📡 BitMadWall — *"Communications that do not depend on the network."*
-> **[bitmadwall.ai →](https://www.bitmadwall.ai/)** · shipped at [Tashi](https://www.tashitech.ai/)
+### 📡 BitMadWall
+**"Communications that do not depend on the network."**
 
-Sovereign secure mesh communications. Encrypted messaging and Bitcoin transactions relay **device to device** over Bluetooth LE, Wi-Fi Direct, and optional LoRa — no internet, no cell tower, no server anywhere in the path.
+<p>
+  <img src="https://img.shields.io/badge/AES--256--GCM-1f6feb?style=flat-square">
+  <img src="https://img.shields.io/badge/Bluetooth_LE-0082FC?style=flat-square&logo=bluetooth&logoColor=white">
+  <img src="https://img.shields.io/badge/Wi--Fi_Direct-0a66c2?style=flat-square">
+  <img src="https://img.shields.io/badge/LoRa-00539f?style=flat-square">
+  <img src="https://img.shields.io/badge/Double_Ratchet-3a0ca3?style=flat-square">
+  <img src="https://img.shields.io/badge/Bitcoin-F7931A?style=flat-square&logo=bitcoin&logoColor=white">
+</p>
+
+Sovereign secure mesh communications. Encrypted messaging and Bitcoin transactions relay **device to device** over Bluetooth LE, Wi-Fi Direct, and optional LoRa - no internet, no cell tower, no server anywhere in the path.
 
 | | |
 |---|---|
-| **Crypto** | AES-256-GCM · Signal-style double-ratchet key derivation |
-| **Transport** | Bluetooth LE · Wi-Fi Direct · optional LoRa (2–5 km range) |
-| **Routing** | Self-healing mesh, up to 7 hops, store-and-forward for delayed delivery |
-| **Identity** | Cryptographic — no phone number, no SIM |
-| **Safety** | Panic wipe |
+| 🔐 **Crypto** | AES-256-GCM · Signal-style double-ratchet key derivation |
+| 📡 **Transport** | Bluetooth LE · Wi-Fi Direct · optional LoRa (2–5 km range) |
+| 🕸️ **Routing** | Self-healing mesh, up to 7 hops, store-and-forward for delayed delivery |
+| 🪪 **Identity** | Cryptographic - no phone number, no SIM |
+| 🧨 **Safety** | Panic wipe |
 
 Built for the moments when the network is gone or can't be trusted: continuity of government, disaster response, field teams in denied environments.
 
+<p>
+  <img src="https://img.shields.io/badge/0_servers_in_path-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/7_mesh_hops-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/no_SIM_required-2ea043?style=flat-square">
+</p>
+
+<a href="https://www.bitmadwall.ai/"><img src="https://img.shields.io/badge/Visit_bitmadwall.ai-1f6feb?style=for-the-badge&logo=vercel&logoColor=white"></a> <a href="https://www.tashitech.ai/"><img src="https://img.shields.io/badge/Shipped_at_Tashi-161b22?style=for-the-badge"></a>
+
 <br/>
 
-### 🏢 Tashi — the enterprise AI platform site
-> **[tashitech.ai →](https://www.tashitech.ai/)**
-
-Built and shipped the public platform site for [Tashi](https://www.tashitech.ai/), an enterprise AI company running on one thesis: *the future of operations is human + agents.* Agents that orchestrate across ERP and CRM systems, carry governance and approvals inside every action, and anchor each operation on-chain so the audit trail is provable rather than promised.
-
-The site is the front door for all of it — platform architecture, six industry solution tracks (finance, retail, healthcare, security, enterprise, education), customer stories, and the demo funnel.
+---
 
 <br/>
 
-### 🛰️ SkyElite AI — travel decisions, not travel blogs
-> 🥉 3rd Place, National AI Hackathon · ⭐ Recognized GCF production adopter
-> **[Source →](https://github.com/Hassaan146/ai-travel-planner)**
+### 🛰️ SkyElite AI
+**Travel decisions, not travel blogs.**
 
-Give it your passport, budget, and interests. It rules out the destinations you legally or financially *can't* reach, then ranks what's left — and tells you what it traded away to get there.
+<p>
+  <img src="https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+  <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white">
+  <img src="https://img.shields.io/badge/Pydantic_v2-E92063?style=flat-square&logo=pydantic&logoColor=white">
+  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langgraph&logoColor=white">
+  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white">
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/%F0%9F%A5%89_3rd_Place_National_AI_Hackathon-d29922?style=flat-square">
+  <img src="https://img.shields.io/badge/%E2%AD%90_GCF_Production_Adopter-8957e5?style=flat-square">
+</p>
+
+Give it your passport, budget, and interests. It rules out the destinations you legally or financially *can't* reach, then ranks what's left - and tells you what it traded away to get there.
 
 ```
-intake → filter → visa → research → scoring → tradeoff → final
-└──────────── 7-node LangGraph StateGraph ────────────┘
+intake -> filter -> visa -> research -> scoring -> tradeoff -> final
+|________________ 7-node LangGraph StateGraph ________________|
 ```
 
-- Scores every candidate across **safety, budget, visa difficulty, and scenery**, returning ranked packages with confidence levels, source counts, and honest tradeoffs — not a confident-sounding guess.
+- Scores every candidate across **safety, budget, visa difficulty, and scenery**, returning ranked packages with confidence levels, source counts, and honest tradeoffs - not a confident-sounding guess.
 - Security-first backend: CORS allow-listing, rate limiting, Pydantic v2 validation, prompt-injection sanitization, and **RLS-enforced** Supabase persistence.
 - GRASP + GoF patterns throughout (Repository, Abstract Factory, Adapter, Strategy, Facade).
-- **Runs with zero API keys** — every external dependency degrades to a mock or in-memory fallback, so a new contributor is productive in one clone.
+- **Runs with zero API keys** - every external dependency degrades to a mock or in-memory fallback, so a new contributor is productive in one clone.
 
-| Layer | Stack |
-|---|---|
-| Frontend | Next.js 15 · TypeScript · Tailwind CSS · Three.js |
-| Backend | FastAPI · Pydantic v2 · LangGraph |
-| AI | Anthropic API (Claude Haiku 4.5) · Tavily |
-| Data | Supabase (Postgres + RLS) |
-| Deploy | Vercel · Railway |
+<p>
+  <img src="https://img.shields.io/badge/7_graph_nodes-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/0_keys_to_run-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/RLS_enforced-2ea043?style=flat-square">
+</p>
 
-<br/>
-
-### 📰 Asme — AI news, filtered down to five things worth reading
-> **[Live demo →](https://ai-news-aggregator-weld.vercel.app)** · **[Source →](https://github.com/Hassaan146/ai-news-aggregator)**
-
-The AI feed is a firehose. Asme drinks it so you don't: it scrapes **164 sites and 36 YouTube channels** — labs, product blogs, newsletters, policy sources — then hands each user a personalized top-5 digest in their inbox every morning.
-
-- Modular services for scraping, ranking, digesting, email, subscriptions, reviews, and admin — each behind its own FastAPI REST surface.
-- LLM agents write the summaries, with **Groq primary and Gemini fallback** so a single provider outage doesn't kill the digest.
-- Real product plumbing: user auth, Stripe payments, a deployed React dashboard.
-
-`React` `Vite` `Tailwind` `FastAPI` `SQLAlchemy` `PostgreSQL (Neon)` `Groq` `Gemini` `Stripe` `Render` `Vercel`
+<a href="https://github.com/Hassaan146/ai-travel-planner"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white"></a>
 
 <br/>
 
-### 🔨 Forge Mentor — a Claude Code plugin that makes you decide before you code
-> **[Source →](https://github.com/Hassaan146/forge-mentor)** · MIT · v1.28.0
+---
+
+<br/>
+
+### 🔨 Forge Mentor
+**A Claude Code plugin that makes you decide before you code.**
+
+<p>
+  <img src="https://img.shields.io/badge/Python_3.12+-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logo=modelcontextprotocol&logoColor=white">
+  <img src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white">
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white">
+  <img src="https://img.shields.io/badge/MIT-1f6feb?style=flat-square">
+  <img src="https://img.shields.io/badge/v1.28.0-8957e5?style=flat-square">
+</p>
 
 AI coding agents happily write 2,000 lines on top of a decision nobody made. Forge Mentor stops that: it teaches the load-bearing architectural choice, lays out the options with a recommendation, **waits for your call**, records it in `.claude/forge/`, and blocks code from moving past an undecided question.
 
-- Decisions become part of the codebase — rationale, not just result — so the *why* survives the sprint.
-- Three workflow modes: `pipeline`, `accept-edits`, `auto`.
-- **1,216 tests at 100% coverage.** Every step announces what it will write before writing it.
+| | |
+|---|---|
+| 🚦 **Decision gate** | Blocks code from moving past a question you haven't answered |
+| 📝 **Recorded rationale** | Every call written to `.claude/forge/` - the *why* outlives the sprint |
+| 🧪 **1,216 tests** | At 100% coverage |
+| 🎛️ **Three modes** | `pipeline` · `accept-edits` · `auto` |
 
 ```bash
 /plugin marketplace add Hassaan146/forge-marketplace
@@ -165,46 +187,162 @@ AI coding agents happily write 2,000 lines on top of a decision nobody made. For
 /plugin install forge@forge-marketplace
 ```
 
-`Python 3.12+` `MCP` `Claude` `Git`
+<p>
+  <img src="https://img.shields.io/badge/1,216_tests-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/100%25_coverage-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/MIT_licensed-2ea043?style=flat-square">
+</p>
+
+<a href="https://github.com/Hassaan146/forge-mentor"><img src="https://img.shields.io/badge/%E2%AD%90_Star_Forge_Mentor-161b22?style=for-the-badge&logo=github&logoColor=white"></a>
 
 <br/>
 
-### 🛍️ AI Fashion Sales Assistant — the DM that closes the sale
-> **[Source →](https://github.com/Hassaan146/ai-fashion-sales-assistant)**
+---
 
-Clothing brands lose orders in unread Instagram DMs. This assistant answers them: it understands what the customer actually wants, recommends from the live catalog, reads their mood, and walks the order to completion — across Instagram, WhatsApp, and web chat.
+<br/>
 
-A **three-phase pipeline** does the work:
+### 📰 Asme
+**AI news, filtered down to five things worth reading.**
+
+<p>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white">
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white">
+  <img src="https://img.shields.io/badge/Groq-F55036?style=flat-square">
+  <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white">
+  <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white">
+</p>
+
+The AI feed is a firehose. Asme drinks it so you don't: it scrapes **164 sites and 36 YouTube channels** - labs, product blogs, newsletters, policy sources - then hands each user a personalized top-5 digest in their inbox every morning.
+
+- Modular services for scraping, ranking, digesting, email, subscriptions, reviews, and admin - each behind its own FastAPI REST surface.
+- LLM agents write the summaries, with **Groq primary and Gemini fallback** so a single provider outage doesn't kill the digest.
+- Real product plumbing: user auth, Stripe payments, a deployed React dashboard.
+
+<p>
+  <img src="https://img.shields.io/badge/164_sites-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/36_channels-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/5_picks_a_day-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/live-2ea043?style=flat-square">
+</p>
+
+<a href="https://ai-news-aggregator-weld.vercel.app"><img src="https://img.shields.io/badge/Live_demo-1f6feb?style=for-the-badge&logo=vercel&logoColor=white"></a> <a href="https://github.com/Hassaan146/ai-news-aggregator"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white"></a>
+
+<br/>
+
+---
+
+<br/>
+
+### 🛍️ AI Fashion Sales Assistant
+**The DM that closes the sale.**
+
+<p>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white">
+  <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white">
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white">
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white">
+  <img src="https://img.shields.io/badge/Llama_3.3-0866FF?style=flat-square&logo=meta&logoColor=white">
+  <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white">
+</p>
+
+Clothing brands lose orders in unread Instagram DMs. This assistant answers them: it understands what the customer actually wants, recommends from the live catalog, reads their mood, and walks the order to completion - across Instagram, WhatsApp, and web chat.
 
 | Phase | What happens |
 |---|---|
-| **1 · NLU** | Extracts **11 intent types** plus entities — colour, size, price band |
+| **1 · NLU** | Extracts **11 intent types** plus entities - colour, size, price band |
 | **2 · Recommend + sentiment** | Ranks catalog matches, adds upsells, classifies customer mood |
 | **3 · Converse** | State machine collects the order; templates keep replies on-brand |
 
-Rule-based fast path for common messages, LLM path for everything else — so it still works with **no API key at all**. 164 automated tests.
+Rule-based fast path for common messages, LLM path for everything else - so it still works with **no API key at all**.
 
-`React` `Vite` `Tailwind` `Node.js` `Express` `MongoDB` `JWT` `LangChain` `Llama 3.3` `OpenAI API`
+<p>
+  <img src="https://img.shields.io/badge/11_intent_types-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/164_tests-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/works_with_0_keys-2ea043?style=flat-square">
+</p>
 
-<br/>
-
-### 💳 PayTrace — reconciliation for startups without a finance team
-> **[Source →](https://github.com/Hassaan146/PayTrace)**
-
-A desktop system that matches vendor invoices against bank records automatically, through a **four-stage engine**: Exact → Vendor Reference → Tolerant → Partial-Payment. Role-aware KPIs, email notifications, undo/redo, and BCrypt-secured audit trails, built on a Maven architecture using Strategy, Factory, Command, Observer, DAO, MVC, and Singleton.
-
-`Java` `JavaFX` `SQL Server` `Maven` `SMTP` `BCrypt`
+<a href="https://github.com/Hassaan146/ai-fashion-sales-assistant"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white"></a>
 
 <br/>
 
-### 🧑‍💼 AI Employee OS — an org chart where every seat is an agent
-> **[Source →](https://github.com/Hassaan146/agentic-ai-workflow)**
+---
+
+<br/>
+
+### 🧑‍💼 AI Employee OS
+**An org chart where every seat is an agent.**
+
+<p>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white">
+  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langgraph&logoColor=white">
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white">
+  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white">
+  <img src="https://img.shields.io/badge/Groq-F55036?style=flat-square">
+</p>
 
 A company staffed entirely by AI. Give it a messy request in plain English; it decomposes that into a **dependency-aware workflow**, routes each piece to the specialist agent that should own it, validates what comes back, and shows you the full execution trace instead of asking you to trust it.
 
-Each role — sales, research, ops, engineering — is an agent with its own scope, tools, and handoffs, coordinating like a team instead of firing off one-shot prompts. Everything the other projects taught me about orchestration, pointed at one question: how much of a company can actually run itself?
+Each role - sales, research, ops, engineering - is an agent with its own scope, tools, and handoffs, coordinating like a team instead of firing off one-shot prompts. Everything the other projects taught me about orchestration, pointed at one question: how much of a company can actually run itself?
 
-`Next.js` `React` `FastAPI` `Pydantic` `LangGraph` `LangChain` `Supabase` `Groq` `Gemini` `Vercel` `Render`
+<p>
+  <img src="https://img.shields.io/badge/1_request_to_N_agents-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/DAG_ordered-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/full_trace-2ea043?style=flat-square">
+</p>
+
+<a href="https://github.com/Hassaan146/agentic-ai-workflow"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white"></a>
+
+<br/>
+
+---
+
+<br/>
+
+### 🏢 Tashi
+**The enterprise AI platform site.**
+
+<p>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+  <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white">
+  <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white">
+</p>
+
+Built and shipped the public platform site for [Tashi](https://www.tashitech.ai/), an enterprise AI company running on one thesis: *the future of operations is human + agents.* Agents that orchestrate across ERP and CRM systems, carry governance and approvals inside every action, and anchor each operation on-chain so the audit trail is provable rather than promised.
+
+The site is the front door for all of it - platform architecture, six industry solution tracks (finance, retail, healthcare, security, enterprise, education), customer stories, and the demo funnel.
+
+<a href="https://www.tashitech.ai/"><img src="https://img.shields.io/badge/Visit_tashitech.ai-1f6feb?style=for-the-badge&logo=vercel&logoColor=white"></a>
+
+<br/>
+
+---
+
+<br/>
+
+### 💳 PayTrace
+**Reconciliation for startups without a finance team.**
+
+<p>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaFX-ED8B00?style=flat-square">
+  <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white">
+  <img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white">
+  <img src="https://img.shields.io/badge/BCrypt-004880?style=flat-square">
+</p>
+
+A desktop system that matches vendor invoices against bank records automatically, through a **four-stage engine**: Exact -> Vendor Reference -> Tolerant -> Partial-Payment. Role-aware KPIs, email notifications, undo/redo, and BCrypt-secured audit trails, built on a Maven architecture using Strategy, Factory, Command, Observer, DAO, MVC, and Singleton.
+
+<p>
+  <img src="https://img.shields.io/badge/4--stage_engine-2ea043?style=flat-square">
+  <img src="https://img.shields.io/badge/7_design_patterns-2ea043?style=flat-square">
+</p>
+
+<a href="https://github.com/Hassaan146/PayTrace"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white"></a>
 
 <br/>
 

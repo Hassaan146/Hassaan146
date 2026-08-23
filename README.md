@@ -80,7 +80,7 @@ flowchart LR
 ### 📡 BitMadWall
 **"Communications that do not depend on the network."**
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/AES--256--GCM-1f6feb?style=flat-square">
   <img src="https://img.shields.io/badge/Bluetooth_LE-0082FC?style=flat-square&logo=bluetooth&logoColor=white">
   <img src="https://img.shields.io/badge/Wi--Fi_Direct-0a66c2?style=flat-square">
@@ -101,7 +101,7 @@ Sovereign secure mesh communications. Encrypted messaging and Bitcoin transactio
 
 Built for the moments when the network is gone or can't be trusted: continuity of government, disaster response, field teams in denied environments.
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/0_servers_in_path-2ea043?style=flat-square">
   <img src="https://img.shields.io/badge/7_mesh_hops-2ea043?style=flat-square">
   <img src="https://img.shields.io/badge/no_SIM_required-2ea043?style=flat-square">
@@ -118,7 +118,7 @@ Built for the moments when the network is gone or can't be trusted: continuity o
 ### 🛰️ SkyElite AI
 **Travel decisions, not travel blogs.**
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
   <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white">
@@ -128,7 +128,7 @@ Built for the moments when the network is gone or can't be trusted: continuity o
   <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white">
 </p>
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/%F0%9F%A5%89_3rd_Place_National_AI_Hackathon-d29922?style=flat-square">
   <img src="https://img.shields.io/badge/%E2%AD%90_GCF_Production_Adopter-8957e5?style=flat-square">
 </p>
@@ -145,7 +145,7 @@ intake -> filter -> visa -> research -> scoring -> tradeoff -> final
 - GRASP + GoF patterns throughout (Repository, Abstract Factory, Adapter, Strategy, Facade).
 - **Runs with zero API keys** - every external dependency degrades to a mock or in-memory fallback, so a new contributor is productive in one clone.
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/7_graph_nodes-2ea043?style=flat-square">
   <img src="https://img.shields.io/badge/0_keys_to_run-2ea043?style=flat-square">
   <img src="https://img.shields.io/badge/RLS_enforced-2ea043?style=flat-square">
@@ -162,7 +162,7 @@ intake -> filter -> visa -> research -> scoring -> tradeoff -> final
 ### 🔨 Forge Mentor
 **A Claude Code plugin that makes you decide before you code.**
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/Python_3.12+-3776AB?style=flat-square&logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logo=modelcontextprotocol&logoColor=white">
   <img src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white">
@@ -187,7 +187,7 @@ AI coding agents happily write 2,000 lines on top of a decision nobody made. For
 /plugin install forge@forge-marketplace
 ```
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/1,216_tests-2ea043?style=flat-square">
   <img src="https://img.shields.io/badge/100%25_coverage-2ea043?style=flat-square">
   <img src="https://img.shields.io/badge/MIT_licensed-2ea043?style=flat-square">
@@ -204,7 +204,7 @@ AI coding agents happily write 2,000 lines on top of a decision nobody made. For
 ### 📰 Asme
 **AI news, filtered down to five things worth reading.**
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white">
   <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white">
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white">
@@ -220,7 +220,7 @@ The AI feed is a firehose. Asme drinks it so you don't: it scrapes **164 sites a
 - LLM agents write the summaries, with **Groq primary and Gemini fallback** so a single provider outage doesn't kill the digest.
 - Real product plumbing: user auth, Stripe payments, a deployed React dashboard.
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/164_sites-2ea043?style=flat-square">
   <img src="https://img.shields.io/badge/36_channels-2ea043?style=flat-square">
   <img src="https://img.shields.io/badge/5_picks_a_day-2ea043?style=flat-square">
@@ -238,7 +238,7 @@ The AI feed is a firehose. Asme drinks it so you don't: it scrapes **164 sites a
 ### 🛍️ AI Fashion Sales Assistant
 **The DM that closes the sale.**
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white">
   <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white">
   <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white">
@@ -258,7 +258,7 @@ Clothing brands lose orders in unread Instagram DMs. This assistant answers them
 
 Rule-based fast path for common messages, LLM path for everything else - so it still works with **no API key at all**.
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/11_intent_types-2ea043?style=flat-square">
   <img src="https://img.shields.io/badge/164_tests-2ea043?style=flat-square">
   <img src="https://img.shields.io/badge/works_with_0_keys-2ea043?style=flat-square">
@@ -275,7 +275,7 @@ Rule-based fast path for common messages, LLM path for everything else - so it s
 ### 🧑‍💼 AI Employee OS
 **An org chart where every seat is an agent.**
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white">
   <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langgraph&logoColor=white">
@@ -288,7 +288,7 @@ A company staffed entirely by AI. Give it a messy request in plain English; it d
 
 Each role - sales, research, ops, engineering - is an agent with its own scope, tools, and handoffs, coordinating like a team instead of firing off one-shot prompts. Everything the other projects taught me about orchestration, pointed at one question: how much of a company can actually run itself?
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/1_request_to_N_agents-2ea043?style=flat-square">
   <img src="https://img.shields.io/badge/DAG_ordered-2ea043?style=flat-square">
   <img src="https://img.shields.io/badge/full_trace-2ea043?style=flat-square">
@@ -305,7 +305,7 @@ Each role - sales, research, ops, engineering - is an agent with its own scope, 
 ### 🏢 Tashi
 **The enterprise AI platform site.**
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
   <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white">
@@ -327,7 +327,7 @@ The site is the front door for all of it - platform architecture, six industry s
 ### 💳 PayTrace
 **Reconciliation for startups without a finance team.**
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
   <img src="https://img.shields.io/badge/JavaFX-ED8B00?style=flat-square">
   <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white">
@@ -337,7 +337,7 @@ The site is the front door for all of it - platform architecture, six industry s
 
 A desktop system that matches vendor invoices against bank records automatically, through a **four-stage engine**: Exact -> Vendor Reference -> Tolerant -> Partial-Payment. Role-aware KPIs, email notifications, undo/redo, and BCrypt-secured audit trails, built on a Maven architecture using Strategy, Factory, Command, Observer, DAO, MVC, and Singleton.
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/4--stage_engine-2ea043?style=flat-square">
   <img src="https://img.shields.io/badge/7_design_patterns-2ea043?style=flat-square">
 </p>
@@ -368,23 +368,25 @@ A desktop system that matches vendor invoices against bank records automatically
 
 ---
 
-## Stack
+<h2 align="center">Stack</h2>
 
 
-### Languages
+<h3 align="center">Languages</h3>
 
+<div align="center">
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=py,ts,js,cpp,java,html,css&theme=dark&perline=12" />
 </a>
+</div>
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/SQL_/_T--SQL-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white">
   <img src="https://img.shields.io/badge/x86_Assembly-6E4C13?style=flat-square">
 </p>
 
-### AI & agents
+<h3 align="center">AI & agents</h3>
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langgraph&logoColor=white">
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white">
   <img src="https://img.shields.io/badge/MCP-000000?style=flat-square&logo=modelcontextprotocol&logoColor=white">
@@ -395,41 +397,49 @@ A desktop system that matches vendor invoices against bank records automatically
   <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white">
 </p>
 
-### Backend
+<h3 align="center">Backend</h3>
 
+<div align="center">
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=fastapi,django,nodejs,expressjs,maven&theme=dark&perline=12" />
 </a>
+</div>
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/Django_REST-A30000?style=flat-square&logo=django&logoColor=white">
   <img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white">
 </p>
 
-### Frontend
+<h3 align="center">Frontend</h3>
 
+<div align="center">
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=react,nextjs,vite,tailwind,threejs&theme=dark&perline=12" />
 </a>
+</div>
 
-### Data
+<h3 align="center">Data</h3>
 
+<div align="center">
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=postgres,supabase,mysql,mongodb,redis,sqlite&theme=dark&perline=12" />
 </a>
+</div>
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/Neon-00E599?style=flat-square">
   <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white">
 </p>
 
-### Ship & test
+<h3 align="center">Ship & test</h3>
 
+<div align="center">
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=docker,git,linux,bash,vercel,postman&theme=dark&perline=12" />
 </a>
+</div>
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/Render-46E3B7?style=flat-square">
   <img src="https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white">
   <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white">

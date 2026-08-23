@@ -31,6 +31,8 @@
 
 ## Who I am
 
+<img align="right" width="360" src="assets/desk.svg" alt="A developer at a desk with two screens, code filling in line by line, a gear turning in a thought bubble above" />
+
 I build AI systems that make decisions under real constraints — and then I put them in front of real users.
 
 Most "AI projects" stop at a notebook. Mine ship with rate limiting, input validation, row-level security, graceful degradation when an API key is missing, and a URL you can open. That gap — between a working prototype and something a client can depend on — is the part I care about.
@@ -51,6 +53,8 @@ strongest_at:
   - Turning a vague client problem into a shipped, scoped system
 looking_for:  Forward-deployed engineering · AI product roles
 ```
+
+<br clear="right"/>
 
 ### How I build
 

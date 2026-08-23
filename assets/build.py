@@ -239,6 +239,7 @@ def audit(path):
 
 
 if __name__ == "__main__":
+    from desk import desk
     style = importlib.import_module("style_%s" % STYLE)
     print("  style: %s" % STYLE)
     s = stats()
@@ -246,6 +247,12 @@ if __name__ == "__main__":
         print("  stats: %d repos, %d stars, last %s" % (s["repos"], s["stars"], s["pushed"]))
 
     keep = set()
+    # The workstation is style-independent: one drawing, reused by every style.
+    (OUT / "desk.svg").write_text(desk(), encoding="utf-8")
+    keep.add("desk.svg")
+    # Hand-drawn, not generated: the README's header art. Listed so the sweep
+    # below does not delete files it never wrote.
+    keep.update({"banner-dark.svg", "banner-light.svg"})
     if hasattr(style, "canvas"):
         # one sheet. It carries the live numbers, so a failed fetch leaves the
         # existing file alone rather than redrawing it without them.

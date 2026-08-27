@@ -312,17 +312,17 @@
 <rect class="cell" style="animation-delay:0.52s" x="680.0" y="98.0" width="11" height="11" rx="2" fill="#18160f"/>
 <rect class="cell" style="animation-delay:0.52s" x="680.0" y="112.0" width="11" height="11" rx="2" fill="#18160f"/>
 <rect class="cell" style="animation-delay:0.52s" x="680.0" y="126.0" width="11" height="11" rx="2" fill="#18160f"/>
-<rect class="cell" style="animation-delay:0.52s" x="680.0" y="140.0" width="11" height="11" rx="2" fill="#3a301a"/>
+<rect class="cell" style="animation-delay:0.52s" x="680.0" y="140.0" width="11" height="11" rx="2" fill="#18160f"/>
 <rect class="cell" style="animation-delay:0.52s" x="680.0" y="154.0" width="11" height="11" rx="2" fill="#3a301a"/>
-<rect class="cell" style="animation-delay:0.53s" x="694.0" y="70.0" width="11" height="11" rx="2" fill="#18160f"/>
+<rect class="cell" style="animation-delay:0.53s" x="694.0" y="70.0" width="11" height="11" rx="2" fill="#3a301a"/>
 <rect class="cell" style="animation-delay:0.53s" x="694.0" y="84.0" width="11" height="11" rx="2" fill="#18160f"/>
-<rect class="cell" style="animation-delay:0.53s" x="694.0" y="98.0" width="11" height="11" rx="2" fill="#3a301a"/>
+<rect class="cell" style="animation-delay:0.53s" x="694.0" y="98.0" width="11" height="11" rx="2" fill="#18160f"/>
 <rect class="cell" style="animation-delay:0.53s" x="694.0" y="112.0" width="11" height="11" rx="2" fill="#3a301a"/>
-<rect class="cell" style="animation-delay:0.53s" x="694.0" y="126.0" width="11" height="11" rx="2" fill="#5c4b28"/>
+<rect class="cell" style="animation-delay:0.53s" x="694.0" y="126.0" width="11" height="11" rx="2" fill="#3a301a"/>
 <rect class="cell" style="animation-delay:0.53s" x="694.0" y="140.0" width="11" height="11" rx="2" fill="#5c4b28"/>
-<rect class="cell" style="animation-delay:0.53s" x="694.0" y="154.0" width="11" height="11" rx="2" fill="#3a301a"/>
+<rect class="cell" style="animation-delay:0.53s" x="694.0" y="154.0" width="11" height="11" rx="2" fill="#5c4b28"/>
 <rect class="cell" style="animation-delay:0.54s" x="708.0" y="70.0" width="11" height="11" rx="2" fill="#3a301a"/>
-<rect class="cell" style="animation-delay:0.54s" x="708.0" y="84.0" width="11" height="11" rx="2" fill="#18160f"/>
+<rect class="cell" style="animation-delay:0.54s" x="708.0" y="84.0" width="11" height="11" rx="2" fill="#3a301a"/>
 <rect class="cell" style="animation-delay:0.54s" x="708.0" y="98.0" width="11" height="11" rx="2" fill="#18160f"/>
 <rect class="cell" style="animation-delay:0.54s" x="708.0" y="112.0" width="11" height="11" rx="2" fill="#18160f"/>
 <rect class="cell" style="animation-delay:0.54s" x="708.0" y="126.0" width="11" height="11" rx="2" fill="#18160f"/>
@@ -335,8 +335,8 @@
 <rect class="cell" style="animation-delay:0.55s" x="722.0" y="126.0" width="11" height="11" rx="2" fill="#18160f"/>
 <rect class="cell" style="animation-delay:0.55s" x="722.0" y="140.0" width="11" height="11" rx="2" fill="#18160f"/>
 <rect class="cell" style="animation-delay:0.55s" x="722.0" y="154.0" width="11" height="11" rx="2" fill="#18160f"/>
-<rect class="cell" style="animation-delay:0.56s" x="736.0" y="70.0" width="11" height="11" rx="2" fill="#3a301a"/>
-<rect class="cell" style="animation-delay:0.56s" x="736.0" y="84.0" width="11" height="11" rx="2" fill="#18160f"/>
+<rect class="cell" style="animation-delay:0.56s" x="736.0" y="70.0" width="11" height="11" rx="2" fill="#18160f"/>
+<rect class="cell" style="animation-delay:0.56s" x="736.0" y="84.0" width="11" height="11" rx="2" fill="#3a301a"/>
 <rect class="cell" style="animation-delay:0.56s" x="736.0" y="98.0" width="11" height="11" rx="2" fill="#18160f"/>
 <rect class="cell" style="animation-delay:0.56s" x="736.0" y="112.0" width="11" height="11" rx="2" fill="#18160f"/>
 <rect class="cell" style="animation-delay:0.56s" x="736.0" y="126.0" width="11" height="11" rx="2" fill="#18160f"/>
@@ -368,12 +368,13 @@
 <rect class="cell" style="animation-delay:0.61s" x="792.0" y="98.0" width="11" height="11" rx="2" fill="#18160f"/>
 <rect class="cell" style="animation-delay:0.61s" x="792.0" y="112.0" width="11" height="11" rx="2" fill="#18160f"/>
 <rect class="cell" style="animation-delay:0.61s" x="792.0" y="126.0" width="11" height="11" rx="2" fill="#18160f"/>
-<rect class="cell" style="animation-delay:0.61s" x="792.0" y="140.0" width="11" height="11" rx="2" fill="#3a301a"/>
-<rect class="cell" style="animation-delay:0.61s" x="792.0" y="154.0" width="11" height="11" rx="2" fill="#c9a961"/>
-<rect class="cell" style="animation-delay:0.62s" x="806.0" y="70.0" width="11" height="11" rx="2" fill="#5c4b28"/>
-<rect class="cell" style="animation-delay:0.62s" x="806.0" y="84.0" width="11" height="11" rx="2" fill="#3a301a"/>
+<rect class="cell" style="animation-delay:0.61s" x="792.0" y="140.0" width="11" height="11" rx="2" fill="#18160f"/>
+<rect class="cell" style="animation-delay:0.61s" x="792.0" y="154.0" width="11" height="11" rx="2" fill="#3a301a"/>
+<rect class="cell" style="animation-delay:0.62s" x="806.0" y="70.0" width="11" height="11" rx="2" fill="#c9a961"/>
+<rect class="cell" style="animation-delay:0.62s" x="806.0" y="84.0" width="11" height="11" rx="2" fill="#5c4b28"/>
 <rect class="cell" style="animation-delay:0.62s" x="806.0" y="98.0" width="11" height="11" rx="2" fill="#3a301a"/>
 <rect class="cell" style="animation-delay:0.62s" x="806.0" y="112.0" width="11" height="11" rx="2" fill="#3a301a"/>
+<rect class="cell" style="animation-delay:0.62s" x="806.0" y="126.0" width="11" height="11" rx="2" fill="#3a301a"/>
 <text x="78.0" y="190.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#615c53">less</text>
 <rect x="112" y="181" width="11" height="11" rx="2" fill="#18160f"/>
 <rect x="126" y="181" width="11" height="11" rx="2" fill="#3a301a"/>
@@ -381,5 +382,5 @@
 <rect x="154" y="181" width="11" height="11" rx="2" fill="#8d7539"/>
 <rect x="168" y="181" width="11" height="11" rx="2" fill="#c9a961"/>
 <text x="188.0" y="190.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#615c53">more</text>
-<text x="922.0" y="190.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#615c53" text-anchor="end">368 days drawn from the live calendar</text>
+<text x="922.0" y="190.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#615c53" text-anchor="end">369 days drawn from the live calendar</text>
 </svg>

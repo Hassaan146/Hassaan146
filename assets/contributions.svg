@@ -376,6 +376,7 @@
 <rect class="cell" style="animation-delay:0.62s" x="806.0" y="112.0" width="11" height="11" rx="2" fill="#3a301a"/>
 <rect class="cell" style="animation-delay:0.62s" x="806.0" y="126.0" width="11" height="11" rx="2" fill="#3a301a"/>
 <rect class="cell" style="animation-delay:0.62s" x="806.0" y="140.0" width="11" height="11" rx="2" fill="#18160f"/>
+<rect class="cell" style="animation-delay:0.62s" x="806.0" y="154.0" width="11" height="11" rx="2" fill="#18160f"/>
 <text x="78.0" y="190.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#615c53">less</text>
 <rect x="112" y="181" width="11" height="11" rx="2" fill="#18160f"/>
 <rect x="126" y="181" width="11" height="11" rx="2" fill="#3a301a"/>
@@ -383,5 +384,5 @@
 <rect x="154" y="181" width="11" height="11" rx="2" fill="#8d7539"/>
 <rect x="168" y="181" width="11" height="11" rx="2" fill="#c9a961"/>
 <text x="188.0" y="190.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#615c53">more</text>
-<text x="922.0" y="190.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#615c53" text-anchor="end">370 days drawn from the live calendar</text>
+<text x="922.0" y="190.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#615c53" text-anchor="end">371 days drawn from the live calendar</text>
 </svg>
